@@ -4,10 +4,14 @@ const { rimraf, series } = npsUtils
 
 module.exports = {
   scripts: {
-    clean: series(rimraf('coverage'), rimraf('.next')),
+    clean: series(
+      rimraf('coverage'),
+      rimraf('.next'),
+      rimraf('./lib/i18n/.messages')
+    ),
     commit: 'git cz',
     lint: {
-      default: 'eslint pages',
+      default: 'eslint __mocks__ __tests__ components lib pages scripts',
       fix: series.nps('lint --fix')
     },
     reportCoverage: 'codecov',

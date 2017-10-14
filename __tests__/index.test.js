@@ -1,21 +1,35 @@
 import React from 'react'
-import { shallow, render } from 'enzyme'
+import { render, shallow } from 'enzyme'
+import { intl } from 'react-intl'
 
-import Index from '../pages'
+/**
+ * QUESTION
+ *
+ * How to toggle the locale & messages with mock?
+ */
 
-describe('Index Page', () => {
-  test('shallow', () => {
-    const wrapper = shallow(<Index />)
+import { IndexPage } from '../pages'
+
+describe('IndexPage "en"', () => {
+  test('should yield English text.', () => {
+    const wrapper = shallow(<IndexPage intl={intl} />)
     expect(wrapper.text()).toEqual('Hello World!')
   })
 
-  test('render', () => {
-    const wrapper = render(<Index />)
+  test('Snapshot', () => {
+    const tree = render(<IndexPage intl={intl} />)
+    expect(tree).toMatchSnapshot()
+  })
+})
+
+describe.skip('IndexPage "ru"', () => {
+  test('should yield Russian text.', () => {
+    const wrapper = shallow(<IndexPage intl={intl} />)
     expect(wrapper.text()).toEqual('Hello World!')
   })
 
-  test('snapshot', () => {
-    const tree = render(<Index />)
+  test('Snapshot', () => {
+    const tree = render(<IndexPage intl={intl} />)
     expect(tree).toMatchSnapshot()
   })
 })
