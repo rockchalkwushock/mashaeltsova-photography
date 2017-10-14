@@ -1,0 +1,79 @@
+{
+  "name": "mashaeltsova-photography",
+  "version": "0.1.0",
+  "license": "MIT",
+  "private": true,
+  "description": "Photography Business Website for Masha Eltsova.",
+  "author":
+    "Cody Brunner <rockchalkwushock@icloud.com> (https://rcws-development.com)",
+  "repository":
+    "https://github.com/rockchalkwushock/mashaeltsova-photography.git",
+  "homepage":
+    "https://github.com/rockchalkwushock/mashaeltsova-photography#readme",
+  "bugs": "https://github.com/rockchalkwushock/mashaeltsova-photography/issues",
+  "scripts": {
+    "commit": "nps commit",
+    "dev": "next",
+    "now-build": "next build",
+    "now-start": "next start",
+    "precommit": "lint-staged",
+    "prettier": "prettier --single-quote --no-semi --write",
+    "start": "nps",
+    "test": "nps test"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "jest": {
+    "bail": true,
+    "collectCoverageFrom": ["pages/*.js"],
+    "coverageThreshold": {
+      "global": {
+        "branches": 50,
+        "functions": 50,
+        "lines": 50,
+        "statements": 50
+      }
+    },
+    "setupFiles": ["./jest.setup.js"],
+    "snapshotSerializers": ["enzyme-to-json/serializer"],
+    "testEnvironment": "jsdom"
+  },
+  "lint-staged": {
+    "*.js": ["yarn prettier", "git add"]
+  },
+  "now": {
+    "alias": ["mashaeltsova-photography-beta", "mashaeltsovaphotography.com"],
+    "env": {
+      "NODE_ENV": "production"
+    },
+    "files": ["./components", "./lib", "./pages", "package.json", "yarn.lock"],
+    "name": "mashaeltsova-photography"
+  },
+  "dependencies": {
+    "next": "~4.0.3",
+    "raf": "~3.4.0",
+    "react": "~16.0.0",
+    "react-dom": "~16.0.0"
+  },
+  "devDependencies": {
+    "codecov": "~2.3.0",
+    "commitizen": "~2.9.6",
+    "cz-conventional-changelog": "~2.0.0",
+    "enzyme": "~3.1.0",
+    "enzyme-adapter-react-16": "~1.0.1",
+    "enzyme-to-json": "~3.1.2",
+    "eslint": "~4.8.0",
+    "eslint-config-equimper": "~2.2.1",
+    "eslint-config-prettier": "~2.6.0",
+    "husky": "~0.14.3",
+    "jest": "~21.2.1",
+    "lint-staged": "~4.2.3",
+    "nps": "~5.7.1",
+    "nps-utils": "~1.4.0",
+    "prettier": "~1.7.3",
+    "react-test-renderer": "~16.0.0"
+  }
+}
