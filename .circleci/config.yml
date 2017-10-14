@@ -38,6 +38,19 @@ jobs:
           prefix: coverage
       - store_test_results:
           path: ./coverage/clover.xml
+  # QUESTION Why is CircleCi requiring this?
+  build:
+    docker:
+      - image: circleci/node:latest
+    working_directory: ~/mashaeltsova-photography
+    steps:
+      - attach_workspace:
+          at: ~/mashaeltsova-photography
+      - run: yarn install
+      - run: yarn build
+      - store_artifacts:
+          path: .next
+          prefix: .next
   deployment:
     docker:
       - image: circleci/node:latest
@@ -46,6 +59,7 @@ jobs:
       - attach_workspace:
           at: ~/mashaeltsova-photography
       - run: yarn install
+      # `now` will exectue `now_build` & `now_start`.
       - run: sudo yarn global add now
       - deploy:
           name: Deploy & Alias.
@@ -67,9 +81,13 @@ workflows:
       - test_and_report:
           requires:
             - checkout_code
+      - build:
+          requires:
+            - test_and_report
       - deployment:
           requires:
             - test_and_report
+            - build
           filters:
             branches:
               only:
