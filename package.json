@@ -28,7 +28,7 @@
   },
   "jest": {
     "bail": true,
-    "collectCoverageFrom": ["pages/*.js"],
+    "collectCoverageFrom": ["pages/index.js"],
     "coverageThreshold": {
       "global": {
         "branches": 50,
