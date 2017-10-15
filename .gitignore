@@ -34,7 +34,6 @@ bower_components
 build/
 dist/
 es/
-lib/
 
 # Dependency directories
 node_modules/
