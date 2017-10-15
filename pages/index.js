@@ -4,7 +4,8 @@ import { messages, WithIntl } from '../lib'
 
 export class IndexPage extends Component {
   static propTypes = {
-    intl: PropTypes.object.isRequired
+    intl: PropTypes.object.isRequired,
+    locale: PropTypes.string
   }
   render() {
     const { intl } = this.props

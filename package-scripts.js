@@ -22,7 +22,7 @@ module.exports = {
       watch: series.nps('test --watch')
     },
     validate: {
-      withCoverage: series.nps('test.coverage')
+      withCoverage: series.nps('lint', 'test.coverage')
     }
   }
 }
