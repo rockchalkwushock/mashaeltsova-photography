@@ -11,7 +11,8 @@ module.exports = {
     ),
     commit: 'git cz',
     lint: {
-      default: 'eslint',
+      default:
+        'eslint __mocks__ __tests__ components containers lib pages scripts ./server.js',
       fix: series.nps('lint --fix')
     },
     reportCoverage: 'codecov',

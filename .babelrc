@@ -7,7 +7,7 @@
         [
           "inline-dotenv",
           {
-            "path": "./.env"
+            "path": ".env"
           }
         ]
       ]
@@ -24,7 +24,7 @@
         [
           "inline-dotenv",
           {
-            "path": "./.env"
+            "path": ".env"
           }
         ]
       ]
@@ -44,7 +44,7 @@
         [
           "inline-dotenv",
           {
-            "path": "./.env"
+            "path": ".env"
           }
         ]
       ]
