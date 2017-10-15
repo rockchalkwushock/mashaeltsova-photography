@@ -11,7 +11,7 @@ module.exports = {
     ),
     commit: 'git cz',
     lint: {
-      default: 'eslint __mocks__ __tests__ components lib pages scripts',
+      default: 'eslint',
       fix: series.nps('lint --fix')
     },
     reportCoverage: 'codecov',
@@ -22,7 +22,7 @@ module.exports = {
       watch: series.nps('test --watch')
     },
     validate: {
-      withCoverage: series.nps('lint', 'test.coverage')
+      withCoverage: series.nps('test.coverage')
     }
   }
 }
