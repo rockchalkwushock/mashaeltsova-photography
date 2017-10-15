@@ -2,7 +2,15 @@
   "env": {
     "development": {
       "presets": "next/babel",
-      "plugins": ["react-intl"]
+      "plugins": [
+        "react-intl",
+        [
+          "inline-dotenv",
+          {
+            "path": "./.env"
+          }
+        ]
+      ]
     },
     "production": {
       "presets": "next/babel",
@@ -11,6 +19,12 @@
           "react-intl",
           {
             "messagesDir": "lib/i18n/.messages/"
+          }
+        ],
+        [
+          "inline-dotenv",
+          {
+            "path": "./.env"
           }
         ]
       ]
@@ -25,7 +39,15 @@
         ],
         "next/babel"
       ],
-      "plugins": ["react-intl"]
+      "plugins": [
+        "react-intl",
+        [
+          "inline-dotenv",
+          {
+            "path": "./.env"
+          }
+        ]
+      ]
     }
   }
 }

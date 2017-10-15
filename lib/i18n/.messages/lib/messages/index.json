@@ -1,0 +1,14 @@
+[
+  {
+    "id": "description",
+    "defaultMessage": "Photography Business Website for Masha Eltsova Photography"
+  },
+  {
+    "id": "greeting",
+    "defaultMessage": "Hello World!"
+  },
+  {
+    "id": "title",
+    "defaultMessage": "Masha Eltsova Photography"
+  }
+]
