@@ -1,10 +1,10 @@
 import React from 'react'
 
-const TextArea = ({ label, meta: { error, touched } }) => (
+const TextArea = ({ label, input, meta: { error, touched } }) => (
   <div>
     <label htmlFor={label} />
     <div>
-      <textarea name={label} placeholder={label} />
+      <textarea {...input} name={label} placeholder={label} />
       {touched && (error && <span>{error}</span>)}
     </div>
   </div>
