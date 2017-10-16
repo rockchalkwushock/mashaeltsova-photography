@@ -1,5 +1,21 @@
 {
+  "book": "Book Now!",
   "description": "Photography Business Website for Masha Eltsova Photography",
+  "email": "Email",
+  "firstNameRequired": "First name is required.",
+  "firstNameInvalid": "Invalid first name. Only alpha characters.",
+  "firstNameLength": "First name must be at least 2 characters in length.",
+  "lastNameRequired": "Last name is required.",
+  "lastNameInvalid": "Invalid last name. Only alpha characters.",
+  "lastNameLength": "Last name must be at least 2 characters in length.",
+  "emailRequired": "Email is required.",
+  "emailInvalid": "Invalid email address.",
+  "phoneRequired": "Phone number is required.",
+  "phoneInvalid": "Invalid phone number. Accepts: +1-234-567-8901, +61-234-567-89-01.",
+  "firstName": "First Name",
   "greeting": "Hello World!",
+  "lastName": "Last Name",
+  "message": "What are your booking needs?",
+  "phone": "Phone Number",
   "title": "Masha Eltsova Photography"
 }
