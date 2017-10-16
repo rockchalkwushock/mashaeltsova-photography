@@ -44,6 +44,10 @@
     "defaultMessage": "Invalid email address."
   },
   {
+    "id": "errorResponse",
+    "defaultMessage": "There was a problem with your request, please try back later."
+  },
+  {
     "id": "phoneRequired",
     "defaultMessage": "Phone number is required."
   },
@@ -70,6 +74,10 @@
   {
     "id": "phone",
     "defaultMessage": "Phone Number"
+  },
+  {
+    "id": "successResponse",
+    "defaultMessage": "Your booking request was sent!"
   },
   {
     "id": "title",
