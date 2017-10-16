@@ -44,6 +44,22 @@
     "defaultMessage": "Invalid email address."
   },
   {
+    "id": "messageRequired",
+    "defaultMessage": "Message is required."
+  },
+  {
+    "id": "messageInvalid",
+    "defaultMessage": "Invalid message. May only contain: A-Z, a-z, 0-9, \".\", \"!\", \"?\", & \",\""
+  },
+  {
+    "id": "messageMaxLength",
+    "defaultMessage": "Message must be not longer than 140 characters."
+  },
+  {
+    "id": "messageMinLength",
+    "defaultMessage": "Message must be at least 10 characters long."
+  },
+  {
     "id": "errorResponse",
     "defaultMessage": "There was a problem with your request, please try back later."
   },
