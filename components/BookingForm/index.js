@@ -104,7 +104,7 @@ class BookingForm extends Component {
 
 export default reduxForm({
   form: 'booking',
-  onSubmitFail: props => console.log(props.payload.error),
-  onSubmitSuccess: props => console.log(props.payload.message),
+  // onSubmitFail: props => console.log(props.payload.error),
+  // onSubmitSuccess: props => console.log(props.payload.message),
   validate
 })(BookingForm)

@@ -1,6 +1,6 @@
 import { Component } from 'react'
 import PropTypes from 'prop-types'
-import { WithData, WithIntl } from '../lib'
+import { Page } from '../lib'
 import { FormContainer } from '../containers'
 
 /**
@@ -16,4 +16,4 @@ class TestPage extends Component {
   }
 }
 
-export default WithData(WithIntl(TestPage))
+export default Page(TestPage)
