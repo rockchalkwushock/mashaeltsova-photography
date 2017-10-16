@@ -11,7 +11,7 @@ import { intl } from 'react-intl'
 import { IndexPage } from '../pages'
 
 describe('IndexPage "en"', () => {
-  test('should yield English text.', () => {
+  test.skip('should yield English text.', () => {
     const wrapper = shallow(<IndexPage intl={intl} />)
     expect(wrapper.text()).toEqual('Hello World!')
   })

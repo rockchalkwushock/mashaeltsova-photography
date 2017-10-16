@@ -1,9 +1,33 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`IndexPage "en" Snapshot 1`] = `
-<h1>
-  Hello World!
-</h1>
+<main
+  class="jsx-3144190411"
+>
+  <section
+    class="jsx-876394948"
+  >
+    Landing
+  </section>
+  <section
+    class="jsx-876394948"
+  >
+    About
+  </section>
+  <section
+    class="jsx-876394948"
+  >
+    Gallery
+  </section>
+  <section
+    class="jsx-876394948"
+  >
+    Contact
+  </section>
+  <div
+    class="jsx-3967984748"
+  />
+</main>
 `;
 
 exports[`IndexPage "ru" Snapshot 1`] = `
