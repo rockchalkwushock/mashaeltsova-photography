@@ -1,15 +1,4 @@
-import AboutSection from './AboutSection'
 import BookingForm from './BookingForm'
-import ContactSection from './ContactSection'
-import GallerySection from './GallerySection'
-import LandingSection from './LandingSection'
-import Layout from './Layout'
+import { Footer, Main, Navigation, Section } from './commons'
 
-export {
-  AboutSection,
-  BookingForm,
-  ContactSection,
-  GallerySection,
-  LandingSection,
-  Layout
-}
+export { BookingForm, Footer, Main, Navigation, Section }

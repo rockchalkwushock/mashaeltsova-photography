@@ -1,16 +1,17 @@
 import Head from 'next/head'
-import { styles } from '../lib'
+import { styles } from '../../lib'
+
+/**
+ * Styled-JSX notes
+ * @see https://github.com/zeit/styled-jsx#dynamic-styles
+ * @see https://github.com/zeit/styled-jsx#via-inline-style
+ */
 
 export default () => (
   <div>
     <Head>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
-      <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
-        async
-      />
       <link
         rel="stylesheet"
         href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -26,11 +27,18 @@ export default () => (
       * {
         box-sizing: border-box;
         margin: 0;
+        padding: 0;
+      }
+      html,
+      body {
+        min-height: 100vh;
+        overflow-x: hidden;
       }
       body {
         background-color: ${styles.colors.white};
         color: ${styles.colors.charcoal};
         font-family: ${styles.fonts.nunito};
+        line-height: 1.5;
       }
     `}</style>
   </div>
