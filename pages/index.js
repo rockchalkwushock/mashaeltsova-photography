@@ -22,7 +22,13 @@ export class IndexPage extends Component {
           <title>{intl.formatMessage(messages.title)}</title>
           <meta description={intl.formatMessage(messages.description)} />
         </Head>
-        <Section header>Header</Section>
+        <Section header>
+          <h2>Use Logo as Background Image</h2>
+          <h4>or</h4>
+          <h2>
+            Use Logo as first entry in a 3-4 Image Slider with fade-in animation
+          </h2>
+        </Section>
         <Navigation>Navigation</Navigation>
         <Section about>About</Section>
         <Section services>Services</Section>

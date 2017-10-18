@@ -16,7 +16,7 @@ const Main = ({ children }) => (
       {children}
       <style jsx>{`
         .grid {
-          background-color: ${styles.colors.powder};
+          background-color: ${styles.colors.white};
           display: grid;
           grid-gap: 1em;
           grid-template-columns: repeat(7, 1fr);

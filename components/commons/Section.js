@@ -1,3 +1,5 @@
+import { styles } from '../../lib'
+
 const Section = props => (
   <section
     className={
@@ -13,7 +15,7 @@ const Section = props => (
     {props.children}
     <style jsx>{`
       section {
-        background-color: #ffffff;
+        background-color: ${styles.colors.powder};
       }
       .header,
       .about,

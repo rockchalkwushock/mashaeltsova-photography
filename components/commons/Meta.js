@@ -38,6 +38,7 @@ export default () => (
         background-color: ${styles.colors.white};
         color: ${styles.colors.charcoal};
         font-family: ${styles.fonts.nunito};
+        font-size: 1.2em;
         line-height: 1.5;
       }
     `}</style>
