@@ -30,7 +30,9 @@ export class IndexPage extends Component {
           </h2>
         </Section>
         <Navigation>Navigation</Navigation>
-        <Section about>About</Section>
+        <Section about intl={intl}>
+          {intl.formatMessage(messages.aboutMessage)}
+        </Section>
         <Section services>Services</Section>
         <Section gallery>Gallery</Section>
         <Section booking>Booking</Section>

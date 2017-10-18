@@ -1,6 +1,6 @@
 import FontAwesome from 'react-fontawesome'
 
-import { messages, styles } from '../../../lib'
+import { messages, styles } from '../../lib'
 
 /**
  * FIXME

@@ -1,6 +1,5 @@
-import Footer from './Footer'
+import Icon from './Icon'
 import Main from './Main'
-import Navigation from './Navigation'
 import Section from './Section'
 
-export { Footer, Main, Navigation, Section }
+export { Icon, Main, Section }
