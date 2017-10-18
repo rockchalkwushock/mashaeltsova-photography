@@ -25,5 +25,6 @@
   "messageRequired": "Сообщение требуется.",
   "messageInvalid": "FIXME",
   "messageMaxLength": "Сообщение должно быть не более 140 символов.",
-  "messageMinLength": "Сообщение должно содержать не менее 10 символов."
+  "messageMinLength": "Сообщение должно содержать не менее 10 символов.",
+  "rcws": "Разработка RCWS"
 }
