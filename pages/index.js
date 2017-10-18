@@ -34,7 +34,7 @@ export class IndexPage extends Component {
         <Section services>Services</Section>
         <Section gallery>Gallery</Section>
         <Section booking>Booking</Section>
-        <Footer>Footer</Footer>
+        <Footer intl={intl} />
       </Main>
     )
   }
