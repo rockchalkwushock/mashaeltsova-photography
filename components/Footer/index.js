@@ -1,6 +1,6 @@
-import Icon from './Icon'
+import { Icon } from '../commons'
 
-import { styles } from '../../../lib'
+import { styles } from '../../lib'
 
 /**
  * FIXME

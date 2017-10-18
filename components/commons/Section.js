@@ -27,9 +27,12 @@ const Section = props => (
       .header {
         height: 500px;
       }
-      .about,
       .gallery {
         height: 250px;
+      }
+      .about {
+        color: ${styles.colors.warm}
+        padding: 1em;
       }
       .services {
         height: 150px;
