@@ -14,6 +14,25 @@ export class IndexPage extends Component {
     intl: PropTypes.object.isRequired,
     locale: PropTypes.string
   }
+  renderServicesSection = () => {
+    // 1. Get locale specific message.
+    const translatedText = this.props.intl.formatMessage(
+      messages.servicesMessage
+    )
+    // 2. split() the string on the ':' & populate each segment in an array.
+    const [message, services] = translatedText.split(': ')
+    // 3. split() the substring on ',' & map over the array populating the `<li />` returning and array of those elements.
+    const list = services
+      .split(',')
+      .map(service => <li key={Math.random()}>{service}</li>)
+    // 4. Render it all!
+    return (
+      <Section services>
+        <p>{message}:</p>
+        <ul>{list}</ul>
+      </Section>
+    )
+  }
   render() {
     const { intl } = this.props
     return (
@@ -30,10 +49,8 @@ export class IndexPage extends Component {
           </h2>
         </Section>
         <Navigation>Navigation</Navigation>
-        <Section about intl={intl}>
-          {intl.formatMessage(messages.aboutMessage)}
-        </Section>
-        <Section services>Services</Section>
+        <Section about>{intl.formatMessage(messages.aboutMessage)}</Section>
+        {this.renderServicesSection()}
         <Section gallery>Gallery</Section>
         <Section booking>Booking</Section>
         <Footer intl={intl} />

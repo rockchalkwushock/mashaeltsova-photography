@@ -41,6 +41,17 @@ export default () => (
         font-size: 1.2em;
         line-height: 1.5;
       }
+      section {
+        color: ${styles.colors.warm};
+        background-color: ${styles.colors.powder};
+        padding: 1em;
+      }
+      li {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
     `}</style>
   </div>
 )

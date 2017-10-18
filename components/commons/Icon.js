@@ -23,7 +23,6 @@ const Icon = ({ icon, intl, size, url }) => {
       .copyright {
         color: ${styles.colors.warm}
         padding: 0.25em;
-        text-decoration: none;
       }
       .copyright:visited {
         color: ${styles.colors.warm}

@@ -14,9 +14,6 @@ const Section = props => (
   >
     {props.children}
     <style jsx>{`
-      section {
-        background-color: ${styles.colors.powder};
-      }
       .header,
       .about,
       .services,
@@ -31,11 +28,8 @@ const Section = props => (
         height: 250px;
       }
       .about {
-        color: ${styles.colors.warm}
-        padding: 1em;
       }
       .services {
-        height: 150px;
       }
       .booking {
         height: 300px;
