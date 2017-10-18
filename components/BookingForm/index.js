@@ -4,8 +4,9 @@ import PropType from 'prop-types'
 
 import { messages } from '../../lib'
 import validate from './validate'
-import Input from './Input'
-import TextArea from './TextArea'
+import CustomButton from './CustomButton'
+import CustomField from './CustomField'
+import Form from './Form'
 
 class BookingForm extends Component {
   static propTypes = {
@@ -49,55 +50,41 @@ class BookingForm extends Component {
   render() {
     const { handleSubmit, intl, valid } = this.props
     return (
-      <form onSubmit={handleSubmit(this.submitForm)}>
-        <div>
-          <Field
-            component={Input}
-            label={intl.formatMessage(messages.firstName)}
-            name="firstName"
-            type="text"
-          />
-        </div>
-        <div>
-          <Field
-            component={Input}
-            label={intl.formatMessage(messages.lastName)}
-            name="lastName"
-            type="text"
-          />
-        </div>
-        <div>
-          <Field
-            component={Input}
-            label={intl.formatMessage(messages.email)}
-            name="email"
-            type="email"
-          />
-        </div>
-        <div>
-          <Field
-            component={Input}
-            label={intl.formatMessage(messages.phone)}
-            name="phone"
-            type="tel"
-          />
-        </div>
-        <div>
-          <div>
-            <Field
-              component={TextArea}
-              label={intl.formatMessage(messages.message)}
-              name="message"
-            />
-          </div>
-        </div>
-        <div>
-          {this.renderResponse()}
-          <button disabled={!valid} type="submit">
-            {intl.formatMessage(messages.book)}
-          </button>
-        </div>
-      </form>
+      <Form onSubmit={handleSubmit(this.submitForm)}>
+        <Field
+          component={CustomField}
+          label={intl.formatMessage(messages.firstName)}
+          name="firstName"
+          type="text"
+        />
+        <Field
+          component={CustomField}
+          label={intl.formatMessage(messages.lastName)}
+          name="lastName"
+          type="text"
+        />
+        <Field
+          component={CustomField}
+          label={intl.formatMessage(messages.email)}
+          name="email"
+          type="email"
+        />
+        <Field
+          component={CustomField}
+          label={intl.formatMessage(messages.phone)}
+          name="phone"
+          type="tel"
+        />
+        <Field
+          component={CustomField}
+          label={intl.formatMessage(messages.message)}
+          name="message"
+        />
+        {this.renderResponse()}
+        <CustomButton valid={!valid}>
+          {intl.formatMessage(messages.book)}
+        </CustomButton>
+      </Form>
     )
   }
 }

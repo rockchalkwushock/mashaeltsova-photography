@@ -1,5 +1,3 @@
-import { styles } from '../../lib'
-
 const Section = props => (
   <section
     className={
@@ -32,7 +30,7 @@ const Section = props => (
       .services {
       }
       .booking {
-        height: 300px;
+        height: 575px; /* slightly larger than with all error messages displayed. */
       }
       @media (min-width: 768px) {
         .about {

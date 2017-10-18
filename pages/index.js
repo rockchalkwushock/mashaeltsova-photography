@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 
 import { messages, Page } from '../lib'
 import { Footer, Main, Navigation, Section } from '../components'
+import { FormContainer } from '../containers'
 
 /**
  * Will likely contain `state` so keep this as a class component.
@@ -52,7 +53,9 @@ export class IndexPage extends Component {
         <Section about>{intl.formatMessage(messages.aboutMessage)}</Section>
         {this.renderServicesSection()}
         <Section gallery>Gallery</Section>
-        <Section booking>Booking</Section>
+        <Section booking>
+          <FormContainer intl={intl} />
+        </Section>
         <Footer intl={intl} />
       </Main>
     )
