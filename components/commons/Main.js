@@ -9,18 +9,23 @@
 import Meta from './Meta'
 import { styles } from '../../lib'
 
-const Main = ({ children }) => (
+const Main = ({ children, className, id }) => (
   <div>
     <Meta />
-    <main className="grid">
+    <main className={className} id={id}>
       {children}
       <style jsx>{`
-        .grid {
+        main {
           background-color: ${styles.colors.white};
           display: grid;
           grid-gap: 1em;
-          grid-template-columns: repeat(7, 1fr);
           padding: 0 1em;
+        }
+        .mainGrid {
+          grid-template-columns: repeat(6, 1fr);
+        }
+        .galleryGrid {
+          grid-template-columns: 1fr;
         }
       `}</style>
     </main>
