@@ -11,11 +11,11 @@ const CustomField = ({ label, input, type, meta: { error, touched } }) => {
         <CustomTextArea input={input} placeholder={label} />
         {touched && (error && <CustomSpan>{error}</CustomSpan>)}
         <style>{`
-      .field {
-        grid-column: span 6;
-        text-align: center;
-        width: 100%;
-      }
+        .field {
+          grid-column: span 6;
+          text-align: center;
+          width: 100%;
+        }
     `}</style>
       </div>
     )

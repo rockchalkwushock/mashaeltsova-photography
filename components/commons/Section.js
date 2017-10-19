@@ -25,23 +25,14 @@ const Section = props => (
       .gallery {
         height: 250px;
       }
-      .about {
-      }
-      .services {
-      }
-      .booking {
-        height: 575px; /* slightly larger than with all error messages displayed. */
-      }
       @media (min-width: 768px) {
         .about {
           grid-column: span 4;
         }
         .services {
           grid-column: span 3;
-          height: 250px;
         }
-        .gallery,
-        .booking {
+        .gallery {
           height: 500px;
         }
       }

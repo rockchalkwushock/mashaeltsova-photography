@@ -17,15 +17,23 @@ const CustomTextArea = ({ input, placeholder }) => (
     />
     <style jsx>{`
       textarea {
-        background-color: Transparent;
+        background-color: ${styles.colors.peach};
         background-repeat: no-repeat;
-        border: 1px solid blue;
+        border: 1px solid ${styles.colors.warm};
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px 1px rgba(223, 116, 74, 0.5);
+        color: ${styles.colors.warm};
         font-family: ${styles.fonts.nunito};
         font-size: 1em;
         outline: none;
         overflow: auto;
+        padding: 0.5em;
         resize: none;
         text-align: center;
+        width: 100%;
+      }
+      textarea:focus {
+        text-align: left;
       }
       textarea::placeholder {
         color: ${styles.colors.warm};
@@ -45,6 +53,11 @@ const CustomTextArea = ({ input, placeholder }) => (
       :-moz-placeholder {
         /* Firefox 18- */
         color: ${styles.colors.warm};
+      }
+      @media (min-width: 768px) {
+        textarea {
+          width: 60%;
+        }
       }
     `}</style>
   </div>

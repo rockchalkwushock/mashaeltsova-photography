@@ -5,13 +5,6 @@
  * labels.
  */
 
-const CustomLabel = ({ label }) => (
-  <label htmlFor={label}>
-    <style jsx>{`
-      label {
-      }
-    `}</style>
-  </label>
-)
+const CustomLabel = ({ label }) => <label htmlFor={label} />
 
 export default CustomLabel
