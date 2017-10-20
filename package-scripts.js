@@ -1,9 +1,10 @@
 const npsUtils = require('nps-utils')
 
-const { rimraf, series } = npsUtils
+const { crossEnv, rimraf, series } = npsUtils
 
 module.exports = {
   scripts: {
+    analyze: `${crossEnv('ANALYZE=1')} next build`,
     clean: series(
       rimraf('coverage'),
       rimraf('.next'),
