@@ -9,7 +9,9 @@ const Header = ({ text }) => (
     <style jsx>{`
       header {
         font-family: ${styles.fonts.courgette};
+        grid-column: span 12;
         padding-top: 1.2em;
+        text-align: center;
       }
     `}</style>
   </header>

@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 
-import { Container, CustomLink, Header, Nav } from '../commons'
+import { Container, CustomLink, Header, Nav, Photo } from '../commons'
 
 const Gallery = ({ ids, pathname }) => (
   <Container className="galleryPage">
@@ -19,12 +19,15 @@ const Gallery = ({ ids, pathname }) => (
         url="/gallery/wedding"
       />
     </Nav>
-    <Container className="gallery">{pathname.substring(9)}</Container>
+    <Container className="gallery">
+      {/* <Photo publicId='girl_in_red_dress' />*/}
+      {ids.map(id => <Photo key={id} publicId={id} />)}
+    </Container>
   </Container>
 )
 
 Gallery.propTypes = {
-  ids: PropTypes.array.isRequired,
+  // ids: PropTypes.array.isRequired,
   // intl: PropTypes.object.isRequired,
   // messages: PropTypes.object.isRequired,
   pathname: PropTypes.string.isRequired

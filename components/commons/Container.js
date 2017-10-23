@@ -19,16 +19,14 @@ const Container = ({ className, children }) => (
         background-color: ${styles.colors.powder};
         display: grid;
         grid-gap: 1em;
-        grid-template-column: repeat(4, 1fr);
-        text-align: center;
-      }
-      .galleryPages > * {
-        color: ${styles.colors.warm};
-        grid-column: span 4;
+        grid-template-columns: repeat(12, 1fr);
       }
       .gallery {
         background-color: ${styles.colors.lemon};
-        height: 250px;
+        display: grid;
+        grid-column: span 12;
+        grid-template-columns: repeat(8, 1fr);
+        text-align: center;
       }
     `}</style>
   </div>
