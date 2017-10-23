@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import Head from 'next/head'
 import PropTypes from 'prop-types'
-import { Image, Transformation } from 'cloudinary-react'
 
 import { messages, PageWithData } from '../lib'
 import { Footer, Section } from '../components'

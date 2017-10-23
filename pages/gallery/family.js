@@ -1,9 +1,14 @@
+import Head from 'next/head'
 import PropTypes from 'prop-types'
 
-import { PageWithoutData } from '../../lib'
-import { Gallery } from '../../components'
+import { messages, PageWithoutData } from '../../lib'
+import { Footer, Gallery } from '../../components'
 
 /**
+ * FIXME
+ *
+ * Create a messages[xyz] for the correct title/content/description.
+ *
  * REVIEW
  *
  * this.props.messages will hold the messages; however,
@@ -19,7 +24,14 @@ import { Gallery } from '../../components'
  * 2) Can I write some kind of 'if' block to use this.props.messages
  * if the above is not possible?
  */
-const FamilyGallery = ({ ids }) => <Gallery ids={ids} />
+const FamilyGallery = ({ ids, intl, url }) => [
+  <Head key={0}>
+    <title>{intl.formatMessage(messages.title)}</title>
+    <meta description={intl.formatMessage(messages.description)} />
+  </Head>,
+  <Gallery key={1} ids={ids} pathname={url.pathname} />,
+  <Footer key={2} intl={intl} />
+]
 
 FamilyGallery.propTypes = {
   ids: PropTypes.array.isRequired,

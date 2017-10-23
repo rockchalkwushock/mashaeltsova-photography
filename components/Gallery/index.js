@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 
 import { Container, CustomLink, Header, Nav } from '../commons'
 
-const Gallery = ({ ids }) => (
+const Gallery = ({ ids, pathname }) => (
   <Container className="galleryPage">
     <Header text="Masha Eltsova Photography" />
     <Nav>
@@ -19,17 +19,15 @@ const Gallery = ({ ids }) => (
         url="/gallery/wedding"
       />
     </Nav>
-    <Container className="gallery">hello</Container>
+    <Container className="gallery">{pathname.substring(9)}</Container>
   </Container>
 )
 
 Gallery.propTypes = {
-  ids: PropTypes.array.isRequired
+  ids: PropTypes.array.isRequired,
   // intl: PropTypes.object.isRequired,
   // messages: PropTypes.object.isRequired,
-  // url: PropTypes.shape({
-  //   pathname: PropTypes.string.isRequired
-  // })
+  pathname: PropTypes.string.isRequired
 }
 
 export default Gallery
