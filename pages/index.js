@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Head from 'next/head'
 import PropTypes from 'prop-types'
+import { Image, Transformation } from 'cloudinary-react'
 
 import { messages, PageWithData } from '../lib'
 import { Footer, Section } from '../components'
@@ -36,7 +37,9 @@ export class IndexPage extends Component {
         <title>{intl.formatMessage(messages.title)}</title>
         <meta description={intl.formatMessage(messages.description)} />
       </Head>,
-      <Section header key={1} />,
+      <Section header key={1}>
+        <h1 style={{ textAlign: 'center' }}>Hello World</h1>
+      </Section>,
       <Section about key={2}>
         {intl.formatMessage(messages.aboutMessage)}
       </Section>,

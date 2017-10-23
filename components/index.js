@@ -1,6 +1,6 @@
 import BookingForm from './BookingForm'
 import Footer from './Footer'
-import Navigation from './Navigation'
-import { CustomLink, Main, Meta, Section } from './commons'
+import Gallery from './Gallery'
+import { CustomLink, Main, Meta, Section, Photo } from './commons'
 
-export { BookingForm, CustomLink, Footer, Main, Meta, Navigation, Section }
+export { BookingForm, CustomLink, Footer, Gallery, Main, Meta, Section, Photo }
