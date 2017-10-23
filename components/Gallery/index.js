@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 
 import { Container, CustomLink, Header, Nav, Photo } from '../commons'
 
-const Gallery = ({ ids, pathname }) => (
+const Gallery = ({ ids }) => (
   <Container className="galleryPage">
     <Header text="Masha Eltsova Photography" />
     <Nav>

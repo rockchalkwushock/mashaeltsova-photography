@@ -2,7 +2,7 @@ import Head from 'next/head'
 import PropTypes from 'prop-types'
 
 import { messages, PageWithoutData } from '../../lib'
-import { Footer, Gallery } from '../../components'
+import { Footer, Gallery, Layout } from '../../components'
 
 /**
  * FIXME
@@ -24,14 +24,16 @@ import { Footer, Gallery } from '../../components'
  * 2) Can I write some kind of 'if' block to use this.props.messages
  * if the above is not possible?
  */
-const FamilyGallery = ({ ids, intl, url }) => [
-  <Head key={0}>
-    <title>{intl.formatMessage(messages.title)}</title>
-    <meta description={intl.formatMessage(messages.description)} />
-  </Head>,
-  <Gallery key={1} ids={ids} pathname={url.pathname} />,
-  <Footer key={2} intl={intl} />
-]
+const FamilyGallery = ({ ids, intl, url }) => (
+  <Layout pathname={url.pathname}>
+    <Head key={0}>
+      <title>{intl.formatMessage(messages.title)}</title>
+      <meta description={intl.formatMessage(messages.description)} />
+    </Head>
+    <Gallery key={1} ids={ids} pathname={url.pathname} />
+    <Footer key={2} intl={intl} />
+  </Layout>
+)
 
 FamilyGallery.propTypes = {
   ids: PropTypes.array.isRequired,

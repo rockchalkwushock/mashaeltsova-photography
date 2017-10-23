@@ -24,8 +24,6 @@ const Main = ({ children, className, id }) => (
           grid-gap: 1em;
           grid-template-columns: repeat(6, 1fr);
         }
-        .galleryGrid {
-        }
       `}</style>
     </main>
   </div>

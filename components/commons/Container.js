@@ -25,7 +25,10 @@ const Container = ({ className, children }) => (
         background-color: ${styles.colors.lemon};
         display: grid;
         grid-column: span 12;
-        grid-template-columns: repeat(8, 1fr);
+        grid-template-columns: repeat(
+          8,
+          1fr
+        ); /* FIXME this needs to be dynamic to 'ids.length' */
         text-align: center;
       }
     `}</style>

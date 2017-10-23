@@ -1,23 +1,10 @@
 import Container from './Container'
 import CustomLink from './CustomLink'
-import Fragment from './Fragment'
+import Footer from './Footer'
 import Header from './Header'
-import Icon from './Icon'
-import Main from './Main'
-import Meta from './Meta'
+import Layout from './Layout'
 import Nav from './Nav'
 import Photo from './Photo'
 import Section from './Section'
 
-export {
-  Container,
-  CustomLink,
-  Fragment,
-  Header,
-  Icon,
-  Main,
-  Meta,
-  Nav,
-  Photo,
-  Section
-}
+export { Container, CustomLink, Footer, Header, Layout, Nav, Photo, Section }

@@ -3,7 +3,7 @@ import Head from 'next/head'
 import PropTypes from 'prop-types'
 
 import { messages, PageWithData } from '../lib'
-import { Footer, Fragment, Section } from '../components'
+import { Footer, Layout, Section } from '../components'
 import { FormContainer } from '../containers'
 
 export class IndexPage extends Component {
@@ -21,10 +21,10 @@ export class IndexPage extends Component {
     return { message, list }
   }
   render() {
-    const { intl } = this.props
+    const { intl, url } = this.props
     const { message, list } = this.manipulateText()
     return (
-      <Fragment>
+      <Layout pathname={url.pathname}>
         <Head>
           <title>{intl.formatMessage(messages.title)}</title>
           <meta description={intl.formatMessage(messages.description)} />
@@ -42,7 +42,7 @@ export class IndexPage extends Component {
           <FormContainer intl={intl} />
         </Section>
         <Footer intl={intl} />
-      </Fragment>
+      </Layout>
     )
   }
 }
