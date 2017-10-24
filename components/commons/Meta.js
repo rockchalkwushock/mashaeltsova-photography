@@ -14,7 +14,7 @@ export default () => (
       <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
       <link
         rel="stylesheet"
-        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         async
       />
       <link

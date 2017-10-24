@@ -52,10 +52,7 @@
     ]
   },
   "now": {
-    "alias": [
-      "mashaeltsova-photography-beta",
-      "mashaeltsovaphotography.com"
-    ],
+    "alias": "mashaeltsovaphotography.com",
     "env": {
       "NODE_ENV": "production"
     },
@@ -65,14 +62,17 @@
       "./lib",
       "./pages",
       "./scripts",
+      ".babelrc",
+      "env-config.js",
       "package.json",
-      "./server.js",
+      "server.js",
       "yarn.lock"
     ],
     "name": "mashaeltsova-photography"
   },
   "dependencies": {
     "accepts": "~1.3.4",
+    "axios": "~0.17.0",
     "babel-plugin-react-intl": "~2.3.1",
     "babel-plugin-transform-define": "~1.3.0",
     "cloudinary-react": "~1.0.4",
