@@ -1,4 +1,4 @@
-import { Icon } from '../commons'
+import Icon from './Icon'
 
 import { styles } from '../../lib'
 

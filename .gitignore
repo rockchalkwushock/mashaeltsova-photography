@@ -62,6 +62,7 @@ package/
 
 # dotenv environment variables file
 .env
+env-config.js
 
 # Editors
 .idea/

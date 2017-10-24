@@ -2,7 +2,7 @@
  * REVIEW
  * FIXME
  *
- * header & gallery have fixed heights for development
+ * gallery has fixed heights for development
  * because there is no content to give height automatically.
  *
  */
@@ -25,9 +25,6 @@ const Section = props => (
       .gallery,
       .booking {
         grid-column: span 7;
-      }
-      .header {
-        height: 800px;
       }
       .gallery {
         height: 250px;

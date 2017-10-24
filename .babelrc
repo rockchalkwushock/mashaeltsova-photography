@@ -2,7 +2,7 @@
   "env": {
     "development": {
       "presets": "next/babel",
-      "plugins": ["react-intl"]
+      "plugins": ["react-intl", ["transform-define", "./env-config.js"]]
     },
     "production": {
       "presets": "next/babel",
@@ -12,7 +12,8 @@
           {
             "messagesDir": "lib/i18n/.messages/"
           }
-        ]
+        ],
+        ["transform-define", "./env-config.js"]
       ]
     },
     "test": {

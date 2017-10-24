@@ -17,15 +17,12 @@ const Main = ({ children, className, id }) => (
       <style jsx>{`
         main {
           background-color: ${styles.colors.white};
-          display: grid;
-          grid-gap: 1em;
           padding: 0 1em;
         }
         .mainGrid {
+          display: grid;
+          grid-gap: 1em;
           grid-template-columns: repeat(6, 1fr);
-        }
-        .galleryGrid {
-          grid-template-columns: 1fr;
         }
       `}</style>
     </main>
