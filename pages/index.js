@@ -2,8 +2,19 @@ import { Component } from 'react'
 import Head from 'next/head'
 import PropTypes from 'prop-types'
 
-import { messages, WithCloudinary, WithIntl } from '../lib'
-import { Footer, Layout, Section } from '../components'
+import { messages, WithIntl } from '../lib'
+import { BookingForm, Footer, Layout, Section } from '../components'
+
+/**
+ * TODO
+ * 1) Fix Sidebar Navigation issue.
+ * 2) Add/Update translations
+ * 3) react-waypoint (?)
+ * 4) lazy load images, Sprite (?)
+ * 5) Cleanup Styling
+ * 6) Test mobile responsiveness in Chrome, Firefox, Opera, Safari in production.
+ * 7) CSS Grid fallbacks
+ */
 
 export class IndexPage extends Component {
   static propTypes = {
@@ -37,11 +48,13 @@ export class IndexPage extends Component {
           <ul>{list}</ul>
         </Section>
         <Section gallery>Gallery</Section>
-        <Section booking>form</Section>
+        <Section booking>
+          <BookingForm />
+        </Section>
         <Footer intl={intl} />
       </Layout>
     )
   }
 }
 
-export default WithIntl(WithCloudinary(IndexPage))
+export default WithIntl(IndexPage)
