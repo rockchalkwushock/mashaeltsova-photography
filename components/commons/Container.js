@@ -29,6 +29,7 @@ const Container = ({ className, children }) => (
           8,
           1fr
         ); /* FIXME this needs to be dynamic to 'ids.length' */
+        min-height: 100vh;
         text-align: center;
       }
     `}</style>

@@ -1,68 +1,28 @@
-import PropTypes from 'prop-types'
 import { Image, Transformation } from 'cloudinary-react'
 
-import { PageWithoutData } from '../lib'
+// import { PageWithoutData } from '../lib'
 
-const TrialPage = ({ ids }) => {
-  const gallery = ids.map(id => (
-    <Image key={id} publicId={id} secure use_root_path>
-      <Transformation
-        crop="scale"
-        dpr="auto"
-        fetch_format="auto"
-        quality="auto:best"
-        width="1024"
-      />
-    </Image>
-  ))
-  return gallery
-}
+// https://res.cloudinary.com/rockchalkwushock/c_scale,dpr_2.0,f_auto,q_auto:best,w_414/e_overlay,fl_tiled,l_logo_as_watermark,o_40,w_150/mother_daughter_black_white
 
-TrialPage.propTypes = {
-  ids: PropTypes.array.isRequired,
-  intl: PropTypes.object.isRequired,
-  messages: PropTypes.object.isRequired,
-  url: PropTypes.shape({
-    pathname: PropTypes.string.isRequired
-  })
-}
+const TrialPage = () => (
+  <Image
+    cloudName="rockchalkwushock"
+    publicId="girl_in_red_dress"
+    responsive
+    secure
+    use_root_path
+  >
+    <Transformation
+      crop="scale"
+      dpr="auto"
+      fetch_format="auto"
+      quality="auto:best"
+      width="auto"
+    />
+  </Image>
+)
 
-export default PageWithoutData(TrialPage)
-
-// export default PageWithoutData(() => (
-//   <div>
-//     <Image publicId="girl_in_red_dress" secure use_root_path>
-//       <Transformation
-//         crop="scale"
-//         dpr="auto"
-//         fetch_format="auto"
-//         height='683'
-//         quality="auto:best"
-//         width="1024"
-//       />
-//     </Image>
-//     <Image publicId="mother_baby_window" secure use_root_path>
-//       <Transformation
-//         crop="scale"
-//         dpr="auto"
-//         fetch_format="auto"
-//         height='683'
-//         quality="auto:best"
-//         width="1024"
-//       />
-//     </Image>
-//     <Image publicId="young_girl_posing" secure use_root_path>
-//       <Transformation
-//         crop="scale"
-//         dpr="auto"
-//         fetch_format="auto"
-//         height='683'
-//         quality="auto:best"
-//         width="1024"
-//       />
-//     </Image>
-//   </div>
-// ))
+export default TrialPage
 
 // http://res.cloudinary.com/rockchalkwushock/image/upload/ar_4:6,c_fill,g_auto/c_scale,f_auto,q_auto,w_auto/mep_svg_logo
 // <Image publicId="ar_4:6,c_fill,g_auto/c_scale,f_auto,q_auto,w_auto/mep_svg_logo" />
