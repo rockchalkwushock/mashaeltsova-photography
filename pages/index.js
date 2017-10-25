@@ -1,10 +1,9 @@
-import React, { Component } from 'react'
+import { Component } from 'react'
 import Head from 'next/head'
 import PropTypes from 'prop-types'
 
-import { messages, PageWithData } from '../lib'
+import { messages, WithCloudinary, WithIntl } from '../lib'
 import { Footer, Layout, Section } from '../components'
-import { FormContainer } from '../containers'
 
 export class IndexPage extends Component {
   static propTypes = {
@@ -38,13 +37,11 @@ export class IndexPage extends Component {
           <ul>{list}</ul>
         </Section>
         <Section gallery>Gallery</Section>
-        <Section booking>
-          <FormContainer intl={intl} />
-        </Section>
+        <Section booking>form</Section>
         <Footer intl={intl} />
       </Layout>
     )
   }
 }
 
-export default PageWithData(IndexPage)
+export default WithIntl(WithCloudinary(IndexPage))

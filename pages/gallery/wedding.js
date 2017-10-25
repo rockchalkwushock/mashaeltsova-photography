@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import PropTypes from 'prop-types'
 
-import { messages, PageWithoutData } from '../../lib'
+import { messages, WithCloudinary, WithIntl } from '../../lib'
 import { Footer, Gallery, Layout } from '../../components'
 
 const WeddingGallery = ({ ids, intl, url }) => (
@@ -24,4 +24,4 @@ WeddingGallery.propTypes = {
   })
 }
 
-export default PageWithoutData(WeddingGallery)
+export default WithIntl(WithCloudinary(WeddingGallery))

@@ -1,7 +1,5 @@
 import { Image, Transformation } from 'cloudinary-react'
 
-// import { PageWithoutData } from '../lib'
-
 // https://res.cloudinary.com/rockchalkwushock/c_scale,dpr_2.0,f_auto,q_auto:best,w_414/e_overlay,fl_tiled,l_logo_as_watermark,o_40,w_150/mother_daughter_black_white
 
 const TrialPage = () => (
