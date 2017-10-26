@@ -1,28 +1,45 @@
 import { styles } from '../../../lib'
 
 const CustomTextArea = props => (
-  <div>
+  <div className="field">
     <textarea {...props} />
     <label htmlFor={props.label}>{props.label}</label>
     <style jsx>{`
-      textarea {
-        background-color: ${styles.colors.peach};
-        background-repeat: no-repeat;
-        border: 1px solid ${styles.colors.warm};
-        border-radius: 10px;
-        box-shadow: 2px 2px 2px 1px rgba(223, 116, 74, 0.5);
-        color: ${styles.colors.warm};
-        font-family: ${styles.fonts.nunito};
-        font-size: 1em;
-        outline: none;
-        overflow: auto;
-        padding: 0.5em;
-        resize: none;
-        text-align: center;
+      .field {
+        grid-column: span 6;
+        height: 60px;
+        line-height: 44px;
+        position: relative;
+        text-align: left;
+      }
+      label {
+        position: absolute;
+        text-align: left;
+        top: -12px;
+        transition: 0.2s all;
         width: 100%;
       }
-      textarea:focus {
+      textarea {
+        background-color: transparent;
+        background-repeat: no-repeat;
+        border: 0;
+        border-bottom: 2px solid ${styles.colors.warm};
+        color: ${styles.colors.warm};
+        font-size: 1em;
+        outline: 0;
+        overflow: auto;
+        padding: 0em 0.5em;
+        position: absolute;
+        resize: none;
         text-align: left;
+        width: 100%;
+        z-index: 1;
+      }
+      textarea:focus ~ label {
+        top: -35px;
+      }
+      textarea:focus {
+        height: 60px;
       }
       textarea::placeholder {
         color: ${styles.colors.warm};
@@ -42,11 +59,6 @@ const CustomTextArea = props => (
       :-moz-placeholder {
         /* Firefox 18- */
         color: ${styles.colors.warm};
-      }
-      @media (min-width: 768px) {
-        textarea {
-          width: 60%;
-        }
       }
     `}</style>
   </div>

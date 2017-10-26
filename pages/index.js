@@ -49,6 +49,7 @@ export class IndexPage extends Component {
         </Section>
         <Section gallery>Gallery</Section>
         <Section booking>
+          <span>All fields required</span>
           <BookingForm />
         </Section>
         <Footer intl={intl} />

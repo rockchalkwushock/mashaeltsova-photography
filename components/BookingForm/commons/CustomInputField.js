@@ -29,12 +29,11 @@ const CustomInputField = props => (
         line-height: 44px;
         position: relative;
         text-align: left;
-        width: 100%;
       }
       label {
         position: absolute;
         text-align: left;
-        top: 0;
+        top: -12px;
         transition: 0.2s all;
         width: 100%;
       }
@@ -46,14 +45,13 @@ const CustomInputField = props => (
         color: ${styles.colors.warm};
         font-size: 1em;
         outline: 0;
-        padding: 0.5em;
+        padding: 0em 0.5em;
+        position: absolute;
         width: 100%;
-      }
-      input:focus {
-        background-color: ${styles.colors.peach};
+        z-index: 1;
       }
       input:focus ~ label {
-        top: -24px;
+        top: -35px;
       }
     `}</style>
   </div>

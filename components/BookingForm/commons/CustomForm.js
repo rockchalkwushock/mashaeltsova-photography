@@ -6,7 +6,6 @@ const CustomForm = ({ children, onSubmit }) => (
         display: grid;
         grid-row-gap: 0.5em;
         grid-template-columns: repeat(6, 1fr);
-        justify-items: center;
         padding: 1em;
       }
     `}</style>

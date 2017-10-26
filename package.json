@@ -85,6 +85,7 @@
     "react-burger-menu": "~2.1.9",
     "react-dom": "~16.0.0",
     "react-fontawesome": "~1.6.1",
+    "react-form-with-constraints": "~0.6.2",
     "react-intl": "~2.4.0",
     "react-lazyload": "~2.3.0"
   },
