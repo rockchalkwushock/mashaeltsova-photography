@@ -4,16 +4,21 @@ import Modal from 'react-modal'
 
 class AppModal extends Component {
   static defaultProps = {
-    error: false,
-    loading: false,
     message: '',
-    success: false
+    status: {
+      error: false,
+      loading: false,
+      success: false
+    }
   }
   static propTypes = {
-    error: PropTypes.bool,
-    loading: PropTypes.bool,
     message: PropTypes.string.isRequired,
-    success: PropTypes.bool
+    status: PropTypes.shape({
+      disabled: PropTypes.bool,
+      error: PropTypes.bool.isRequired,
+      loading: PropTypes.bool.isRequired,
+      success: PropTypes.bool.isRequired
+    })
   }
   state = {
     interval: null,
@@ -21,7 +26,7 @@ class AppModal extends Component {
   }
   componentDidMount() {
     // Handle loading logic
-    if (this.props.loading) {
+    if (this.props.status.loading) {
       this.openModal()
     }
   }
