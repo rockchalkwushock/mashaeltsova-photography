@@ -8,6 +8,7 @@ import {
 
 import { styles } from '../../lib'
 import sendToBackend from './api'
+import { Modal } from '../commons'
 
 // Function for clearing all fields on this.state.values
 const fn = values => {
@@ -54,6 +55,7 @@ class BookingForm extends Component {
       e.preventDefault()
       this.form.validateFields() // Validate all fields on form
       this.setState({
+        message: 'Sending your inquiry now!',
         status: {
           ...this.state.status,
           disabled: !this.form.isValid(),
@@ -81,17 +83,35 @@ class BookingForm extends Component {
       throw err
     }
   }
-  renderErrorModal = () => <h1>{this.state.message}</h1>
-  renderLoader = () => <h1>Loading</h1>
-  renderSuccessModal = () => <h1>{this.state.message}</h1>
   render() {
     const { disabled, error, loading, success } = this.state.status
     if (loading) {
-      return this.renderLoader()
+      return (
+        <Modal
+          error={error}
+          loading={loading}
+          message={this.state.message}
+          success={success}
+        />
+      )
     } else if (success) {
-      return this.renderSuccessModal()
+      return (
+        <Modal
+          error={error}
+          loading={loading}
+          message={this.state.message}
+          success={success}
+        />
+      )
     } else if (error) {
-      return this.renderErrorModal()
+      return (
+        <Modal
+          error={error}
+          loading={loading}
+          message={this.state.message}
+          success={success}
+        />
+      )
     }
     return (
       <FormWithConstraints

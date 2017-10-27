@@ -2589,6 +2589,10 @@ execa@^0.8.0:
     signal-exit "^3.0.0"
     strip-eof "^1.0.0"
 
+exenv@^1.2.0:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/exenv/-/exenv-1.2.2.tgz#2ae78e85d9894158670b03d47bec1f03bd91bb9d"
+
 exit-hook@^1.0.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/exit-hook/-/exit-hook-1.1.1.tgz#f05ca233b48c05d54fff07765df8507e95c02ff8"
@@ -5724,6 +5728,13 @@ react-intl@~2.4.0:
 react-lazyload@~2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/react-lazyload/-/react-lazyload-2.3.0.tgz#ccb134223012447074a96543954f44b055dc6185"
+
+react-modal@~3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/react-modal/-/react-modal-3.1.0.tgz#ce594f88f9ab7338ee265cfec4be3cc5253f5baa"
+  dependencies:
+    exenv "^1.2.0"
+    prop-types "^15.5.10"
 
 react-proxy@^3.0.0-alpha.0:
   version "3.0.0-alpha.1"
