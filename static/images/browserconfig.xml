@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<browserconfig>
+    <msapplication>
+        <tile>
+            <square150x150logo src="https://mashaeltsovaphotography.com/static/images/mstile-150x150.png"/>
+            <TileColor>#df744a</TileColor>
+        </tile>
+    </msapplication>
+</browserconfig>

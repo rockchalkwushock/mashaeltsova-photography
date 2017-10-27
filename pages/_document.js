@@ -20,7 +20,7 @@ export default class CustomDocument extends Document {
   render() {
     const { locale, localeDataScript } = this.props
     return (
-      <html>
+      <html prefix="og: http://ogp.me/ns#">
         <Head />
         <body>
           <Main />
