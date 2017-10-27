@@ -31,24 +31,6 @@ Photo.propTypes = {
 
 export default Photo
 
-// import { Image, Transformation } from 'cloudinary-react'
-// import LazyLoad from 'react-lazyload'
-// import PropTypes from 'prop-types'
-
-// const Loader = () => (
-//   <div>
-//     ...Loading
-//     <style jsx>{`
-//       div {
-//         grid-column: span 8;
-//         height: 300px;
-//       }
-//     `}</style>
-//   </div>
-// )
-
-// const Photo = ({ publicId }) => (
-//   <div>
 //     <LazyLoad height={300} offset={-200} once placeholder={<Loader />}>
 //       <Image publicId={publicId} responsive secure use_root_path>
 //         <Transformation
@@ -68,26 +50,3 @@ export default Photo
 //         />
 //       </Image>
 //     </LazyLoad>
-//     <style jsx>{`
-//       div {
-//         grid-column: span 8;
-//       }
-//       @media (min-width: 768px) {
-//         div {
-//           grid-column: span 12;
-//         }
-//       }
-//       @media (min-width: 1024px) {
-//         div {
-//           grid-column: span 12;
-//         }
-//       }
-//     `}</style>
-//   </div>
-// )
-
-// Photo.propTypes = {
-//   publicId: PropTypes.string.isRequired
-// }
-
-// export default Photo
