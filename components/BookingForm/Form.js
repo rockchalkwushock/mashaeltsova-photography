@@ -16,7 +16,7 @@ const Form = props => (
         value={props.values.firstName}
         onChange={props.onChange}
         required
-        minLength={3}
+        minLength={2}
       />
       <label htmlFor="firstName">First Name</label>
       <FieldFeedbacks for="firstName">
@@ -40,7 +40,7 @@ const Form = props => (
         value={props.values.lastName}
         onChange={props.onChange}
         required
-        minLength={3}
+        minLength={2}
       />
       <label htmlFor="lastName">Last Name</label>
       <FieldFeedbacks for="lastName">

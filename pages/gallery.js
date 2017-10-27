@@ -3,21 +3,25 @@ import PropTypes from 'prop-types'
 import { loadGetInitialProps } from 'next/dist/lib/utils'
 import 'isomorphic-fetch'
 
-import { Photo } from '../components'
-import { fetchData } from '../lib'
+import { fetchData, WithIntl } from '../lib'
+import { Footer, Layout, Nav, Photo, Section } from '../components'
 
 const buttons = ['Family', 'Portrait', 'Travel', 'Wedding']
 
 class BaseGalleryPage extends Component {
   static propTypes = {
-    ids: PropTypes.array.isRequired
+    ids: PropTypes.array.isRequired,
+    intl: PropTypes.object,
+    messages: PropTypes.object,
+    url: PropTypes.shape({
+      pathname: PropTypes.string.isRequired
+    })
   }
   static async getInitialProps(ctx) {
     try {
-      return {
-        ...(await fetchData('family')),
-        ...(await loadGetInitialProps(ctx))
-      }
+      const props = await loadGetInitialProps(ctx)
+      const { ids } = await fetchData('family')
+      return { ids, ...props }
     } catch (err) {
       throw err
     }
@@ -26,21 +30,6 @@ class BaseGalleryPage extends Component {
     currentView: 'family',
     error: false,
     images: null
-  }
-  componentWillReceiveProps(nextProps) {
-    console.log('CWRP lastProps', this.props)
-    console.log('CWRP nextProps', nextProps)
-  }
-  shouldComponentUpdate(nextProps, nextState) {
-    /**
-     * FIXME
-     * Here I should perform checks to make sure the state/props
-     * have in fact changed to avoid needless renders.
-     * i.e. Clicking 'portrait' over and over again.
-     */
-    console.log('SCU nextProps', nextProps)
-    console.log('SCU nextState', nextState)
-    return true
   }
   handleOnClick = async e => {
     const target = e.currentTarget.name
@@ -70,12 +59,16 @@ class BaseGalleryPage extends Component {
     const imgs =
       this.state.currentView === 'family' ? this.props.ids : this.state.images
     return (
-      <div>
-        <div>{this.renderButtons()}</div>
+      <Layout pathname={this.props.url.pathname}>
+        <Section header>
+          <h1>Gallery</h1>
+        </Section>
+        <Nav>{this.renderButtons()}</Nav>
         <div>{imgs.map(id => <Photo key={id} publicId={id} />)}</div>
-      </div>
+        <Footer intl={this.props.intl} />
+      </Layout>
     )
   }
 }
 
-export default BaseGalleryPage
+export default WithIntl(BaseGalleryPage)
