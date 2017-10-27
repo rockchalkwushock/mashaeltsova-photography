@@ -1,10 +1,20 @@
-import React, { Component } from 'react'
+import { Component } from 'react'
 import Head from 'next/head'
 import PropTypes from 'prop-types'
 
-import { messages, PageWithData } from '../lib'
-import { Footer, Layout, Section } from '../components'
-import { FormContainer } from '../containers'
+import { messages, WithIntl } from '../lib'
+import { BookingForm, Footer, Layout, Section } from '../components'
+
+/**
+ * TODO
+ * 1) Fix Sidebar Navigation issue.
+ * 2) Add/Update translations
+ * 3) react-waypoint (?)
+ * 4) lazy load images, Sprite (?)
+ * 5) Cleanup Styling
+ * 6) Test mobile responsiveness in Chrome, Firefox, Opera, Safari in production.
+ * 7) CSS Grid fallbacks
+ */
 
 export class IndexPage extends Component {
   static propTypes = {
@@ -39,7 +49,8 @@ export class IndexPage extends Component {
         </Section>
         <Section gallery>Gallery</Section>
         <Section booking>
-          <FormContainer intl={intl} />
+          <span>All fields required</span>
+          <BookingForm />
         </Section>
         <Footer intl={intl} />
       </Layout>
@@ -47,4 +58,4 @@ export class IndexPage extends Component {
   }
 }
 
-export default PageWithData(IndexPage)
+export default WithIntl(IndexPage)

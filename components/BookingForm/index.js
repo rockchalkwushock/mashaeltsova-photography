@@ -1,118 +1,116 @@
-/* eslint-disable no-nested-ternary */
-import React, { Component } from 'react'
-import { Field, reduxForm } from 'redux-form'
-import PropType from 'prop-types'
+import { Component } from 'react'
 
-import { messages } from '../../lib'
-import validate from './validate'
-import CustomButton from './CustomButton'
-import CustomField from './CustomField'
-import CustomSpan from './CustomSpan'
+import { clearKeys } from '../../lib'
+import sendToBackend from './api'
+import { Modal } from '../commons'
 import Form from './Form'
 
-/**
- * REVIEW
- *
- * I would like to when an input is correct display a green circle with a white
- * check mark to the user or red circle with white 'X'. I think it would be
- * really cool if when the user moved to the next input:
- *  'valid': icon rolled out from behind input and border highlight green.
- *  'invalid': icon rolled out from behind input and border highlight red as well as
- *            display error message. Shake input too.
- *
- * For time being this.renderError() & this.renderSuccess() will do.
- * In the future on:
- *  'error': overlay a modal for X seconds that says there was an internal error.
- *  'success': transition form to a successful icon or message using animations.
- */
-
 class BookingForm extends Component {
-  static propTypes = {
-    intl: PropType.object.isRequired
-  }
   state = {
-    error: false,
-    isFetched: false
+    message: '',
+    status: {
+      disabled: true,
+      error: false,
+      loading: false,
+      success: false
+    },
+    values: {
+      email: '',
+      firstName: '',
+      lastName: '',
+      message: '',
+      phone: ''
+    }
   }
-  submitForm = async values => {
-    const { getBookingInfo, reset } = this.props
-    return getBookingInfo(values).then(({ payload }) => {
-      // NOTE: Checking that this is a successful request.
-      // No need to set the message from the server on state
-      // use `react-intl` for translations.
-      if (payload.message) {
-        this.setState(state => ({
-          ...state,
-          isFetched: true
-        }))
-      } else if (payload.error) {
-        this.setState(state => ({
-          ...state,
-          error: true,
-          isFetched: true
-        }))
+  handleOnChange = e => {
+    this.form.validateFields(e.currentTarget)
+    this.setState({
+      values: {
+        ...this.state.values,
+        [e.currentTarget.name]: e.currentTarget.value
       }
-      reset()
     })
+    // When arriving at last field check validation on all of form
+    // if valid enable the button for sending the data.
+    // FIXME This is a really shitty check, "What if they do message first?"
+    if (e.currentTarget.name === 'message') {
+      this.form.validateFields() // Validate all fields on form
+      this.setState({
+        status: { ...this.state.status, disabled: !this.form.isValid() }
+      })
+    }
   }
-  renderError = () => (
-    <CustomSpan>{this.props.intl.formatMessage(messages.errorRes)}</CustomSpan>
-  )
-  renderForm = () => {
-    const { handleSubmit, intl, valid } = this.props
-    return (
-      <Form onSubmit={handleSubmit(this.submitForm)}>
-        <Field
-          component={CustomField}
-          label={intl.formatMessage(messages.firstName)}
-          name="firstName"
-          type="text"
-        />
-        <Field
-          component={CustomField}
-          label={intl.formatMessage(messages.lastName)}
-          name="lastName"
-          type="text"
-        />
-        <Field
-          component={CustomField}
-          label={intl.formatMessage(messages.email)}
-          name="email"
-          type="email"
-        />
-        <Field
-          component={CustomField}
-          label={intl.formatMessage(messages.phone)}
-          name="phone"
-          type="tel"
-        />
-        <Field
-          component={CustomField}
-          label={intl.formatMessage(messages.message)}
-          name="message"
-        />
-        <CustomButton valid={!valid}>
-          {intl.formatMessage(messages.book)}
-        </CustomButton>
-      </Form>
-    )
+  handleOnSubmit = async e => {
+    try {
+      e.preventDefault()
+      // Validate all fields on form.
+      this.form.validateFields()
+      // Check if form is valid before sending data to API.
+      if (this.form.isValid()) {
+        // 1. SET LOADING STATE.
+        this.setState({
+          message: 'Sending your inquiry now!',
+          status: {
+            ...this.state.status,
+            disabled: !this.form.isValid(),
+            loading: true
+          }
+        })
+        // 2. SEND REQUEST & AWAIT PROMISE
+        const res = await sendToBackend(this.state)
+        // 3. HANDLE API ERROR RESPONSE
+        if (res.error) {
+          // 3a. SET ERROR STATE
+          this.setState({
+            message: res.error,
+            status: { ...this.state.status, error: true, loading: false },
+            values: { ...clearKeys(this.state.values) }
+          })
+        }
+        // 3b. SET SUCCESS STATE
+        this.setState({
+          message: res.message,
+          status: { ...this.state.status, loading: false, success: true },
+          values: { ...clearKeys(this.state.values) }
+        })
+      }
+      // 4. FORM NOT VALID
+      console.error('How in the hell did this happen?')
+      return
+    } catch (err) {
+      // TODO
+      // 1) Send to a service like Sentry to notify me when and why this failed.
+      throw err
+    }
   }
-  renderSuccess = () => (
-    <CustomSpan>
-      {this.props.intl.formatMessage(messages.successRes)}
-    </CustomSpan>
-  )
+  renderModal = ({ error, loading, success }) => {
+    // LOADING STATE
+    if (loading) {
+      return <Modal message={this.state.message} status={this.state.status} />
+      // SUCCESS STATE
+    } else if (success) {
+      return <Modal message={this.state.message} status={this.state.status} />
+      // ERROR STATE
+    } else if (error) {
+      return <Modal message={this.state.message} status={this.state.status} />
+    }
+    return
+  }
   render() {
-    const { error, isFetched } = this.state
-    const view =
-      !isFetched && !error
-        ? this.renderForm()
-        : isFetched && error ? this.renderError() : this.renderSuccess()
-    return view
+    const { disabled, error, loading, success } = this.state.status
+    if (error || loading || success) {
+      return this.renderModal(this.state.status)
+    }
+    return (
+      <Form
+        disabled={disabled}
+        formRef={formWithConstraints => (this.form = formWithConstraints)}
+        onChange={this.handleOnChange}
+        onSubmit={this.handleOnSubmit}
+        values={this.state.values}
+      />
+    )
   }
 }
 
-export default reduxForm({
-  form: 'booking',
-  validate
-})(BookingForm)
+export default BookingForm

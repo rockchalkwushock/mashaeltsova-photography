@@ -29,6 +29,9 @@ const Section = props => (
       .gallery {
         height: 250px;
       }
+      .booking {
+        text-align: center;
+      }
       @media (min-width: 768px) {
         .about {
           grid-column: span 4;
