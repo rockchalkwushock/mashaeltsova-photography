@@ -5,15 +5,24 @@ import { styles } from '../../lib'
 /**
  * FIXME
  *
- * Add links to social icons.
+ * Twitter Account????
+ *
  */
 
 const Footer = ({ intl }) => (
   <footer>
     <div className="container social">
-      <Icon icon="facebook" size="2x" url="#" />
-      <Icon icon="instagram" size="2x" url="#" />
-      <Icon icon="vk" size="2x" url="#" />
+      <Icon
+        icon="facebook"
+        size="2x"
+        url="https://www.facebook.com/masha.eltsova"
+      />
+      <Icon
+        icon="instagram"
+        size="2x"
+        url="https://www.instagram.com/mashaeltcovaphotography"
+      />
+      <Icon icon="vk" size="2x" url="https://www.vk.com/club65938200" />
       <Icon icon="twitter" size="2x" url="#" />
     </div>
     <div className="container copyright">

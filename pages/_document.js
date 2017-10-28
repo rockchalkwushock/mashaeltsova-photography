@@ -20,7 +20,11 @@ export default class CustomDocument extends Document {
   render() {
     const { locale, localeDataScript } = this.props
     return (
-      <html prefix="og: http://ogp.me/ns#">
+      <html
+        itemScope
+        itemType="http://schema.org/Article"
+        prefix="og: http://ogp.me/ns#"
+      >
         <Head />
         <body>
           <Main />
