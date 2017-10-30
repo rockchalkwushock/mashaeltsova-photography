@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Component: Form Renders without exploding 1`] = `
+exports[`Component: BookingForm Renders without exploding 1`] = `
 <form
   class="jsx-1188712385"
 >

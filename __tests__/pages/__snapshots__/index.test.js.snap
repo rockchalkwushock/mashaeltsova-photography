@@ -149,6 +149,7 @@ exports[`Component: Index Renders without exploding 1`] = `
             class="jsx-3773761155"
             name="firstName"
             type="text"
+            value=""
           />
         </div>
         <div
@@ -164,6 +165,7 @@ exports[`Component: Index Renders without exploding 1`] = `
             class="jsx-3773761155"
             name="lastName"
             type="text"
+            value=""
           />
         </div>
         <div
@@ -179,6 +181,7 @@ exports[`Component: Index Renders without exploding 1`] = `
             class="jsx-3773761155"
             name="email"
             type="email"
+            value=""
           />
         </div>
         <div
@@ -194,6 +197,7 @@ exports[`Component: Index Renders without exploding 1`] = `
             class="jsx-3773761155"
             name="phone"
             type="tel"
+            value=""
           />
         </div>
         <div
@@ -209,6 +213,7 @@ exports[`Component: Index Renders without exploding 1`] = `
             class="jsx-3773761155"
             name="message"
             type="text"
+            value=""
           />
         </div>
         <div
@@ -216,6 +221,7 @@ exports[`Component: Index Renders without exploding 1`] = `
         >
           <button
             class="jsx-3953151939"
+            disabled=""
             type="submit"
           >
             Book Now!

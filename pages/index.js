@@ -1,6 +1,5 @@
 import {
   CollagePhoto,
-  Form,
   GalleryButton,
   Layout,
   Li,
@@ -10,6 +9,7 @@ import {
   Section,
   Ul
 } from '../components'
+import { BookingForm } from '../containers'
 
 export default () => (
   <Layout>
@@ -42,7 +42,7 @@ export default () => (
       </Section>
       <Section className="booking">
         <Plug />
-        <Form />
+        <BookingForm />
       </Section>
     </Main>
   </Layout>
