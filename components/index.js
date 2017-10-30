@@ -1,4 +1,4 @@
 import { Layout } from './commons'
-import { CollagePhoto, GalleryButton, Main, Section } from './main'
+import { CollagePhoto, Form, GalleryButton, Main, Plug, Section } from './main'
 
-export { CollagePhoto, GalleryButton, Layout, Main, Section }
+export { CollagePhoto, Form, GalleryButton, Layout, Main, Plug, Section }

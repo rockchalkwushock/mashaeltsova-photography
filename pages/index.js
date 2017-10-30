@@ -1,8 +1,10 @@
 import {
   CollagePhoto,
+  Form,
   GalleryButton,
   Layout,
   Main,
+  Plug,
   Section
 } from '../components'
 
@@ -15,7 +17,10 @@ export default () => (
         <CollagePhoto />
         <GalleryButton />
       </Section>
-      <Section className="booking" />
+      <Section className="booking">
+        <Plug />
+        <Form />
+      </Section>
     </Main>
   </Layout>
 )

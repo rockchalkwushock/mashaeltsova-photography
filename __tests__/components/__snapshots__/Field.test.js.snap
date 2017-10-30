@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: Field Renders without exploding as .button 1`] = `
+<div
+  class="jsx-3953151939 button"
+>
+  <button
+    class="jsx-3953151939"
+    type="submit"
+  >
+    Book Now!
+  </button>
+</div>
+`;
+
+exports[`Component: Field Renders without exploding as .email 1`] = `
+<div
+  class="jsx-3773761155 email"
+>
+  <label
+    class="jsx-3773761155"
+    for="email"
+  >
+    Email
+  </label>
+  <input
+    class="jsx-3773761155"
+    name="email"
+    type="email"
+  />
+</div>
+`;
+
+exports[`Component: Field Renders without exploding as .firstName 1`] = `
+<div
+  class="jsx-3773761155 firstName"
+>
+  <label
+    class="jsx-3773761155"
+    for="firstName"
+  >
+    First Name
+  </label>
+  <input
+    class="jsx-3773761155"
+    name="firstName"
+    type="text"
+  />
+</div>
+`;
+
+exports[`Component: Field Renders without exploding as .lastName 1`] = `
+<div
+  class="jsx-3773761155 lastName"
+>
+  <label
+    class="jsx-3773761155"
+    for="lastName"
+  >
+    Last Name
+  </label>
+  <input
+    class="jsx-3773761155"
+    name="lastName"
+    type="text"
+  />
+</div>
+`;
+
+exports[`Component: Field Renders without exploding as .message 1`] = `
+<div
+  class="jsx-3773761155 message"
+>
+  <label
+    class="jsx-3773761155"
+    for="message"
+  >
+    Short Message
+  </label>
+  <input
+    class="jsx-3773761155"
+    name="message"
+    type="text"
+  />
+</div>
+`;
+
+exports[`Component: Field Renders without exploding as .phone 1`] = `
+<div
+  class="jsx-3773761155 phone"
+>
+  <label
+    class="jsx-3773761155"
+    for="phone"
+  >
+    Phone
+  </label>
+  <input
+    class="jsx-3773761155"
+    name="phone"
+    type="tel"
+  />
+</div>
+`;
