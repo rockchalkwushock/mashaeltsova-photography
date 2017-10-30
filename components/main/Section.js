@@ -12,16 +12,18 @@ const Section = ({ children, className }) => (
         color: ${styles.colors.charcoal};
         grid-area: about;
         grid-column: 1 / 5;
-        padding: 0.5em;
+        padding: 0.75em;
         text-align: left;
       }
       .services {
         background-color: ${styles.colors.lemon};
         box-shadow: 0 0 20px rgba(54, 69, 79, 0.7);
         color: ${styles.colors.charcoal};
+        display: flex;
+        flex-direction: column;
         grid-area: services;
         grid-column: 1 / 5;
-        padding: 0.5em;
+        padding: 0.75em;
         text-align: left;
       }
       .gallery {

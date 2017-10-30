@@ -2,24 +2,24 @@
 
 exports[`Component: Section Renders without exploding as .about 1`] = `
 <section
-  class="jsx-1457307111 about"
+  class="jsx-3734640297 about"
 />
 `;
 
 exports[`Component: Section Renders without exploding as .booking 1`] = `
 <section
-  class="jsx-1457307111 booking"
+  class="jsx-3734640297 booking"
 />
 `;
 
 exports[`Component: Section Renders without exploding as .gallery 1`] = `
 <section
-  class="jsx-1457307111 gallery"
+  class="jsx-3734640297 gallery"
 />
 `;
 
 exports[`Component: Section Renders without exploding as .services 1`] = `
 <section
-  class="jsx-1457307111 services"
+  class="jsx-3734640297 services"
 />
 `;

@@ -5,7 +5,7 @@ exports[`Component: Plug Renders without exploding 1`] = `
   class="jsx-3428991023"
 >
   <p
-    class="jsx-3428991023"
+    class="jsx-3682007968 plug"
   >
     Contact me if you want to relive those precious moments for years to come!
   </p>

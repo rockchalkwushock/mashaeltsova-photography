@@ -1,10 +1,11 @@
+import { P } from '../commons'
 import { styles } from '../../lib'
 
 const Plug = () => (
   <div>
-    <p>
+    <P className="plug">
       Contact me if you want to relive those precious moments for years to come!
-    </p>
+    </P>
     <style jsx>{`
       div {
         background-color: ${styles.colors.peach};

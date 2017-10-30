@@ -37,13 +37,54 @@ exports[`Component: Index Renders without exploding 1`] = `
     class="jsx-3311478223"
   >
     <section
-      class="jsx-1457307111 about"
-    />
+      class="jsx-3734640297 about"
+    >
+      <p
+        class="jsx-3682007968 about"
+      >
+        For many years now I have had a great passion for capturing a moment in time and sharing the beauty of that moment with the world. I enjoy taking pictures for many varying events. When I am not doing photo shoots you will find me preforming English tutoring, or practicing my other passion, surfing.
+      </p>
+    </section>
     <section
-      class="jsx-1457307111 services"
-    />
+      class="jsx-3734640297 services"
+    >
+      <p
+        class="jsx-3682007968 services"
+      >
+        I am willing to negotiate other requested services, however the below are what I primarily offer:
+      </p>
+      <ul
+        class="jsx-2686926528"
+      >
+        <li
+          class="jsx-2559750438"
+        >
+          baby portraits
+        </li>
+        <li
+          class="jsx-2559750438"
+        >
+          family portraits
+        </li>
+        <li
+          class="jsx-2559750438"
+        >
+          self-portraits
+        </li>
+        <li
+          class="jsx-2559750438"
+        >
+          engagements
+        </li>
+        <li
+          class="jsx-2559750438"
+        >
+          and weddings
+        </li>
+      </ul>
+    </section>
     <section
-      class="jsx-1457307111 gallery"
+      class="jsx-3734640297 gallery"
     >
       <picture
         class="jsx-2291332275"
@@ -81,13 +122,13 @@ exports[`Component: Index Renders without exploding 1`] = `
       </a>
     </section>
     <section
-      class="jsx-1457307111 booking"
+      class="jsx-3734640297 booking"
     >
       <div
         class="jsx-3428991023"
       >
         <p
-          class="jsx-3428991023"
+          class="jsx-3682007968 plug"
         >
           Contact me if you want to relive those precious moments for years to come!
         </p>

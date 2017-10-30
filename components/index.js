@@ -1,4 +1,15 @@
-import { Layout } from './commons'
+import { Layout, Li, P, Ul } from './commons'
 import { CollagePhoto, Form, GalleryButton, Main, Plug, Section } from './main'
 
-export { CollagePhoto, Form, GalleryButton, Layout, Main, Plug, Section }
+export {
+  CollagePhoto,
+  Form,
+  GalleryButton,
+  Layout,
+  Li,
+  Main,
+  P,
+  Plug,
+  Section,
+  Ul
+}
