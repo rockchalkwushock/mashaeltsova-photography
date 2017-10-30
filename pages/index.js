@@ -38,7 +38,7 @@ export default () => (
       </Section>
       <Section className="gallery">
         <CollagePhoto />
-        <GalleryButton />
+        <GalleryButton text="Visit Gallery" url="/gallery" />
       </Section>
       <Section className="booking">
         <Plug />

@@ -5,7 +5,7 @@ import GalleryButton from '../../components/main/GalleryButton'
 
 describe('Component: GalleryButton', () => {
   test('Renders without exploding', () => {
-    const tree = render(<GalleryButton />)
+    const tree = render(<GalleryButton text="go here" url="/" />)
     expect(tree).toMatchSnapshot()
   })
 })

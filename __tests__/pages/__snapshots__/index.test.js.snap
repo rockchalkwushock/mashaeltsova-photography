@@ -115,11 +115,11 @@ exports[`Component: Index Renders without exploding 1`] = `
           src="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,dpr_auto,f_auto,q_auto:best,w_125/c_scale,dpr_auto,f_auto,h_83,l_model_headshot_laying_down,w_125,x_125/c_scale,dpr_auto,f_auto,h_83,l_ireland_oceanside,w_125,x_62,y_83/c_scale,dpr_auto,f_auto,h_83,l_mother_son_black_white,w_125,x_-63,y_41/young_girl_posing.jpg"
         />
       </picture>
-      <a
-        class="jsx-1424217103 gallery-btn"
+      <button
+        class="jsx-4102330989 gallery-btn"
       >
         Visit Gallery
-      </a>
+      </button>
     </section>
     <section
       class="jsx-3734640297 booking"
