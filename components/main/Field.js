@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 import { styles } from '../../lib'
 
 const Field = props => {
@@ -104,6 +106,14 @@ const Field = props => {
       `}</style>
     </div>
   )
+}
+
+Field.propTypes = {
+  props: PropTypes.shape({
+    className: PropTypes.string.isRequired,
+    text: PropTypes.string.isRequired,
+    type: PropTypes.string
+  })
 }
 
 export default Field

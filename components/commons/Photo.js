@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 const Photo = ({ alt, publicId }) => (
   <picture>
     <source
@@ -22,5 +24,10 @@ const Photo = ({ alt, publicId }) => (
     />
   </picture>
 )
+
+Photo.propTypes = {
+  alt: PropTypes.string.isRequired,
+  publicId: PropTypes.string.isRequired
+}
 
 export default Photo

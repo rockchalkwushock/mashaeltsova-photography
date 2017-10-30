@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 import { styles } from '../../lib'
 
 const Section = ({ children, className }) => (
@@ -69,5 +71,9 @@ const Section = ({ children, className }) => (
     `}</style>
   </section>
 )
+
+Section.propTypes = {
+  className: PropTypes.string.isRequired
+}
 
 export default Section

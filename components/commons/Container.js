@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 import { styles } from '../../lib'
 
 const Container = ({ children, className }) => (
@@ -21,5 +23,9 @@ const Container = ({ children, className }) => (
     `}</style>
   </div>
 )
+
+Container.propTypes = {
+  className: PropTypes.string.isRequired
+}
 
 export default Container
