@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: Section Renders without exploding as .about 1`] = `
+<section
+  class="jsx-1457307111 about"
+/>
+`;
+
+exports[`Component: Section Renders without exploding as .booking 1`] = `
+<section
+  class="jsx-1457307111 booking"
+/>
+`;
+
+exports[`Component: Section Renders without exploding as .gallery 1`] = `
+<section
+  class="jsx-1457307111 gallery"
+/>
+`;
+
+exports[`Component: Section Renders without exploding as .services 1`] = `
+<section
+  class="jsx-1457307111 services"
+/>
+`;

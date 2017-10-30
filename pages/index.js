@@ -1,7 +1,21 @@
-import { Layout } from '../components'
+import {
+  CollagePhoto,
+  GalleryButton,
+  Layout,
+  Main,
+  Section
+} from '../components'
 
 export default () => (
   <Layout>
-    <h1>Hello World</h1>
+    <Main>
+      <Section className="about" />
+      <Section className="services" />
+      <Section className="gallery">
+        <CollagePhoto />
+        <GalleryButton />
+      </Section>
+      <Section className="booking" />
+    </Main>
   </Layout>
 )
