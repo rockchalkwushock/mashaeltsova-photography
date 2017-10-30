@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: Photo Renders without exploding 1`] = `
+<picture>
+  <source
+    media="(min-width: 1024px)"
+    srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_1024/watermark"
+  />
+  <source
+    media="(min-width: 768px)"
+    srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_768/watermark"
+  />
+  <source
+    media="(min-width: 540px)"
+    srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_540/watermark"
+  />
+  <source
+    media="(min-width: 425px)"
+    srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_425/watermark"
+  />
+  <img
+    alt="Masha Eltsova Photography Logo"
+    src="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_320/watermark"
+  />
+</picture>
+`;

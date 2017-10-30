@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: Index Renders without exploding 1`] = `
+<div
+  class="jsx-2743470350 wrapper"
+>
+  <div
+    class="jsx-3361249103"
+  />
+  <header
+    class="jsx-3791225326"
+  >
+    <picture>
+      <source
+        media="(min-width: 1024px)"
+        srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_1024/watermark"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_768/watermark"
+      />
+      <source
+        media="(min-width: 540px)"
+        srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_540/watermark"
+      />
+      <source
+        media="(min-width: 425px)"
+        srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_425/watermark"
+      />
+      <img
+        alt="Masha Eltsova Photography Logo"
+        src="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_320/watermark"
+      />
+    </picture>
+  </header>
+  <h1>
+    Hello World
+  </h1>
+  <footer
+    class="jsx-3846709230"
+  >
+    <div
+      class="jsx-1617167279 social"
+    >
+      <a
+        href="https://www.facebook.com/masha.eltsova"
+      >
+        <span
+          aria-hidden="true"
+          class="fa fa-facebook fa-2x"
+        />
+      </a>
+      <a
+        href="https://www.instagram.com/mashaeltcovaphotography"
+      >
+        <span
+          aria-hidden="true"
+          class="fa fa-instagram fa-2x"
+        />
+      </a>
+      <a
+        href="https://www.vk.com/club65938200"
+      >
+        <span
+          aria-hidden="true"
+          class="fa fa-vk fa-2x"
+        />
+      </a>
+    </div>
+    <div
+      class="jsx-1617167279 copyright"
+    >
+      <a
+        href="https://rcws-development.com"
+      >
+        <span>
+          <span
+            aria-hidden="true"
+            class="fa fa-copyright fa-lg"
+          />
+           2017 RCWS Development
+        </span>
+      </a>
+    </div>
+  </footer>
+</div>
+`;

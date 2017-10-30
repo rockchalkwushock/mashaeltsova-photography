@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: Container Renders without exploding as .copyright 1`] = `
+<div
+  class="jsx-1617167279 copyright"
+/>
+`;
+
+exports[`Component: Container Renders without exploding as .social 1`] = `
+<div
+  class="jsx-1617167279 social"
+/>
+`;

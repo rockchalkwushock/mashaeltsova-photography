@@ -4,12 +4,9 @@
   "license": "MIT",
   "private": true,
   "description": "Photography Business Website for Masha Eltsova.",
-  "author":
-    "Cody Brunner <rockchalkwushock@icloud.com> (https://rcws-development.com)",
-  "repository":
-    "https://github.com/rockchalkwushock/mashaeltsova-photography.git",
-  "homepage":
-    "https://github.com/rockchalkwushock/mashaeltsova-photography#readme",
+  "author": "Cody Brunner <rockchalkwushock@icloud.com> (https://rcws-development.com)",
+  "repository": "https://github.com/rockchalkwushock/mashaeltsova-photography.git",
+  "homepage": "https://github.com/rockchalkwushock/mashaeltsova-photography#readme",
   "bugs": "https://github.com/rockchalkwushock/mashaeltsova-photography/issues",
   "scripts": {
     "commit": "nps commit",
@@ -29,7 +26,10 @@
   },
   "jest": {
     "bail": true,
-    "collectCoverageFrom": [""],
+    "collectCoverageFrom": [
+      "components/**/*.js",
+      "pages/*.js"
+    ],
     "coverageThreshold": {
       "global": {
         "branches": 50,
@@ -38,19 +38,31 @@
         "statements": 50
       }
     },
-    "setupFiles": ["./jest.setup.js"],
-    "snapshotSerializers": ["enzyme-to-json/serializer"],
+    "setupFiles": [
+      "./jest.setup.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
     "testEnvironment": "jsdom"
   },
   "lint-staged": {
-    "*.js": ["yarn prettier", "git add"]
+    "*.js": [
+      "yarn prettier",
+      "git add"
+    ]
   },
   "now": {
     "alias": "mashaeltsova-beta",
     "env": {
       "NODE_ENV": "production"
     },
-    "files": [".babelrc", "env-config.js", "package.json", "yarn.lock"],
+    "files": [
+      ".babelrc",
+      "env-config.js",
+      "package.json",
+      "yarn.lock"
+    ],
     "name": "rework-mashaeltsova-photography"
   },
   "dependencies": {
@@ -59,7 +71,8 @@
     "prop-types": "~15.6.0",
     "raf": "~3.4.0",
     "react": "~16.0.0",
-    "react-dom": "~16.0.0"
+    "react-dom": "~16.0.0",
+    "react-fontawesome": "^1.6.1"
   },
   "devDependencies": {
     "codecov": "~3.0.0",

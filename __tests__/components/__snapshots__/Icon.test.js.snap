@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: Icon Renders without exploding as copyright icon 1`] = `
+<a
+  href="https://rcws-development.com"
+>
+  <span>
+    <span
+      aria-hidden="true"
+      class="fa fa-copyright fa-lg"
+    />
+     2017 RCWS Development
+  </span>
+</a>
+`;
+
+exports[`Component: Icon Renders without exploding as social icon 1`] = `
+<a
+  href="https://instagram.com"
+>
+  <span
+    aria-hidden="true"
+    class="fa fa-instagram fa-2x"
+  />
+</a>
+`;

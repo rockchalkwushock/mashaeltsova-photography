@@ -5,15 +5,10 @@ const { crossEnv, rimraf, series } = npsUtils
 module.exports = {
   scripts: {
     analyze: `${crossEnv('ANALYZE=1')} next build`,
-    clean: series(
-      rimraf('coverage'),
-      rimraf('.next'),
-      rimraf('./lib/i18n/.messages')
-    ),
+    clean: series(rimraf('coverage'), rimraf('.next')),
     commit: 'git cz',
     lint: {
-      default:
-        'eslint __mocks__ __tests__ components containers lib pages scripts ./server.js',
+      default: 'eslint __mocks__ __tests__ components lib pages',
       fix: series.nps('lint --fix')
     },
     reportCoverage: 'codecov',
