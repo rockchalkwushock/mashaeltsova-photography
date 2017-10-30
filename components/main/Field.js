@@ -6,7 +6,9 @@ const Field = props => {
   if (props.className === 'button') {
     return (
       <div className={props.className}>
-        <button type={props.type}>{props.text}</button>
+        <button disabled={props.disabled} type={props.type}>
+          {props.text}
+        </button>
         <style jsx>{`
           .button {
             grid-area: bookingButton;
@@ -48,7 +50,12 @@ const Field = props => {
   return (
     <div className={props.className}>
       <label htmlFor={props.className}>{props.text}</label>
-      <input type={props.type} name={props.className} />
+      <input
+        name={props.className}
+        onChange={props.onChange}
+        type={props.type}
+        value={props.value}
+      />
       <style jsx>{`
         label {
           display: block;
@@ -111,8 +118,11 @@ const Field = props => {
 Field.propTypes = {
   props: PropTypes.shape({
     className: PropTypes.string.isRequired,
+    disabled: PropTypes.bool.isRequired,
+    onChange: PropTypes.func.isRequired,
     text: PropTypes.string.isRequired,
-    type: PropTypes.string
+    type: PropTypes.string,
+    value: PropTypes.string
   })
 }
 
