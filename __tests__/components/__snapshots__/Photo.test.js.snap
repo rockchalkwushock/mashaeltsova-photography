@@ -1,27 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Component: Photo Renders without exploding as a regular image 1`] = `
-<picture>
-  <source
-    media="(min-width: 1024px)"
-    srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,q_auto:best,r_15,w_320/c_scale,dpr_auto,f_auto,g_south_east,l_watermark,o_60,w_80,x_2,y_2/family_black_white"
-  />
-  <source
-    media="(min-width: 768px)"
-    srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,q_auto:best,r_15,w_360/c_scale,dpr_auto,f_auto,g_south_east,l_watermark,o_60,w_80,x_2,y_2/family_black_white"
-  />
-  <source
-    media="(min-width: 540px)"
-    srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,q_auto:best,r_15,w_475/c_scale,dpr_auto,f_auto,g_south_east,l_watermark,o_60,w_80,x_2,y_2/family_black_white"
-  />
-  <source
-    media="(min-width: 425px)"
-    srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,q_auto:best,r_15,w_375/c_scale,dpr_auto,f_auto,g_south_east,l_watermark,o_60,w_80,x_2,y_2/family_black_white"
-  />
-  <img
-    src="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,q_auto:best,r_15,w_300/c_scale,dpr_auto,f_auto,g_south_east,l_watermark,o_60,w_80,x_2,y_2/family_black_white"
-  />
-</picture>
+<div
+  class="lazyload-placeholder"
+  style="height:100px"
+/>
 `;
 
 exports[`Component: Photo Renders without exploding as site logo 1`] = `

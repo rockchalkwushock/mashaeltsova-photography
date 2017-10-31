@@ -120,6 +120,31 @@ export default () => (
         font-size: 1.2em;
         line-height: 1.5em;
       }
+      #nprogress {
+        pointer-events: none;
+      }
+      #nprogress .bar {
+        background: ${styles.colors.warm};
+        position: fixed;
+        z-index: 1031;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+      }
+      #nprogress .peg {
+        display: block;
+        position: absolute;
+        right: 0px;
+        width: 100px;
+        height: 100%;
+        box-shadow: 0 0 10px ${styles.colors.warm},
+          0 0 5px ${styles.colors.warm};
+        opacity: 1;
+        -webkit-transform: rotate(3deg) translate(0px, -4px);
+        -ms-transform: rotate(3deg) translate(0px, -4px);
+        transform: rotate(3deg) translate(0px, -4px);
+      }
     `}</style>
   </div>
 )

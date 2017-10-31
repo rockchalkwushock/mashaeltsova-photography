@@ -2,13 +2,13 @@
 
 exports[`Component: Gallery Renders without exploding 1`] = `
 <div
-  class="jsx-3126043951 wrapper"
+  class="jsx-3544140459 wrapper"
 >
   <div
-    class="jsx-1634235595"
+    class="jsx-592563972"
   />
   <header
-    class="jsx-51972803 gallery"
+    class="jsx-1518572121 gallery"
   >
     <picture>
       <source
@@ -34,105 +34,58 @@ exports[`Component: Gallery Renders without exploding 1`] = `
     </picture>
   </header>
   <main
-    class="jsx-1868992201 gallery"
+    class="jsx-1845556999 gallery"
   >
     <nav
-      class="jsx-569683143"
+      class="jsx-709412855"
     >
       <button
-        class="jsx-1348557828"
+        class="jsx-3153731447"
         name="family"
       >
         Family
       </button>
       <button
-        class="jsx-1348557828"
+        class="jsx-3153731447"
         name="portrait"
       >
         Portrait
       </button>
       <button
-        class="jsx-1348557828"
+        class="jsx-3153731447"
         name="travel"
       >
         Travel
       </button>
       <button
-        class="jsx-1348557828"
+        class="jsx-3153731447"
         name="wedding"
       >
         Wedding
       </button>
     </nav>
-    <picture>
-      <source
-        media="(min-width: 1024px)"
-        srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,q_auto:best,r_15,w_320/c_scale,dpr_auto,f_auto,g_south_east,l_watermark,o_60,w_80,x_2,y_2/a"
+    <div
+      class="jsx-4021821574"
+    >
+      <div
+        class="lazyload-placeholder"
+        style="height:100px"
       />
-      <source
-        media="(min-width: 768px)"
-        srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,q_auto:best,r_15,w_360/c_scale,dpr_auto,f_auto,g_south_east,l_watermark,o_60,w_80,x_2,y_2/a"
+      <div
+        class="lazyload-placeholder"
+        style="height:100px"
       />
-      <source
-        media="(min-width: 540px)"
-        srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,q_auto:best,r_15,w_475/c_scale,dpr_auto,f_auto,g_south_east,l_watermark,o_60,w_80,x_2,y_2/a"
+      <div
+        class="lazyload-placeholder"
+        style="height:100px"
       />
-      <source
-        media="(min-width: 425px)"
-        srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,q_auto:best,r_15,w_375/c_scale,dpr_auto,f_auto,g_south_east,l_watermark,o_60,w_80,x_2,y_2/a"
-      />
-      <img
-        src="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,q_auto:best,r_15,w_300/c_scale,dpr_auto,f_auto,g_south_east,l_watermark,o_60,w_80,x_2,y_2/a"
-      />
-    </picture>
-    <picture>
-      <source
-        media="(min-width: 1024px)"
-        srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,q_auto:best,r_15,w_320/c_scale,dpr_auto,f_auto,g_south_east,l_watermark,o_60,w_80,x_2,y_2/b"
-      />
-      <source
-        media="(min-width: 768px)"
-        srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,q_auto:best,r_15,w_360/c_scale,dpr_auto,f_auto,g_south_east,l_watermark,o_60,w_80,x_2,y_2/b"
-      />
-      <source
-        media="(min-width: 540px)"
-        srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,q_auto:best,r_15,w_475/c_scale,dpr_auto,f_auto,g_south_east,l_watermark,o_60,w_80,x_2,y_2/b"
-      />
-      <source
-        media="(min-width: 425px)"
-        srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,q_auto:best,r_15,w_375/c_scale,dpr_auto,f_auto,g_south_east,l_watermark,o_60,w_80,x_2,y_2/b"
-      />
-      <img
-        src="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,q_auto:best,r_15,w_300/c_scale,dpr_auto,f_auto,g_south_east,l_watermark,o_60,w_80,x_2,y_2/b"
-      />
-    </picture>
-    <picture>
-      <source
-        media="(min-width: 1024px)"
-        srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,q_auto:best,r_15,w_320/c_scale,dpr_auto,f_auto,g_south_east,l_watermark,o_60,w_80,x_2,y_2/c"
-      />
-      <source
-        media="(min-width: 768px)"
-        srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,q_auto:best,r_15,w_360/c_scale,dpr_auto,f_auto,g_south_east,l_watermark,o_60,w_80,x_2,y_2/c"
-      />
-      <source
-        media="(min-width: 540px)"
-        srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,q_auto:best,r_15,w_475/c_scale,dpr_auto,f_auto,g_south_east,l_watermark,o_60,w_80,x_2,y_2/c"
-      />
-      <source
-        media="(min-width: 425px)"
-        srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,q_auto:best,r_15,w_375/c_scale,dpr_auto,f_auto,g_south_east,l_watermark,o_60,w_80,x_2,y_2/c"
-      />
-      <img
-        src="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,q_auto:best,r_15,w_300/c_scale,dpr_auto,f_auto,g_south_east,l_watermark,o_60,w_80,x_2,y_2/c"
-      />
-    </picture>
+    </div>
   </main>
   <footer
-    class="jsx-3846709230"
+    class="jsx-747610455"
   >
     <div
-      class="jsx-1617167279 social"
+      class="jsx-590062731 social"
     >
       <a
         href="https://www.facebook.com/masha.eltsova"
@@ -160,7 +113,7 @@ exports[`Component: Gallery Renders without exploding 1`] = `
       </a>
     </div>
     <div
-      class="jsx-1617167279 copyright"
+      class="jsx-590062731 copyright"
     >
       <a
         href="https://rcws-development.com"

@@ -2,13 +2,13 @@
 
 exports[`Component: Index Renders without exploding 1`] = `
 <div
-  class="jsx-3126043951 wrapper"
+  class="jsx-3544140459 wrapper"
 >
   <div
-    class="jsx-1634235595"
+    class="jsx-592563972"
   />
   <header
-    class="jsx-51972803 index"
+    class="jsx-1518572121 index"
   >
     <picture>
       <source
@@ -34,27 +34,27 @@ exports[`Component: Index Renders without exploding 1`] = `
     </picture>
   </header>
   <main
-    class="jsx-1868992201 index"
+    class="jsx-1845556999 index"
   >
     <section
-      class="jsx-3734640297 about"
+      class="jsx-2104976944 about"
     >
       <p
-        class="jsx-3682007968 about"
+        class="jsx-3204703105 about"
       >
         For many years now I have had a great passion for capturing a moment in time and sharing the beauty of that moment with the world. I enjoy taking pictures for many varying events. When I am not doing photo shoots you will find me preforming English tutoring, or practicing my other passion, surfing.
       </p>
     </section>
     <section
-      class="jsx-3734640297 services"
+      class="jsx-2104976944 services"
     >
       <p
-        class="jsx-3682007968 services"
+        class="jsx-3204703105 services"
       >
         I am willing to negotiate other requested services, however the below are what I primarily offer:
       </p>
       <ul
-        class="jsx-2686926528"
+        class="jsx-630089860"
       >
         <li
           class="jsx-2559750438"
@@ -84,52 +84,52 @@ exports[`Component: Index Renders without exploding 1`] = `
       </ul>
     </section>
     <section
-      class="jsx-3734640297 gallery"
+      class="jsx-2104976944 gallery"
     >
       <picture
-        class="jsx-2291332275"
+        class="jsx-2134046235"
       >
         <source
-          class="jsx-2291332275"
+          class="jsx-2134046235"
           media="(min-width: 1024px)"
           srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_fill,dpr_1.0,f_webp,fl_awebp,q_auto:best,r_15,w_300/c_fill,dpr_1.0,f_webp,h_200,l_model_headshot_laying_down,r_15,w_300,x_150,y_150/c_fill,dpr_1.0,h_200,r_15,u_ireland_oceanside,w_300,x_250,y_-75/c_fill,dpr_1.0,h_200,l_mother_son_black_white,r_15,w_300,x_325,y_75/c_fill,dpr_1.0,f_auto,h_200,r_15,u_bride_groom_outside,w_300,x_410,y_-75/young_girl_posing.jpg"
         />
         <source
-          class="jsx-2291332275"
+          class="jsx-2134046235"
           media="(min-width: 768px)"
           srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,dpr_auto,f_auto,q_auto:best,r_15,w_150/c_scale,dpr_auto,f_auto,h_100,l_model_headshot_laying_down,r_15,w_150,x_80,y_75/c_scale,dpr_auto,f_auto,h_100,r_15,u_ireland_oceanside,w_150,x_160,y_-37/c_scale,dpr_auto,f_auto,h_100,l_mother_son_black_white,r_15,w_150,x_200,y_38/c_scale,h_100,r_15,u_bride_groom_outside,w_150,x_250,y_-37/young_girl_posing.jpg"
         />
         <source
-          class="jsx-2291332275"
+          class="jsx-2134046235"
           media="(min-width: 540px)"
           srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,dpr_auto,f_auto,q_auto:best,w_200/c_scale,dpr_auto,f_auto,h_133,l_model_headshot_laying_down,w_200,x_200/c_scale,dpr_auto,f_auto,h_133,l_ireland_oceanside,w_200,x_100,y_133/c_scale,dpr_auto,f_auto,h_133,l_mother_son_black_white,w_200,x_-100,y_66/young_girl_posing.jpg"
         />
         <source
-          class="jsx-2291332275"
+          class="jsx-2134046235"
           media="(min-width: 425px)"
           srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,dpr_auto,f_auto,q_auto:best,w_150/c_scale,dpr_auto,f_auto,h_100,l_model_headshot_laying_down,w_150,x_150/c_scale,dpr_auto,f_auto,h_100,l_ireland_oceanside,w_150,x_75,y_100/c_scale,dpr_auto,f_auto,h_100,l_mother_son_black_white,w_150,x_-75,y_50/young_girl_posing.jpg"
         />
         <img
           alt="collage"
-          class="jsx-2291332275"
+          class="jsx-2134046235"
           src="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,dpr_auto,f_auto,q_auto:best,w_125/c_scale,dpr_auto,f_auto,h_83,l_model_headshot_laying_down,w_125,x_125/c_scale,dpr_auto,f_auto,h_83,l_ireland_oceanside,w_125,x_62,y_83/c_scale,dpr_auto,f_auto,h_83,l_mother_son_black_white,w_125,x_-63,y_41/young_girl_posing.jpg"
         />
       </picture>
       <a
-        class="jsx-1427207808 linkToGallery"
+        class="jsx-2214171906 linkToGallery"
         href="/gallery"
       >
         Visit Gallery
       </a>
     </section>
     <section
-      class="jsx-3734640297 booking"
+      class="jsx-2104976944 booking"
     >
       <div
         class="jsx-3428991023"
       >
         <p
-          class="jsx-3682007968 plug"
+          class="jsx-3204703105 plug"
         >
           Contact me if you want to relive those precious moments for years to come!
         </p>
@@ -218,10 +218,10 @@ exports[`Component: Index Renders without exploding 1`] = `
           />
         </div>
         <div
-          class="jsx-3953151939 button"
+          class="jsx-4021739229 button"
         >
           <button
-            class="jsx-3953151939"
+            class="jsx-4021739229"
             disabled=""
             type="submit"
           >
@@ -232,10 +232,10 @@ exports[`Component: Index Renders without exploding 1`] = `
     </section>
   </main>
   <footer
-    class="jsx-3846709230"
+    class="jsx-747610455"
   >
     <div
-      class="jsx-1617167279 social"
+      class="jsx-590062731 social"
     >
       <a
         href="https://www.facebook.com/masha.eltsova"
@@ -263,7 +263,7 @@ exports[`Component: Index Renders without exploding 1`] = `
       </a>
     </div>
     <div
-      class="jsx-1617167279 copyright"
+      class="jsx-590062731 copyright"
     >
       <a
         href="https://rcws-development.com"

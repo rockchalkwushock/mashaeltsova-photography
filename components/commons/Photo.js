@@ -1,3 +1,4 @@
+import LazyLoad from 'react-lazyload'
 import PropTypes from 'prop-types'
 
 import { createUrl } from '../../lib'
@@ -25,25 +26,35 @@ const Logo = ({ alt, publicId }) => (
 )
 
 const Image = ({ publicId }) => (
-  <picture>
-    <source
-      media="(min-width: 1024px)"
-      srcSet={createUrl(false, publicId, 320)}
-    />
-    <source
-      media="(min-width: 768px)"
-      srcSet={createUrl(false, publicId, 360)}
-    />
-    <source
-      media="(min-width: 540px)"
-      srcSet={createUrl(false, publicId, 475)}
-    />
-    <source
-      media="(min-width: 425px)"
-      srcSet={createUrl(false, publicId, 375)}
-    />
-    <img src={createUrl(false, publicId, 300)} />
-  </picture>
+  <LazyLoad height={100} offset={100} once>
+    <picture>
+      <source
+        media="(min-width: 1024px)"
+        srcSet={createUrl(false, publicId, 320)}
+      />
+      <source
+        media="(min-width: 768px)"
+        srcSet={createUrl(false, publicId, 360)}
+      />
+      <source
+        media="(min-width: 540px)"
+        srcSet={createUrl(false, publicId, 475)}
+      />
+      <source
+        media="(min-width: 425px)"
+        srcSet={createUrl(false, publicId, 375)}
+      />
+      <img src={createUrl(false, publicId, 300)} />
+      <style jsx>{`
+        picture {
+          border: 2px solid lime;
+        }
+        img {
+          border: 2px solid blue;
+        }
+      `}</style>
+    </picture>
+  </LazyLoad>
 )
 
 const Photo = props => (props.logo ? <Logo {...props} /> : <Image {...props} />)

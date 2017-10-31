@@ -2,12 +2,12 @@
 
 exports[`Component: Main Renders without exploding as .gallery 1`] = `
 <main
-  class="jsx-1868992201 gallery"
+  class="jsx-1845556999 gallery"
 />
 `;
 
 exports[`Component: Main Renders without exploding as .index 1`] = `
 <main
-  class="jsx-1868992201 index"
+  class="jsx-1845556999 index"
 />
 `;

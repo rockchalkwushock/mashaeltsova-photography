@@ -2,10 +2,10 @@
 
 exports[`Component: Field Renders without exploding as .button 1`] = `
 <div
-  class="jsx-3953151939 button"
+  class="jsx-4021739229 button"
 >
   <button
-    class="jsx-3953151939"
+    class="jsx-4021739229"
     type="submit"
   >
     Book Now!

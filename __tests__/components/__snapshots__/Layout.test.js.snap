@@ -2,13 +2,13 @@
 
 exports[`Component: Layout Renders without exploding as .gallery 1`] = `
 <div
-  class="jsx-3126043951 wrapper"
+  class="jsx-3544140459 wrapper"
 >
   <div
-    class="jsx-1634235595"
+    class="jsx-592563972"
   />
   <header
-    class="jsx-51972803 gallery"
+    class="jsx-1518572121 gallery"
   >
     <picture>
       <source
@@ -34,13 +34,13 @@ exports[`Component: Layout Renders without exploding as .gallery 1`] = `
     </picture>
   </header>
   <main
-    class="jsx-1868992201 gallery"
+    class="jsx-1845556999 gallery"
   />
   <footer
-    class="jsx-3846709230"
+    class="jsx-747610455"
   >
     <div
-      class="jsx-1617167279 social"
+      class="jsx-590062731 social"
     >
       <a
         href="https://www.facebook.com/masha.eltsova"
@@ -68,7 +68,7 @@ exports[`Component: Layout Renders without exploding as .gallery 1`] = `
       </a>
     </div>
     <div
-      class="jsx-1617167279 copyright"
+      class="jsx-590062731 copyright"
     >
       <a
         href="https://rcws-development.com"
@@ -88,13 +88,13 @@ exports[`Component: Layout Renders without exploding as .gallery 1`] = `
 
 exports[`Component: Layout Renders without exploding as .index 1`] = `
 <div
-  class="jsx-3126043951 wrapper"
+  class="jsx-3544140459 wrapper"
 >
   <div
-    class="jsx-1634235595"
+    class="jsx-592563972"
   />
   <header
-    class="jsx-51972803 index"
+    class="jsx-1518572121 index"
   >
     <picture>
       <source
@@ -120,13 +120,13 @@ exports[`Component: Layout Renders without exploding as .index 1`] = `
     </picture>
   </header>
   <main
-    class="jsx-1868992201 index"
+    class="jsx-1845556999 index"
   />
   <footer
-    class="jsx-3846709230"
+    class="jsx-747610455"
   >
     <div
-      class="jsx-1617167279 social"
+      class="jsx-590062731 social"
     >
       <a
         href="https://www.facebook.com/masha.eltsova"
@@ -154,7 +154,7 @@ exports[`Component: Layout Renders without exploding as .index 1`] = `
       </a>
     </div>
     <div
-      class="jsx-1617167279 copyright"
+      class="jsx-590062731 copyright"
     >
       <a
         href="https://rcws-development.com"
