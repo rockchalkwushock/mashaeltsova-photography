@@ -22,10 +22,13 @@ const CollagePhoto = () => (
     />
     <style jsx>{`
       picture {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         position: relative;
       }
       picture img {
+        -ms-flex-item-align: center;
         align-self: center;
       }
     `}</style>

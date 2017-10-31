@@ -9,8 +9,11 @@ const NavButton = ({ onClick, text }) => (
     <style jsx>{`
       button {
         background-color: transparent;
+        -webkit-box-shadow: 4px 4px 4px rgba(54, 69, 79, 0.7);
         box-shadow: 4px 4px 4px rgba(54, 69, 79, 0.7);
         color: ${styles.colors.warm};
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
         flex: 1 1 auto;
         font-family: ${styles.fonts.courgette};
       }
@@ -31,9 +34,11 @@ const NavLink = ({ className, text, url }) => (
       {text}
       <style jsx>{`
         .linkToGallery {
+          -ms-flex-item-align: center;
           align-self: center;
           background-color: ${styles.colors.peach};
           border: 0;
+          -webkit-box-shadow: 0 0 20px rgba(54, 69, 79, 0.7);
           box-shadow: 0 0 20px rgba(54, 69, 79, 0.7);
           color: rgba(223, 116, 74, 0.9);
           cursor: pointer;
@@ -45,6 +50,7 @@ const NavLink = ({ className, text, url }) => (
         }
         .linkToGallery:focus,
         .linkToGallery:hover {
+          -ms-flex-item-align: center;
           align-self: center;
           background-color: ${styles.colors.peach};
           border: 0;

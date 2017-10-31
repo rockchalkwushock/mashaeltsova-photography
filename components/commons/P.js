@@ -9,6 +9,8 @@ const P = ({ children, className }) => (
         padding: 0;
       }
       .services {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
         flex: 1 1 auto;
       }
     `}</style>

@@ -84,6 +84,7 @@ export default () => (
     <style jsx global>{`
       * {
         box-sizing: border-box;
+        -webkit-box-sizing: border-box;
         margin: 0;
         padding: 0;
       }

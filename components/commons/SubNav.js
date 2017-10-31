@@ -1,13 +1,15 @@
-import { styles } from '../../lib'
-
 const Nav = ({ children }) => (
   <nav>
     {children}
     <style jsx>{`
       nav {
-        /* background-color: ${styles.colors.peach}; */
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
         flex: 1 1 auto;
+        -ms-flex-pack: distribute;
         justify-content: space-around;
         padding: 0.5em;
       }

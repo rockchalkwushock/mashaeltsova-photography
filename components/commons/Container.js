@@ -7,6 +7,8 @@ const Container = ({ children, className }) => (
     {children}
     <style jsx>{`
       div {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
         flex: 1 1 auto;
       }
       .copyright {

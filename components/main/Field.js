@@ -17,12 +17,11 @@ const Field = props => {
           }
           button {
             background-color: ${styles.colors.warm};
-            border: 0;
+            -webkit-box-shadow: 4px 4px 4px rgba(54, 69, 79, 0.7);
             box-shadow: 4px 4px 4px rgba(54, 69, 79, 0.7);
             color: ${styles.colors.white};
             font-family: ${styles.fonts.courgette};
             font-size: 1em;
-            outline: 0;
             padding: 1em;
             text-transform: uppercase;
             width: 100%;

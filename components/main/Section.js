@@ -6,9 +6,12 @@ const Section = ({ children, className }) => (
   <section className={className}>
     {children}
     <style jsx>{`
+      section {
+        -webkit-box-shadow: 0 0 20px rgba(54, 69, 79, 0.7);
+        box-shadow: 0 0 20px rgba(54, 69, 79, 0.7);
+      }
       .about {
         background-color: ${styles.colors.lemon};
-        box-shadow: 0 0 20px rgba(54, 69, 79, 0.7);
         color: ${styles.colors.charcoal};
         grid-area: about;
         grid-column: 1 / 5;
@@ -17,9 +20,13 @@ const Section = ({ children, className }) => (
       }
       .services {
         background-color: ${styles.colors.lemon};
-        box-shadow: 0 0 20px rgba(54, 69, 79, 0.7);
         color: ${styles.colors.charcoal};
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         grid-area: services;
         grid-column: 1 / 5;
@@ -28,15 +35,17 @@ const Section = ({ children, className }) => (
       }
       .gallery {
         background-color: ${styles.colors.peach};
-        box-shadow: 0 0 20px rgba(54, 69, 79, 0.7);
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         grid-area: gallery;
         grid-column: 1 / 5;
         height: 250px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
       }
       .booking {
-        box-shadow: 0 0 20px rgba(54, 69, 79, 0.7);
         grid-area: booking;
         grid-column: 1 / 5;
       }
