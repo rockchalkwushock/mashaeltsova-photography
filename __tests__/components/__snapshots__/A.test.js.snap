@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: A Renders without exploding as button 1`] = `
+<button
+  class="jsx-1348557828"
+  name="family"
+>
+  Family
+</button>
+`;
+
+exports[`Component: A Renders without exploding as navigation link 1`] = `
+<a
+  class="jsx-1427207808 linkToGallery"
+  href="/gallery"
+>
+  Visit Gallery
+</a>
+`;

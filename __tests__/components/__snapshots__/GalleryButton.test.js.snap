@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`Component: GalleryButton Renders without exploding 1`] = `
-<button
-  class="jsx-4102330989 gallery-btn"
->
-  go here
-</button>
-`;

@@ -5,36 +5,36 @@ exports[`Component: Index Renders without exploding 1`] = `
   class="jsx-3126043951 wrapper"
 >
   <div
-    class="jsx-3361249103"
+    class="jsx-1634235595"
   />
   <header
-    class="jsx-3791225326"
+    class="jsx-51972803 index"
   >
     <picture>
       <source
         media="(min-width: 1024px)"
-        srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_1024/watermark"
+        srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_1024/watermark"
       />
       <source
         media="(min-width: 768px)"
-        srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_768/watermark"
+        srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_768/watermark"
       />
       <source
         media="(min-width: 540px)"
-        srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_540/watermark"
+        srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_540/watermark"
       />
       <source
         media="(min-width: 425px)"
-        srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_425/watermark"
+        srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_425/watermark"
       />
       <img
         alt="Masha Eltsova Photography Logo"
-        src="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_320/watermark"
+        src="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_320/watermark"
       />
     </picture>
   </header>
   <main
-    class="jsx-3311478223"
+    class="jsx-1868992201 index"
   >
     <section
       class="jsx-3734640297 about"
@@ -115,11 +115,12 @@ exports[`Component: Index Renders without exploding 1`] = `
           src="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,dpr_auto,f_auto,q_auto:best,w_125/c_scale,dpr_auto,f_auto,h_83,l_model_headshot_laying_down,w_125,x_125/c_scale,dpr_auto,f_auto,h_83,l_ireland_oceanside,w_125,x_62,y_83/c_scale,dpr_auto,f_auto,h_83,l_mother_son_black_white,w_125,x_-63,y_41/young_girl_posing.jpg"
         />
       </picture>
-      <button
-        class="jsx-4102330989 gallery-btn"
+      <a
+        class="jsx-1427207808 linkToGallery"
+        href="/gallery"
       >
         Visit Gallery
-      </button>
+      </a>
     </section>
     <section
       class="jsx-3734640297 booking"

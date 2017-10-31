@@ -1,32 +1,65 @@
 import PropTypes from 'prop-types'
 
-const Photo = ({ alt, publicId }) => (
+import { createUrl } from '../../lib'
+
+const Logo = ({ alt, publicId }) => (
   <picture>
     <source
       media="(min-width: 1024px)"
-      srcSet={`https://res.cloudinary.com/mashaeltsovaphotography/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_1024/${publicId}`}
+      srcSet={createUrl(true, publicId, 1024)}
     />
     <source
       media="(min-width: 768px)"
-      srcSet={`https://res.cloudinary.com/mashaeltsovaphotography/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_768/${publicId}`}
+      srcSet={createUrl(true, publicId, 768)}
     />
     <source
       media="(min-width: 540px)"
-      srcSet={`https://res.cloudinary.com/mashaeltsovaphotography/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_540/${publicId}`}
+      srcSet={createUrl(true, publicId, 540)}
     />
     <source
       media="(min-width: 425px)"
-      srcSet={`https://res.cloudinary.com/mashaeltsovaphotography/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_425/${publicId}`}
+      srcSet={createUrl(true, publicId, 425)}
     />
-    <img
-      src={`https://res.cloudinary.com/mashaeltsovaphotography/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_320/${publicId}`}
-      alt={alt}
-    />
+    <img src={createUrl(true, publicId, 320)} alt={alt} />
   </picture>
 )
 
+const Image = ({ publicId }) => (
+  <picture>
+    <source
+      media="(min-width: 1024px)"
+      srcSet={createUrl(false, publicId, 320)}
+    />
+    <source
+      media="(min-width: 768px)"
+      srcSet={createUrl(false, publicId, 360)}
+    />
+    <source
+      media="(min-width: 540px)"
+      srcSet={createUrl(false, publicId, 475)}
+    />
+    <source
+      media="(min-width: 425px)"
+      srcSet={createUrl(false, publicId, 375)}
+    />
+    <img src={createUrl(false, publicId, 300)} />
+  </picture>
+)
+
+const Photo = props => (props.logo ? <Logo {...props} /> : <Image {...props} />)
+
+Image.propTypes = {
+  publicId: PropTypes.string.isRequired
+}
+
+Logo.propTypes = {
+  alt: PropTypes.string,
+  publicId: PropTypes.string.isRequired
+}
+
 Photo.propTypes = {
-  alt: PropTypes.string.isRequired,
+  alt: PropTypes.string,
+  logo: PropTypes.bool,
   publicId: PropTypes.string.isRequired
 }
 

@@ -1,7 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Component: Header Renders without exploding 1`] = `
+exports[`Component: Header Renders without exploding from / 1`] = `
 <header
-  class="jsx-3791225326"
+  class="jsx-51972803 index"
+/>
+`;
+
+exports[`Component: Header Renders without exploding from /gallery 1`] = `
+<header
+  class="jsx-51972803 gallery"
 />
 `;

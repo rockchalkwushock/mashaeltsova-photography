@@ -1,11 +1,15 @@
+import PropTypes from 'prop-types'
+
 import { styles } from '../../lib'
 
-const Main = ({ children }) => (
-  <main>
+const Main = ({ children, className }) => (
+  <main className={className}>
     {children}
     <style jsx>{`
       main {
         background-color: ${styles.colors.powder};
+      }
+      .index {
         display: grid;
         grid-gap: 1em;
         grid-template-areas: 'about about about about'
@@ -14,8 +18,17 @@ const Main = ({ children }) => (
         grid-template-columns: repeat(4, 1fr);
         padding: 1em;
       }
+      .gallery {
+        display: flex;
+        flex-direction: column;
+      }
     `}</style>
   </main>
 )
+
+Main.propTypes = {
+  // NOTE Not marking isRequired because I need to handle Error State in routing.
+  className: PropTypes.string
+}
 
 export default Main

@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 import { styles } from '../../lib'
 
 /**
@@ -12,8 +14,8 @@ import { styles } from '../../lib'
  * 'Masha Eltsova Photography' spanning the rest in Courgette or Nunito.
  */
 
-const Header = ({ children }) => (
-  <header>
+const Header = ({ children, className }) => (
+  <header className={className}>
     {children}
     <style jsx>{`
       header {
@@ -22,12 +24,21 @@ const Header = ({ children }) => (
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: 100vh;
         padding: 1em;
         text-align: center;
+      }
+      .index {
+        height: 100vh;
+      }
+      .gallery {
+        height: 25vh;
       }
     `}</style>
   </header>
 )
+
+Header.propTypes = {
+  className: PropTypes.string.isRequired
+}
 
 export default Header

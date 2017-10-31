@@ -99,6 +99,11 @@ export default () => (
       a:hover {
         color: ${styles.colors.powder};
       }
+      button {
+        border: 0;
+        outline: 0;
+        padding: 0.25em;
+      }
       ul {
         list-style: none;
       }

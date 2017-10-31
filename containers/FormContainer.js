@@ -1,7 +1,7 @@
 import { Component } from 'react'
 
 import { Form } from '../components'
-import { sendToBackend } from '../lib'
+import { sendDataToMicroService } from '../lib'
 
 class BookingForm extends Component {
   state = {
@@ -33,7 +33,7 @@ class BookingForm extends Component {
     e.preventDefault()
     try {
       // 3. SEND REQUEST & AWAIT PROMISE
-      const res = await sendToBackend(this.state)
+      const res = await sendDataToMicroService(this.state)
       // 4. HANDLE API ERROR RESPONSE
       if (res.error) {
         // 4a. SET ERROR STATE

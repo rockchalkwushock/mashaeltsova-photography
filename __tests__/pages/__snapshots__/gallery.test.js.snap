@@ -1,0 +1,179 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: Gallery Renders without exploding 1`] = `
+<div
+  class="jsx-3126043951 wrapper"
+>
+  <div
+    class="jsx-1634235595"
+  />
+  <header
+    class="jsx-51972803 gallery"
+  >
+    <picture>
+      <source
+        media="(min-width: 1024px)"
+        srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_1024/watermark"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_768/watermark"
+      />
+      <source
+        media="(min-width: 540px)"
+        srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_540/watermark"
+      />
+      <source
+        media="(min-width: 425px)"
+        srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_425/watermark"
+      />
+      <img
+        alt="Masha Eltsova Photography Logo"
+        src="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_320/watermark"
+      />
+    </picture>
+  </header>
+  <main
+    class="jsx-1868992201 gallery"
+  >
+    <nav
+      class="jsx-569683143"
+    >
+      <button
+        class="jsx-1348557828"
+        name="family"
+      >
+        Family
+      </button>
+      <button
+        class="jsx-1348557828"
+        name="portrait"
+      >
+        Portrait
+      </button>
+      <button
+        class="jsx-1348557828"
+        name="travel"
+      >
+        Travel
+      </button>
+      <button
+        class="jsx-1348557828"
+        name="wedding"
+      >
+        Wedding
+      </button>
+    </nav>
+    <picture>
+      <source
+        media="(min-width: 1024px)"
+        srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,q_auto:best,r_15,w_320/c_scale,dpr_auto,f_auto,g_south_east,l_watermark,o_60,w_80,x_2,y_2/a"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,q_auto:best,r_15,w_360/c_scale,dpr_auto,f_auto,g_south_east,l_watermark,o_60,w_80,x_2,y_2/a"
+      />
+      <source
+        media="(min-width: 540px)"
+        srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,q_auto:best,r_15,w_475/c_scale,dpr_auto,f_auto,g_south_east,l_watermark,o_60,w_80,x_2,y_2/a"
+      />
+      <source
+        media="(min-width: 425px)"
+        srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,q_auto:best,r_15,w_375/c_scale,dpr_auto,f_auto,g_south_east,l_watermark,o_60,w_80,x_2,y_2/a"
+      />
+      <img
+        src="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,q_auto:best,r_15,w_300/c_scale,dpr_auto,f_auto,g_south_east,l_watermark,o_60,w_80,x_2,y_2/a"
+      />
+    </picture>
+    <picture>
+      <source
+        media="(min-width: 1024px)"
+        srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,q_auto:best,r_15,w_320/c_scale,dpr_auto,f_auto,g_south_east,l_watermark,o_60,w_80,x_2,y_2/b"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,q_auto:best,r_15,w_360/c_scale,dpr_auto,f_auto,g_south_east,l_watermark,o_60,w_80,x_2,y_2/b"
+      />
+      <source
+        media="(min-width: 540px)"
+        srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,q_auto:best,r_15,w_475/c_scale,dpr_auto,f_auto,g_south_east,l_watermark,o_60,w_80,x_2,y_2/b"
+      />
+      <source
+        media="(min-width: 425px)"
+        srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,q_auto:best,r_15,w_375/c_scale,dpr_auto,f_auto,g_south_east,l_watermark,o_60,w_80,x_2,y_2/b"
+      />
+      <img
+        src="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,q_auto:best,r_15,w_300/c_scale,dpr_auto,f_auto,g_south_east,l_watermark,o_60,w_80,x_2,y_2/b"
+      />
+    </picture>
+    <picture>
+      <source
+        media="(min-width: 1024px)"
+        srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,q_auto:best,r_15,w_320/c_scale,dpr_auto,f_auto,g_south_east,l_watermark,o_60,w_80,x_2,y_2/c"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,q_auto:best,r_15,w_360/c_scale,dpr_auto,f_auto,g_south_east,l_watermark,o_60,w_80,x_2,y_2/c"
+      />
+      <source
+        media="(min-width: 540px)"
+        srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,q_auto:best,r_15,w_475/c_scale,dpr_auto,f_auto,g_south_east,l_watermark,o_60,w_80,x_2,y_2/c"
+      />
+      <source
+        media="(min-width: 425px)"
+        srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,q_auto:best,r_15,w_375/c_scale,dpr_auto,f_auto,g_south_east,l_watermark,o_60,w_80,x_2,y_2/c"
+      />
+      <img
+        src="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,q_auto:best,r_15,w_300/c_scale,dpr_auto,f_auto,g_south_east,l_watermark,o_60,w_80,x_2,y_2/c"
+      />
+    </picture>
+  </main>
+  <footer
+    class="jsx-3846709230"
+  >
+    <div
+      class="jsx-1617167279 social"
+    >
+      <a
+        href="https://www.facebook.com/masha.eltsova"
+      >
+        <span
+          aria-hidden="true"
+          class="fa fa-facebook fa-2x"
+        />
+      </a>
+      <a
+        href="https://www.instagram.com/mashaeltcovaphotography"
+      >
+        <span
+          aria-hidden="true"
+          class="fa fa-instagram fa-2x"
+        />
+      </a>
+      <a
+        href="https://www.vk.com/club65938200"
+      >
+        <span
+          aria-hidden="true"
+          class="fa fa-vk fa-2x"
+        />
+      </a>
+    </div>
+    <div
+      class="jsx-1617167279 copyright"
+    >
+      <a
+        href="https://rcws-development.com"
+      >
+        <span>
+          <span
+            aria-hidden="true"
+            class="fa fa-copyright fa-lg"
+          />
+           2017 RCWS Development
+        </span>
+      </a>
+    </div>
+  </footer>
+</div>
+`;

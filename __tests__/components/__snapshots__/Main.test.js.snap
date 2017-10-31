@@ -1,7 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Component: Main Renders without exploding 1`] = `
+exports[`Component: Main Renders without exploding as .gallery 1`] = `
 <main
-  class="jsx-3311478223"
+  class="jsx-1868992201 gallery"
+/>
+`;
+
+exports[`Component: Main Renders without exploding as .index 1`] = `
+<main
+  class="jsx-1868992201 index"
 />
 `;

@@ -1,14 +1,22 @@
 import { Component } from 'react'
+import PropTypes from 'prop-types'
+
 import { initGA, logPageView } from '../../lib'
 
 import Container from './Container'
 import Footer from './Footer'
 import Header from './Header'
 import Icon from './Icon'
+import Main from './Main'
 import Meta from './Meta'
 import Photo from './Photo'
 
 class Layout extends Component {
+  static propTypes = {
+    url: PropTypes.shape({
+      pathname: PropTypes.string.isRequired
+    })
+  }
   componentDidMount() {
     if (!window.GA_INITIALIZED) {
       initGA()
@@ -17,13 +25,27 @@ class Layout extends Component {
     logPageView()
   }
   render() {
+    const { pathname } = this.props.url
+    let location
+    if (pathname === '/') {
+      location = 'index'
+    } else if (pathname === '/gallery') {
+      location = 'gallery'
+    } else {
+      // FIXME Temporary
+      location = '/'
+    }
     return (
       <div className="wrapper">
         <Meta />
-        <Header>
-          <Photo alt="Masha Eltsova Photography Logo" publicId="watermark" />
+        <Header className={location}>
+          <Photo
+            alt="Masha Eltsova Photography Logo"
+            logo
+            publicId="watermark"
+          />
         </Header>
-        {this.props.children}
+        <Main className={location}>{this.props.children}</Main>
         <Footer>
           <Container className="social">
             <Icon
