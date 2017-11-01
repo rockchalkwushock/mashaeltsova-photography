@@ -1,14 +1,18 @@
 import { Component } from 'react'
+import Head from 'next/head'
 import PropTypes from 'prop-types'
 import NProgress from 'nprogress'
 import { loadGetInitialProps } from 'next/dist/lib/utils'
 
 import { A, GalleryGrid, Layout, Photo, SubNav } from '../components'
-import { fetchData } from '../lib'
+import { fetchData, translate, withIntl } from '../lib'
 
-class Gallery extends Component {
+export class Gallery extends Component {
   static propTypes = {
     ids: PropTypes.array.isRequired,
+    intl: PropTypes.object.isRequired,
+    locale: PropTypes.string.isRequired,
+    messages: PropTypes.object.isRequired,
     url: PropTypes.shape({
       pathname: PropTypes.string.isRequired
     })
@@ -28,7 +32,7 @@ class Gallery extends Component {
     images: null
   }
   handleOnClick = async e => {
-    const target = e.currentTarget.name
+    const target = translate(e.currentTarget.name)
     try {
       NProgress.start()
       const { ids } = await fetchData(target)
@@ -44,14 +48,53 @@ class Gallery extends Component {
     }
   }
   renderButtons = () =>
-    ['Family', 'Portrait', 'Travel', 'Wedding'].map(str => (
-      <A key={str} onClick={this.handleOnClick} text={str} />
-    ))
+    this.props.messages.galleryNav
+      .split(',')
+      .map(t => <A key={t} onClick={this.handleOnClick} text={t} />)
   render() {
     const imgs =
-      this.state.currentView === 'family' ? this.props.ids : this.state.images
+      this.state.currentView === 'family' || this.state.currentView === 'Семья'
+        ? this.props.ids
+        : this.state.images
     return (
       <Layout url={this.props.url}>
+        <Head>
+          <title>Masha Eltsova Photography | Gallery</title>
+          {/* SEO */}
+          <meta
+            name="description"
+            content="Masha Eltsova Photography professional gallery and portfolio."
+          />
+          {/* SCHEMA.ORG FOR GOOGLE */}
+          <meta itemProp="name" content="Masha Eltsova Photography | Gallery" />
+          <meta
+            itemProp="description"
+            content="Masha Eltsova Photography professional gallery and portfolio."
+          />
+          {/* TWITTER */}
+          <meta
+            name="twitter:title"
+            content="Masha Eltsova Photography | Gallery"
+          />
+          <meta
+            name="twitter:description"
+            content="Masha Eltsova Photography professional gallery and portfolio."
+          />
+          <meta
+            name="twitter:url"
+            content="https://mashaeltsovaphotography.com/gallery"
+          />
+          {/* FACEBOOK, PINTREST, GOOGLE+ */}
+          <meta name="og:title" content="Masha Eltsova Photography | Gallery" />
+          <meta
+            name="og:description"
+            content="Masha Eltsova Photography professional gallery and portfolio."
+          />
+          <meta
+            name="og:url"
+            content="https://mashaeltsovaphotography.com/gallery"
+          />
+        </Head>
         <SubNav>{this.renderButtons()}</SubNav>
         <GalleryGrid>
           {imgs.map(id => <Photo key={id} publicId={id} />)}
@@ -61,4 +104,4 @@ class Gallery extends Component {
   }
 }
 
-export default Gallery
+export default withIntl(Gallery)

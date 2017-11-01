@@ -1,9 +1,13 @@
 import { Component } from 'react'
+import PropTypes from 'prop-types'
 
 import { Form } from '../components'
 import { sendDataToMicroService } from '../lib'
 
 class BookingForm extends Component {
+  static propTypes = {
+    messages: PropTypes.object.isRequired
+  }
   state = {
     message: '',
     status: {
@@ -70,6 +74,7 @@ class BookingForm extends Component {
     return (
       <Form
         disabled={this.state.status.disabled}
+        messages={this.props.messages}
         onChange={this.handleOnChange}
         onSubmit={this.handleOnSubmit}
         values={this.state.values}

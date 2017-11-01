@@ -3,5 +3,48 @@
 exports[`Component: Footer Renders without exploding 1`] = `
 <footer
   class="jsx-747610455"
-/>
+>
+  <div
+    class="jsx-590062731 social"
+  >
+    <a
+      href="https://www.facebook.com/masha.eltsova"
+    >
+      <span
+        aria-hidden="true"
+        class="fa fa-facebook fa-2x"
+      />
+    </a>
+    <a
+      href="https://www.instagram.com/mashaeltcovaphotography"
+    >
+      <span
+        aria-hidden="true"
+        class="fa fa-instagram fa-2x"
+      />
+    </a>
+    <a
+      href="https://www.vk.com/club65938200"
+    >
+      <span
+        aria-hidden="true"
+        class="fa fa-vk fa-2x"
+      />
+    </a>
+  </div>
+  <div
+    class="jsx-590062731 copyright"
+  >
+    <a
+      class="jsx-1299221301"
+      href="https://rcws-development.com"
+    >
+      <span
+        class="jsx-1299221301"
+      >
+        Designed by RCWS Development 2017
+      </span>
+    </a>
+  </div>
+</footer>
 `;

@@ -1,14 +1,24 @@
 import React from 'react'
 import { render } from 'enzyme'
 
-import Gallery from '../../pages/gallery'
+import { Gallery } from '../../pages/gallery'
+import en from '../../i18n/en.json'
+import ru from '../../i18n/ru.json'
+import { makeProps } from '../../lib'
 
-const url = { pathname: '/gallery' }
 const ids = ['a', 'b', 'c']
 
 describe('Component: Gallery', () => {
-  test('Renders without exploding', () => {
-    const tree = render(<Gallery url={url} ids={ids} />)
+  test('Renders without exploding in English', () => {
+    const tree = render(
+      <Gallery {...makeProps('en', en, '/gallery')} ids={ids} />
+    )
+    expect(tree).toMatchSnapshot()
+  })
+  test('Renders without exploding in Russian', () => {
+    const tree = render(
+      <Gallery {...makeProps('ru', ru, '/gallery')} ids={ids} />
+    )
     expect(tree).toMatchSnapshot()
   })
 })

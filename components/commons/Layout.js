@@ -1,15 +1,15 @@
+/* eslint-disable no-unused-vars */
 import { Component } from 'react'
 import Router from 'next/router'
 import NProgress from 'nprogress'
 import PropTypes from 'prop-types'
 
-import Container from './Container'
 import Footer from './Footer'
 import Header from './Header'
-import Icon from './Icon'
 import Main from './Main'
 import Meta from './Meta'
 import Photo from './Photo'
+import Wrapper from './Wrapper'
 
 import { initGA, logPageView } from '../../lib'
 
@@ -45,7 +45,7 @@ class Layout extends Component {
       location = '/'
     }
     return (
-      <div className="wrapper">
+      <Wrapper>
         <Meta />
         <Header className={location}>
           <Photo
@@ -55,42 +55,8 @@ class Layout extends Component {
           />
         </Header>
         <Main className={location}>{this.props.children}</Main>
-        <Footer>
-          <Container className="social">
-            <Icon
-              icon="facebook"
-              size="2x"
-              url="https://www.facebook.com/masha.eltsova"
-            />
-            <Icon
-              icon="instagram"
-              size="2x"
-              url="https://www.instagram.com/mashaeltcovaphotography"
-            />
-            <Icon icon="vk" size="2x" url="https://www.vk.com/club65938200" />
-          </Container>
-          <Container className="copyright">
-            <Icon
-              icon="copyright"
-              size="lg"
-              url="https://rcws-development.com"
-            />
-          </Container>
-        </Footer>
-        <style jsx>{`
-          .wrapper {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-            flex-direction: column;
-            min-height: 100vh;
-            text-align: center;
-          }
-        `}</style>
-      </div>
+        <Footer />
+      </Wrapper>
     )
   }
 }

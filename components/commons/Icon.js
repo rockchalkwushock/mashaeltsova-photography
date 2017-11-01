@@ -3,14 +3,22 @@ import FontAwesome from 'react-fontawesome'
 
 // Get current year from browser.
 const year = new Date().getFullYear()
+// Slick thinking!
+const yearToDisplay = year === 2017 ? year : `2017 - ${year}`
 
+// NOTE: She wants this left in English!
 const Icon = ({ icon, size, url }) => {
   if (icon === 'copyright') {
     return (
       <a href={url}>
-        <span>
-          <FontAwesome name={icon} size={size} /> {`${year} RCWS Development`}
-        </span>
+        <span>{`Designed by RCWS Development ${yearToDisplay}`}</span>
+        <style jsx>{`
+          @media (max-width: 321px) {
+            span {
+              font-size: 0.95em;
+            }
+          }
+        `}</style>
       </a>
     )
   }

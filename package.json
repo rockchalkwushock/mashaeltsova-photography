@@ -10,9 +10,9 @@
   "bugs": "https://github.com/rockchalkwushock/mashaeltsova-photography/issues",
   "scripts": {
     "commit": "nps commit",
-    "dev": "next",
+    "dev": "node server.js",
     "now-build": "next build",
-    "now-start": "next start",
+    "now-start": "NODE_ENV=production node server.js",
     "precommit": "lint-staged",
     "prettier": "prettier --single-quote --no-semi --write",
     "prod": "yarn now-build && yarn now-start",
@@ -70,8 +70,11 @@
     "name": "rework-mashaeltsova-photography"
   },
   "dependencies": {
+    "accepts": "^1.3.4",
     "axios": "~0.17.0",
     "babel-plugin-transform-define": "~1.3.0",
+    "glob": "^7.1.2",
+    "intl": "^1.2.5",
     "next": "~4.1.4",
     "nprogress": "^0.2.0",
     "prop-types": "~15.6.0",
@@ -80,6 +83,7 @@
     "react-dom": "~16.0.0",
     "react-fontawesome": "~1.6.1",
     "react-ga": "~2.3.5",
+    "react-intl": "^2.4.0",
     "react-lazyload": "^2.3.0"
   },
   "devDependencies": {

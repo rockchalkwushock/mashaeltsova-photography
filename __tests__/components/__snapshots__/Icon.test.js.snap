@@ -2,14 +2,13 @@
 
 exports[`Component: Icon Renders without exploding as copyright icon 1`] = `
 <a
+  class="jsx-1299221301"
   href="https://rcws-development.com"
 >
-  <span>
-    <span
-      aria-hidden="true"
-      class="fa fa-copyright fa-lg"
-    />
-     2017 RCWS Development
+  <span
+    class="jsx-1299221301"
+  >
+    Designed by RCWS Development 2017
   </span>
 </a>
 `;

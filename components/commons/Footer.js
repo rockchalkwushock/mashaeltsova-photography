@@ -1,8 +1,25 @@
+import Container from './Container'
+import Icon from './Icon'
 import { styles } from '../../lib'
 
-const Footer = ({ children }) => (
+const Footer = () => (
   <footer>
-    {children}
+    <Container className="social">
+      <Icon
+        icon="facebook"
+        size="2x"
+        url="https://www.facebook.com/masha.eltsova"
+      />
+      <Icon
+        icon="instagram"
+        size="2x"
+        url="https://www.instagram.com/mashaeltcovaphotography"
+      />
+      <Icon icon="vk" size="2x" url="https://www.vk.com/club65938200" />
+    </Container>
+    <Container className="copyright">
+      <Icon icon="copyright" size="lg" url="https://rcws-development.com" />
+    </Container>
     <style jsx>{`
       footer {
         background-color: ${styles.colors.peach};

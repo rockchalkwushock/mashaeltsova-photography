@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 import {
   A,
   CollagePhoto,
@@ -9,43 +11,44 @@ import {
   Ul
 } from '../components'
 import { BookingForm } from '../containers'
+import { withIntl } from '../lib'
 
-export default props => (
-  <Layout url={props.url}>
-    <Section className="about">
-      <P className="about">
-        For many years now I have had a great passion for capturing a moment in
-        time and sharing the beauty of that moment with the world. I enjoy
-        taking pictures for many varying events. When I am not doing photo
-        shoots you will find me preforming English tutoring, or practicing my
-        other passion, surfing.
-      </P>
-    </Section>
-    <Section className="services">
-      <P className="services">
-        I am willing to negotiate other requested services, however the below
-        are what I primarily offer:
-      </P>
-      <Ul>
-        <Li text="baby portraits" />
-        <Li text="family portraits" />
-        <Li text="self-portraits" />
-        <Li text="engagements" />
-        <Li text="and weddings" />
-      </Ul>
-    </Section>
-    <Section className="gallery">
-      <CollagePhoto />
-      <A
-        className="linkToGallery"
-        navigate
-        text="Visit Gallery"
-        url="/gallery"
-      />
-    </Section>
-    <Section className="booking">
-      <Plug />
-      <BookingForm />
-    </Section>
-  </Layout>
-)
+export const Index = ({ messages, url }) => {
+  const [message, services] = messages.sectionServices.split(': ')
+  const list = services.split(',').map(s => <Li key={s} text={s} />)
+  return (
+    <Layout url={url}>
+      <Section className="about">
+        <P className="about">{messages.sectionAbout}</P>
+      </Section>
+      <Section className="services">
+        <P className="services">{message}:</P>
+        <Ul>{list}</Ul>
+      </Section>
+      <Section className="gallery">
+        <CollagePhoto />
+        <A
+          className="linkToGallery"
+          navigate
+          text={messages.buttonGallery}
+          url="/gallery"
+        />
+      </Section>
+      <Section className="booking">
+        <Plug messages={messages} />
+        <BookingForm messages={messages} />
+      </Section>
+    </Layout>
+  )
+}
+
+Index.propTypes = {
+  intl: PropTypes.object.isRequired,
+  locale: PropTypes.string.isRequired,
+  messages: PropTypes.object.isRequired,
+  url: PropTypes.shape({
+    pathname: PropTypes.string.isRequired
+  })
+}
+
+export default withIntl(Index)

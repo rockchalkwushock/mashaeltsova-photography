@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Component: Gallery Renders without exploding 1`] = `
+exports[`Component: Gallery Renders without exploding in English 1`] = `
 <div
-  class="jsx-3544140459 wrapper"
+  class="jsx-3955059306 wrapper"
 >
   <div
     class="jsx-592563972"
@@ -116,14 +116,143 @@ exports[`Component: Gallery Renders without exploding 1`] = `
       class="jsx-590062731 copyright"
     >
       <a
+        class="jsx-1299221301"
         href="https://rcws-development.com"
       >
-        <span>
-          <span
-            aria-hidden="true"
-            class="fa fa-copyright fa-lg"
-          />
-           2017 RCWS Development
+        <span
+          class="jsx-1299221301"
+        >
+          Designed by RCWS Development 2017
+        </span>
+      </a>
+    </div>
+  </footer>
+</div>
+`;
+
+exports[`Component: Gallery Renders without exploding in Russian 1`] = `
+<div
+  class="jsx-3955059306 wrapper"
+>
+  <div
+    class="jsx-592563972"
+  />
+  <header
+    class="jsx-1518572121 gallery"
+  >
+    <picture>
+      <source
+        media="(min-width: 1024px)"
+        srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_1024/watermark"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_768/watermark"
+      />
+      <source
+        media="(min-width: 540px)"
+        srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_540/watermark"
+      />
+      <source
+        media="(min-width: 425px)"
+        srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_425/watermark"
+      />
+      <img
+        alt="Masha Eltsova Photography Logo"
+        src="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_320/watermark"
+      />
+    </picture>
+  </header>
+  <main
+    class="jsx-1845556999 gallery"
+  >
+    <nav
+      class="jsx-709412855"
+    >
+      <button
+        class="jsx-3153731447"
+        name="семья"
+      >
+        Семья
+      </button>
+      <button
+        class="jsx-3153731447"
+        name="портрет"
+      >
+        Портрет
+      </button>
+      <button
+        class="jsx-3153731447"
+        name="путешествия"
+      >
+        Путешествия
+      </button>
+      <button
+        class="jsx-3153731447"
+        name="свадьбы"
+      >
+        Свадьбы
+      </button>
+    </nav>
+    <div
+      class="jsx-4021821574"
+    >
+      <div
+        class="lazyload-placeholder"
+        style="height:100px"
+      />
+      <div
+        class="lazyload-placeholder"
+        style="height:100px"
+      />
+      <div
+        class="lazyload-placeholder"
+        style="height:100px"
+      />
+    </div>
+  </main>
+  <footer
+    class="jsx-747610455"
+  >
+    <div
+      class="jsx-590062731 social"
+    >
+      <a
+        href="https://www.facebook.com/masha.eltsova"
+      >
+        <span
+          aria-hidden="true"
+          class="fa fa-facebook fa-2x"
+        />
+      </a>
+      <a
+        href="https://www.instagram.com/mashaeltcovaphotography"
+      >
+        <span
+          aria-hidden="true"
+          class="fa fa-instagram fa-2x"
+        />
+      </a>
+      <a
+        href="https://www.vk.com/club65938200"
+      >
+        <span
+          aria-hidden="true"
+          class="fa fa-vk fa-2x"
+        />
+      </a>
+    </div>
+    <div
+      class="jsx-590062731 copyright"
+    >
+      <a
+        class="jsx-1299221301"
+        href="https://rcws-development.com"
+      >
+        <span
+          class="jsx-1299221301"
+        >
+          Designed by RCWS Development 2017
         </span>
       </a>
     </div>

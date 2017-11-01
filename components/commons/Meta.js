@@ -6,8 +6,7 @@ import { styles } from '../../lib'
  * 1. Add Google Site Verification <meta name="google-site-verification" content="getTokenFromGoogle" />
  * 2. Add /static/ & Favicon icons.
  * 3. Add Facebook Page Insights <meta name="fb:admins" content="fbUserID" />
- * 4. Pass props.message to access the localeData for specific keys.
- * 5. Finish Filling in empty keys.
+ * 4. Finish Filling in empty keys.
  */
 
 export default () => (
@@ -22,23 +21,23 @@ export default () => (
       <meta name="author" content="RCWS Development" />
       <meta
         name="description"
-        content="Masha Eltsova is a professional photographer in Moscow, Russia who offers <options>. Schedule a shoot with her today!"
+        content="Masha Eltsova is a professional photographer in Moscow, Russia who offers family, portraits, wedding, & engagement photography. Schedule a shoot with her today!"
       />
       {/* SCHEMA.ORG FOR GOOGLE */}
       <meta itemProp="name" content="Masha Eltsova Photography" />
       <meta
         itemProp="description"
-        content="Masha Eltsova is a professional photographer in Moscow, Russia who offers <options>. Schedule a shoot with her today!"
+        content="Masha Eltsova is a professional photographer in Moscow, Russia who offers family, portraits, wedding, & engagement photography. Schedule a shoot with her today!"
       />
       <meta itemProp="image" content="" />
       {/* TWITTER */}
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:title" content="Masha Eltsova Photography" />
-      <meta name="twitter:site" content="@user" />
-      <meta name="twitter:creator" content="@user" />
+      <meta name="twitter:site" content="@RockChalkDev" />
+      <meta name="twitter:creator" content="@RockChalkDev" />
       <meta
         name="twitter:description"
-        content="Masha Eltsova is a professional photographer in Moscow, Russia who offers <options>. Schedule a shoot with her today!"
+        content="Masha Eltsova is a professional photographer in Moscow, Russia who offers family, portraits, wedding, & engagement photography. Schedule a shoot with her today!"
       />
       <meta name="twitter:image" content="" />
       <meta name="twitter:image:alt" content="Masha Eltsova Photography" />
@@ -47,7 +46,7 @@ export default () => (
       <meta name="og:title" content="Masha Eltsova Photography" />
       <meta
         name="og:description"
-        content="Masha Eltsova is a professional photographer in Moscow, Russia who offers <options>. Schedule a shoot with her today!"
+        content="Masha Eltsova is a professional photographer in Moscow, Russia who offers family, portraits, wedding, & engagement photography. Schedule a shoot with her today!"
       />
       <meta name="og:image" content="" />
       <meta name="og:image:secure_url" content="" />

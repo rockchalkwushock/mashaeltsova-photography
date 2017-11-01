@@ -2,10 +2,9 @@ import React from 'react'
 import { render } from 'enzyme'
 
 import Form from '../../components/main/Form'
+import en from '../../i18n/en.json'
+import ru from '../../i18n/ru.json'
 
-const disabled = true
-const onChange = () => {}
-const onSubmit = () => {}
 const values = {
   email: '',
   firstName: '',
@@ -13,17 +12,21 @@ const values = {
   message: '',
   phone: ''
 }
+const props = messages => ({
+  disabled: true,
+  messages,
+  onChange: () => {},
+  onSubmit: () => {},
+  values
+})
 
 describe('Component: Form', () => {
-  test('Renders without exploding', () => {
-    const tree = render(
-      <Form
-        disabled={disabled}
-        onChange={onChange}
-        onSubmit={onSubmit}
-        values={values}
-      />
-    )
+  test('Renders without exploding in English', () => {
+    const tree = render(<Form {...props(en)} />)
+    expect(tree).toMatchSnapshot()
+  })
+  test('Renders without exploding in Russian', () => {
+    const tree = render(<Form {...props(ru)} />)
     expect(tree).toMatchSnapshot()
   })
 })

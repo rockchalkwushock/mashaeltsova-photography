@@ -1,11 +1,11 @@
+import PropTypes from 'prop-types'
+
 import { P } from '../commons'
 import { styles } from '../../lib'
 
-const Plug = () => (
+const Plug = ({ messages }) => (
   <div>
-    <P className="plug">
-      Contact me if you want to relive those precious moments for years to come!
-    </P>
+    <P className="plug">{messages.sectionPlug}</P>
     <style jsx>{`
       div {
         background-color: ${styles.colors.peach};
@@ -15,5 +15,9 @@ const Plug = () => (
     `}</style>
   </div>
 )
+
+Plug.propTypes = {
+  messages: PropTypes.object.isRequired
+}
 
 export default Plug

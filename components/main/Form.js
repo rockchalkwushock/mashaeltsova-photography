@@ -3,47 +3,47 @@ import PropTypes from 'prop-types'
 import { styles } from '../../lib'
 import Field from './Field'
 
-const Form = props => (
-  <form onSubmit={props.onSubmit}>
+const Form = ({ disabled, messages, onChange, onSubmit, values }) => (
+  <form onSubmit={onSubmit}>
     <Field
       className="firstName"
-      onChange={props.onChange}
-      text="First Name"
+      onChange={onChange}
+      text={messages.formFirstName}
       type="text"
-      value={props.values.firstName}
+      value={values.firstName}
     />
     <Field
       className="lastName"
-      onChange={props.onChange}
-      text="Last Name"
+      onChange={onChange}
+      text={messages.formLastName}
       type="text"
-      value={props.values.lastName}
+      value={values.lastName}
     />
     <Field
       className="email"
-      onChange={props.onChange}
-      text="Email"
+      onChange={onChange}
+      text={messages.formEmail}
       type="email"
-      value={props.values.email}
+      value={values.email}
     />
     <Field
       className="phone"
-      onChange={props.onChange}
-      text="Phone"
+      onChange={onChange}
+      text={messages.formPhone}
       type="tel"
-      value={props.values.phone}
+      value={values.phone}
     />
     <Field
       className="message"
-      onChange={props.onChange}
-      text="Short Message"
+      onChange={onChange}
+      text={messages.formMessage}
       type="text"
-      value={props.values.message}
+      value={values.message}
     />
     <Field
       className="button"
-      disabled={props.disabled}
-      text="Book Now!"
+      disabled={disabled}
+      text={messages.buttonBooking}
       type="submit"
     />
     <style jsx>{`
@@ -64,6 +64,7 @@ const Form = props => (
 
 Form.propTypes = {
   disabled: PropTypes.bool.isRequired,
+  messages: PropTypes.object.isRequired,
   onChange: PropTypes.func.isRequired,
   onSubmit: PropTypes.func.isRequired,
   values: PropTypes.shape({

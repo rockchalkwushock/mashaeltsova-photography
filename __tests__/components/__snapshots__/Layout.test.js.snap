@@ -2,7 +2,7 @@
 
 exports[`Component: Layout Renders without exploding as .gallery 1`] = `
 <div
-  class="jsx-3544140459 wrapper"
+  class="jsx-3955059306 wrapper"
 >
   <div
     class="jsx-592563972"
@@ -71,14 +71,13 @@ exports[`Component: Layout Renders without exploding as .gallery 1`] = `
       class="jsx-590062731 copyright"
     >
       <a
+        class="jsx-1299221301"
         href="https://rcws-development.com"
       >
-        <span>
-          <span
-            aria-hidden="true"
-            class="fa fa-copyright fa-lg"
-          />
-           2017 RCWS Development
+        <span
+          class="jsx-1299221301"
+        >
+          Designed by RCWS Development 2017
         </span>
       </a>
     </div>
@@ -88,7 +87,7 @@ exports[`Component: Layout Renders without exploding as .gallery 1`] = `
 
 exports[`Component: Layout Renders without exploding as .index 1`] = `
 <div
-  class="jsx-3544140459 wrapper"
+  class="jsx-3955059306 wrapper"
 >
   <div
     class="jsx-592563972"
@@ -157,14 +156,13 @@ exports[`Component: Layout Renders without exploding as .index 1`] = `
       class="jsx-590062731 copyright"
     >
       <a
+        class="jsx-1299221301"
         href="https://rcws-development.com"
       >
-        <span>
-          <span
-            aria-hidden="true"
-            class="fa fa-copyright fa-lg"
-          />
-           2017 RCWS Development
+        <span
+          class="jsx-1299221301"
+        >
+          Designed by RCWS Development 2017
         </span>
       </a>
     </div>
