@@ -45,14 +45,6 @@ const Image = ({ publicId }) => (
         srcSet={createUrl(false, publicId, 375)}
       />
       <img src={createUrl(false, publicId, 300)} />
-      <style jsx>{`
-        picture {
-          border: 2px solid lime;
-        }
-        img {
-          border: 2px solid blue;
-        }
-      `}</style>
     </picture>
   </LazyLoad>
 )

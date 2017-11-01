@@ -65,7 +65,7 @@ exports[`Component: Gallery Renders without exploding in English 1`] = `
       </button>
     </nav>
     <div
-      class="jsx-4021821574"
+      class="jsx-1702615427"
     >
       <div
         class="lazyload-placeholder"
@@ -195,7 +195,7 @@ exports[`Component: Gallery Renders without exploding in Russian 1`] = `
       </button>
     </nav>
     <div
-      class="jsx-4021821574"
+      class="jsx-1702615427"
     >
       <div
         class="lazyload-placeholder"
