@@ -7,6 +7,7 @@ import PropTypes from 'prop-types'
 import Footer from './Footer'
 import Header from './Header'
 import Main from './Main'
+import Menu from '../menu'
 import Meta from './Meta'
 import Photo from './Photo'
 import Wrapper from './Wrapper'
@@ -47,6 +48,7 @@ class Layout extends Component {
     return (
       <Wrapper>
         <Meta />
+        <Menu />
         <Header className={location}>
           <Photo
             alt="Masha Eltsova Photography Logo"

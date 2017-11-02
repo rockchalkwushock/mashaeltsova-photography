@@ -11,16 +11,14 @@ const Section = ({ children, className }) => (
         box-shadow: 0 0 20px rgba(54, 69, 79, 0.7);
       }
       .about {
-        background-color: ${styles.colors.lemon};
-        color: ${styles.colors.charcoal};
+        background-color: ${styles.colors.peach};
         grid-area: about;
         grid-column: 1 / 5;
         padding: 0.75em;
         text-align: left;
       }
       .services {
-        background-color: ${styles.colors.lemon};
-        color: ${styles.colors.charcoal};
+        background-color: ${styles.colors.peach};
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;

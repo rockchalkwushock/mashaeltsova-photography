@@ -15,7 +15,7 @@ import { styles } from '../../lib'
  */
 
 const Header = ({ children, className }) => (
-  <header className={className}>
+  <header className={`header ${className}`}>
     {children}
     <style jsx>{`
       header {
@@ -37,7 +37,7 @@ const Header = ({ children, className }) => (
         text-align: center;
       }
       .index {
-        height: 100vh;
+        height: 80vh;
       }
       .gallery {
         height: 25vh;
