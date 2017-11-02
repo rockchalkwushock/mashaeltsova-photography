@@ -1,5 +1,4 @@
 /* eslint-disable no-new-require, no-param-reassign  */
-const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
 
 const { ANALYZE } = process.env
 
@@ -13,9 +12,10 @@ const { ANALYZE } = process.env
  */
 
 module.exports = {
-  webpack: config => {
+  webpack: (config, { dev }) => {
     // Will only run for `yarn start analyze`
-    if (ANALYZE) {
+    if (dev && ANALYZE) {
+      const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
       config.plugins.push(
         new BundleAnalyzerPlugin({
           analyzerMode: 'server',
