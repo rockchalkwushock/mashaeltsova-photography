@@ -6,6 +6,9 @@
   "formLastName": "Last Name",
   "formMessage": "Short Message",
   "formPhone": "Phone",
+  "formErrorEmailPattern": "Not a valid email.",
+  "formErrorNamePattern":
+    "Not a valid pattern. May only contain upper and lowercase letters.",
   "formErrorMessagePattern":
     "May only contain upper & lower case letters, numbers, and .!?,;'",
   "formErrorPhonePattern":

@@ -53,6 +53,7 @@ const Field = props => {
         type={props.type}
         value={props.value}
       />
+      <span className="errors">{props.error}</span>
       <style jsx>{`
         label {
           display: block;
@@ -64,6 +65,10 @@ const Field = props => {
           outline: 0;
           padding: 0 0.5em;
           width: 100%;
+        }
+        .errors {
+          color: red;
+          font-size: 0.75em;
         }
         .firstName {
           grid-area: firstName;
@@ -115,6 +120,7 @@ const Field = props => {
 Field.propTypes = {
   props: PropTypes.shape({
     className: PropTypes.string.isRequired,
+    error: PropTypes.string,
     onChange: PropTypes.func.isRequired,
     text: PropTypes.string.isRequired,
     type: PropTypes.string,

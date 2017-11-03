@@ -3,10 +3,11 @@ import PropTypes from 'prop-types'
 import { styles } from '../../lib'
 import Field from './Field'
 
-const Form = ({ messages, onChange, onSubmit, values }) => (
+const Form = ({ errors, messages, onChange, onSubmit, values }) => (
   <form onSubmit={onSubmit}>
     <Field
       className="firstName"
+      error={errors.firstName}
       onChange={onChange}
       text={messages.formFirstName}
       type="text"
@@ -14,6 +15,7 @@ const Form = ({ messages, onChange, onSubmit, values }) => (
     />
     <Field
       className="lastName"
+      error={errors.lastName}
       onChange={onChange}
       text={messages.formLastName}
       type="text"
@@ -21,6 +23,7 @@ const Form = ({ messages, onChange, onSubmit, values }) => (
     />
     <Field
       className="email"
+      error={errors.email}
       onChange={onChange}
       text={messages.formEmail}
       type="email"
@@ -28,6 +31,7 @@ const Form = ({ messages, onChange, onSubmit, values }) => (
     />
     <Field
       className="phone"
+      error={errors.phone}
       onChange={onChange}
       text={messages.formPhone}
       type="tel"
@@ -35,6 +39,7 @@ const Form = ({ messages, onChange, onSubmit, values }) => (
     />
     <Field
       className="message"
+      error={errors.message}
       onChange={onChange}
       text={messages.formMessage}
       type="text"
@@ -58,7 +63,7 @@ const Form = ({ messages, onChange, onSubmit, values }) => (
 )
 
 Form.propTypes = {
-  disabled: PropTypes.bool.isRequired,
+  errors: PropTypes.object,
   messages: PropTypes.object.isRequired,
   onChange: PropTypes.func.isRequired,
   onSubmit: PropTypes.func.isRequired,
