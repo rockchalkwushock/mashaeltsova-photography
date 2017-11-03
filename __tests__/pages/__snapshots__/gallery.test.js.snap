@@ -7,8 +7,114 @@ exports[`Component: Gallery Renders without exploding in English 1`] = `
   <div
     class="jsx-592563972"
   />
+  <div
+    class="jsx-503300710 scroll-in-nav"
+    style="position:fixed;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;top:0;left:0;right:0;z-index:1;-webkit-transform:translateY(-100%);-ms-transform:translateY(-100%);transform:translateY(-100%)"
+  >
+    <nav
+      class="jsx-503300710 navbar"
+    >
+      <span
+        class="jsx-503300710 open-slide"
+      >
+        <svg
+          class="jsx-503300710"
+          height="30"
+          width="30"
+        >
+          <path
+            class="jsx-503300710"
+            d="M0,5 30,5"
+            stroke="#DF744A"
+            stroke-width="5"
+          />
+          <path
+            class="jsx-503300710"
+            d="M0,14 30,14"
+            stroke="#DF744A"
+            stroke-width="5"
+          />
+          <path
+            class="jsx-503300710"
+            d="M0,23 30,23"
+            stroke="#DF744A"
+            stroke-width="5"
+          />
+        </svg>
+      </span>
+      <ul
+        class="jsx-503300710 navbar-nav"
+      >
+        <li
+          class="jsx-503300710"
+        >
+          <a
+            class="jsx-503300710"
+            href="/"
+          >
+            Home
+          </a>
+        </li>
+        <li
+          class="jsx-503300710"
+        >
+          <a
+            class="jsx-503300710"
+            href="/gallery"
+          >
+            Gallery
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div
+      class="jsx-503300710 mobile-nav"
+      id="mobile-menu"
+    >
+      <a
+        class="jsx-503300710"
+        href="/"
+      >
+        Home
+      </a>
+      <a
+        class="jsx-503300710"
+        href="/gallery"
+      >
+        Gallery
+      </a>
+      <div
+        class="jsx-503300710"
+      >
+        <a
+          href="https://www.facebook.com/masha.eltsova"
+        >
+          <span
+            aria-hidden="true"
+            class="fa fa-facebook fa-2x"
+          />
+        </a>
+        <a
+          href="https://www.instagram.com/mashaeltcovaphotography"
+        >
+          <span
+            aria-hidden="true"
+            class="fa fa-instagram fa-2x"
+          />
+        </a>
+        <a
+          href="https://www.vk.com/club65938200"
+        >
+          <span
+            aria-hidden="true"
+            class="fa fa-vk fa-2x"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
   <header
-    class="jsx-1518572121 gallery"
+    class="jsx-2312722649 header gallery"
   >
     <picture>
       <source
@@ -137,8 +243,114 @@ exports[`Component: Gallery Renders without exploding in Russian 1`] = `
   <div
     class="jsx-592563972"
   />
+  <div
+    class="jsx-503300710 scroll-in-nav"
+    style="position:fixed;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;top:0;left:0;right:0;z-index:1;-webkit-transform:translateY(-100%);-ms-transform:translateY(-100%);transform:translateY(-100%)"
+  >
+    <nav
+      class="jsx-503300710 navbar"
+    >
+      <span
+        class="jsx-503300710 open-slide"
+      >
+        <svg
+          class="jsx-503300710"
+          height="30"
+          width="30"
+        >
+          <path
+            class="jsx-503300710"
+            d="M0,5 30,5"
+            stroke="#DF744A"
+            stroke-width="5"
+          />
+          <path
+            class="jsx-503300710"
+            d="M0,14 30,14"
+            stroke="#DF744A"
+            stroke-width="5"
+          />
+          <path
+            class="jsx-503300710"
+            d="M0,23 30,23"
+            stroke="#DF744A"
+            stroke-width="5"
+          />
+        </svg>
+      </span>
+      <ul
+        class="jsx-503300710 navbar-nav"
+      >
+        <li
+          class="jsx-503300710"
+        >
+          <a
+            class="jsx-503300710"
+            href="/"
+          >
+            Home
+          </a>
+        </li>
+        <li
+          class="jsx-503300710"
+        >
+          <a
+            class="jsx-503300710"
+            href="/gallery"
+          >
+            Gallery
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div
+      class="jsx-503300710 mobile-nav"
+      id="mobile-menu"
+    >
+      <a
+        class="jsx-503300710"
+        href="/"
+      >
+        Home
+      </a>
+      <a
+        class="jsx-503300710"
+        href="/gallery"
+      >
+        Gallery
+      </a>
+      <div
+        class="jsx-503300710"
+      >
+        <a
+          href="https://www.facebook.com/masha.eltsova"
+        >
+          <span
+            aria-hidden="true"
+            class="fa fa-facebook fa-2x"
+          />
+        </a>
+        <a
+          href="https://www.instagram.com/mashaeltcovaphotography"
+        >
+          <span
+            aria-hidden="true"
+            class="fa fa-instagram fa-2x"
+          />
+        </a>
+        <a
+          href="https://www.vk.com/club65938200"
+        >
+          <span
+            aria-hidden="true"
+            class="fa fa-vk fa-2x"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
   <header
-    class="jsx-1518572121 gallery"
+    class="jsx-2312722649 header gallery"
   >
     <picture>
       <source

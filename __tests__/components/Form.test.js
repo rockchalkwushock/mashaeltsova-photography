@@ -13,12 +13,14 @@ const values = {
   phone: ''
 }
 const props = messages => ({
-  disabled: true,
+  errors: {},
   messages,
   onChange: () => {},
   onSubmit: () => {},
   values
 })
+
+// TODO: Test with Errors object for both languages.
 
 describe('Component: Form', () => {
   test('Renders without exploding in English', () => {

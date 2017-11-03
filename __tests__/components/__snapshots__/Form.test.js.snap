@@ -5,83 +5,98 @@ exports[`Component: Form Renders without exploding in English 1`] = `
   class="jsx-1188712385"
 >
   <div
-    class="jsx-3773761155 firstName"
+    class="jsx-894113413 firstName"
   >
     <label
-      class="jsx-3773761155"
+      class="jsx-894113413"
       for="firstName"
     >
       First Name
     </label>
     <input
-      class="jsx-3773761155"
+      class="jsx-894113413"
       name="firstName"
       type="text"
       value=""
     />
+    <span
+      class="jsx-894113413 errors"
+    />
   </div>
   <div
-    class="jsx-3773761155 lastName"
+    class="jsx-894113413 lastName"
   >
     <label
-      class="jsx-3773761155"
+      class="jsx-894113413"
       for="lastName"
     >
       Last Name
     </label>
     <input
-      class="jsx-3773761155"
+      class="jsx-894113413"
       name="lastName"
       type="text"
       value=""
     />
+    <span
+      class="jsx-894113413 errors"
+    />
   </div>
   <div
-    class="jsx-3773761155 email"
+    class="jsx-894113413 email"
   >
     <label
-      class="jsx-3773761155"
+      class="jsx-894113413"
       for="email"
     >
       Email
     </label>
     <input
-      class="jsx-3773761155"
+      class="jsx-894113413"
       name="email"
       type="email"
       value=""
     />
+    <span
+      class="jsx-894113413 errors"
+    />
   </div>
   <div
-    class="jsx-3773761155 phone"
+    class="jsx-894113413 phone"
   >
     <label
-      class="jsx-3773761155"
+      class="jsx-894113413"
       for="phone"
     >
       Phone
     </label>
     <input
-      class="jsx-3773761155"
+      class="jsx-894113413"
       name="phone"
       type="tel"
       value=""
     />
+    <span
+      class="jsx-894113413 errors"
+    />
   </div>
   <div
-    class="jsx-3773761155 message"
+    class="jsx-894113413 message"
   >
     <label
-      class="jsx-3773761155"
+      class="jsx-894113413"
       for="message"
     >
       Short Message
     </label>
     <input
-      class="jsx-3773761155"
+      class="jsx-894113413"
       name="message"
       type="text"
       value=""
+    />
+    <span
+      class="jsx-894113413 errors"
     />
   </div>
   <div
@@ -89,7 +104,6 @@ exports[`Component: Form Renders without exploding in English 1`] = `
   >
     <button
       class="jsx-4021739229"
-      disabled=""
       type="submit"
     >
       Book Now!
@@ -103,83 +117,98 @@ exports[`Component: Form Renders without exploding in Russian 1`] = `
   class="jsx-1188712385"
 >
   <div
-    class="jsx-3773761155 firstName"
+    class="jsx-894113413 firstName"
   >
     <label
-      class="jsx-3773761155"
+      class="jsx-894113413"
       for="firstName"
     >
       Имя
     </label>
     <input
-      class="jsx-3773761155"
+      class="jsx-894113413"
       name="firstName"
       type="text"
       value=""
     />
+    <span
+      class="jsx-894113413 errors"
+    />
   </div>
   <div
-    class="jsx-3773761155 lastName"
+    class="jsx-894113413 lastName"
   >
     <label
-      class="jsx-3773761155"
+      class="jsx-894113413"
       for="lastName"
     >
       Фамилия
     </label>
     <input
-      class="jsx-3773761155"
+      class="jsx-894113413"
       name="lastName"
       type="text"
       value=""
     />
+    <span
+      class="jsx-894113413 errors"
+    />
   </div>
   <div
-    class="jsx-3773761155 email"
+    class="jsx-894113413 email"
   >
     <label
-      class="jsx-3773761155"
+      class="jsx-894113413"
       for="email"
     >
       Электронный адрес
     </label>
     <input
-      class="jsx-3773761155"
+      class="jsx-894113413"
       name="email"
       type="email"
       value=""
     />
+    <span
+      class="jsx-894113413 errors"
+    />
   </div>
   <div
-    class="jsx-3773761155 phone"
+    class="jsx-894113413 phone"
   >
     <label
-      class="jsx-3773761155"
+      class="jsx-894113413"
       for="phone"
     >
       Телефон
     </label>
     <input
-      class="jsx-3773761155"
+      class="jsx-894113413"
       name="phone"
       type="tel"
       value=""
     />
+    <span
+      class="jsx-894113413 errors"
+    />
   </div>
   <div
-    class="jsx-3773761155 message"
+    class="jsx-894113413 message"
   >
     <label
-      class="jsx-3773761155"
+      class="jsx-894113413"
       for="message"
     >
       Сообщение
     </label>
     <input
-      class="jsx-3773761155"
+      class="jsx-894113413"
       name="message"
       type="text"
       value=""
+    />
+    <span
+      class="jsx-894113413 errors"
     />
   </div>
   <div
@@ -187,7 +216,6 @@ exports[`Component: Form Renders without exploding in Russian 1`] = `
   >
     <button
       class="jsx-4021739229"
-      disabled=""
       type="submit"
     >
       Забронировать сейчас!

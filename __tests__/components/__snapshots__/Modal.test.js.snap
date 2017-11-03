@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: Modal Error State Renders without exploding in English 1`] = `
+<div
+  class="jsx-2863241787 error"
+>
+  <span
+    aria-hidden="true"
+    class="fa fa-times-circle fa-3x"
+  />
+  <span
+    class="jsx-2863241787"
+  >
+    I'm sorry there seems to be a problem, please try back later.
+  </span>
+</div>
+`;
+
+exports[`Component: Modal Error State Renders without exploding in Russian 1`] = `
+<div
+  class="jsx-2863241787 error"
+>
+  <span
+    aria-hidden="true"
+    class="fa fa-times-circle fa-3x"
+  />
+  <span
+    class="jsx-2863241787"
+  >
+    Произошла ошибка, попробуйте еще раз.
+  </span>
+</div>
+`;
+
+exports[`Component: Modal Loading State Renders without exploding in English 1`] = `
+<div
+  class="jsx-2863241787 loading"
+>
+  <span
+    aria-hidden="true"
+    class="fa fa-spinner fa-3x fa-pulse"
+  />
+  <span
+    class="jsx-2863241787"
+  >
+    Your request is being sent now.
+  </span>
+</div>
+`;
+
+exports[`Component: Modal Loading State Renders without exploding in Russian 1`] = `
+<div
+  class="jsx-2863241787 loading"
+>
+  <span
+    aria-hidden="true"
+    class="fa fa-spinner fa-3x fa-pulse"
+  />
+  <span
+    class="jsx-2863241787"
+  >
+    Ваш запрос отправляется.
+  </span>
+</div>
+`;
+
+exports[`Component: Modal Success State Renders without exploding in English 1`] = `
+<div
+  class="jsx-2863241787 success"
+>
+  <span
+    aria-hidden="true"
+    class="fa fa-check-circle fa-3x"
+  />
+  <span
+    class="jsx-2863241787"
+  >
+    Your booking inquiry has been sent!
+  </span>
+</div>
+`;
+
+exports[`Component: Modal Success State Renders without exploding in Russian 1`] = `
+<div
+  class="jsx-2863241787 success"
+>
+  <span
+    aria-hidden="true"
+    class="fa fa-check-circle fa-3x"
+  />
+  <span
+    class="jsx-2863241787"
+  >
+    Ваш запрос на фотосессию отправлен!
+  </span>
+</div>
+`;

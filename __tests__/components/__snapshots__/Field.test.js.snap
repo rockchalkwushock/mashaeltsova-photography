@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Component: Field Renders without exploding as .button 1`] = `
+exports[`Component: Field English: Renders without exploding as .button 1`] = `
 <div
   class="jsx-4021739229 button"
 >
@@ -13,92 +13,225 @@ exports[`Component: Field Renders without exploding as .button 1`] = `
 </div>
 `;
 
-exports[`Component: Field Renders without exploding as .email 1`] = `
+exports[`Component: Field English: Renders without exploding as .email 1`] = `
 <div
-  class="jsx-3773761155 email"
+  class="jsx-894113413 email"
 >
   <label
-    class="jsx-3773761155"
+    class="jsx-894113413"
     for="email"
   >
     Email
   </label>
   <input
-    class="jsx-3773761155"
+    class="jsx-894113413"
     name="email"
     type="email"
+  />
+  <span
+    class="jsx-894113413 errors"
   />
 </div>
 `;
 
-exports[`Component: Field Renders without exploding as .firstName 1`] = `
+exports[`Component: Field English: Renders without exploding as .firstName 1`] = `
 <div
-  class="jsx-3773761155 firstName"
+  class="jsx-894113413 firstName"
 >
   <label
-    class="jsx-3773761155"
+    class="jsx-894113413"
     for="firstName"
   >
     First Name
   </label>
   <input
-    class="jsx-3773761155"
+    class="jsx-894113413"
     name="firstName"
     type="text"
+  />
+  <span
+    class="jsx-894113413 errors"
   />
 </div>
 `;
 
-exports[`Component: Field Renders without exploding as .lastName 1`] = `
+exports[`Component: Field English: Renders without exploding as .lastName 1`] = `
 <div
-  class="jsx-3773761155 lastName"
+  class="jsx-894113413 lastName"
 >
   <label
-    class="jsx-3773761155"
+    class="jsx-894113413"
     for="lastName"
   >
     Last Name
   </label>
   <input
-    class="jsx-3773761155"
+    class="jsx-894113413"
     name="lastName"
     type="text"
+  />
+  <span
+    class="jsx-894113413 errors"
   />
 </div>
 `;
 
-exports[`Component: Field Renders without exploding as .message 1`] = `
+exports[`Component: Field English: Renders without exploding as .message 1`] = `
 <div
-  class="jsx-3773761155 message"
+  class="jsx-894113413 message"
 >
   <label
-    class="jsx-3773761155"
+    class="jsx-894113413"
     for="message"
   >
     Short Message
   </label>
   <input
-    class="jsx-3773761155"
+    class="jsx-894113413"
     name="message"
     type="text"
+  />
+  <span
+    class="jsx-894113413 errors"
   />
 </div>
 `;
 
-exports[`Component: Field Renders without exploding as .phone 1`] = `
+exports[`Component: Field English: Renders without exploding as .phone 1`] = `
 <div
-  class="jsx-3773761155 phone"
+  class="jsx-894113413 phone"
 >
   <label
-    class="jsx-3773761155"
+    class="jsx-894113413"
     for="phone"
   >
     Phone
   </label>
   <input
-    class="jsx-3773761155"
+    class="jsx-894113413"
     name="phone"
     type="tel"
+  />
+  <span
+    class="jsx-894113413 errors"
+  />
+</div>
+`;
+
+exports[`Component: Field Russian: Renders without exploding as .button 1`] = `
+<div
+  class="jsx-4021739229 button"
+>
+  <button
+    class="jsx-4021739229"
+    type="submit"
+  >
+    Забронировать сейчас!
+  </button>
+</div>
+`;
+
+exports[`Component: Field Russian: Renders without exploding as .email 1`] = `
+<div
+  class="jsx-894113413 email"
+>
+  <label
+    class="jsx-894113413"
+    for="email"
+  >
+    Электронный адрес
+  </label>
+  <input
+    class="jsx-894113413"
+    name="email"
+    type="email"
+  />
+  <span
+    class="jsx-894113413 errors"
+  />
+</div>
+`;
+
+exports[`Component: Field Russian: Renders without exploding as .firstName 1`] = `
+<div
+  class="jsx-894113413 firstName"
+>
+  <label
+    class="jsx-894113413"
+    for="firstName"
+  >
+    Имя
+  </label>
+  <input
+    class="jsx-894113413"
+    name="firstName"
+    type="text"
+  />
+  <span
+    class="jsx-894113413 errors"
+  />
+</div>
+`;
+
+exports[`Component: Field Russian: Renders without exploding as .lastName 1`] = `
+<div
+  class="jsx-894113413 lastName"
+>
+  <label
+    class="jsx-894113413"
+    for="lastName"
+  >
+    Фамилия
+  </label>
+  <input
+    class="jsx-894113413"
+    name="lastName"
+    type="text"
+  />
+  <span
+    class="jsx-894113413 errors"
+  />
+</div>
+`;
+
+exports[`Component: Field Russian: Renders without exploding as .message 1`] = `
+<div
+  class="jsx-894113413 message"
+>
+  <label
+    class="jsx-894113413"
+    for="message"
+  >
+    Сообщение
+  </label>
+  <input
+    class="jsx-894113413"
+    name="message"
+    type="text"
+  />
+  <span
+    class="jsx-894113413 errors"
+  />
+</div>
+`;
+
+exports[`Component: Field Russian: Renders without exploding as .phone 1`] = `
+<div
+  class="jsx-894113413 phone"
+>
+  <label
+    class="jsx-894113413"
+    for="phone"
+  >
+    Телефон
+  </label>
+  <input
+    class="jsx-894113413"
+    name="phone"
+    type="tel"
+  />
+  <span
+    class="jsx-894113413 errors"
   />
 </div>
 `;
