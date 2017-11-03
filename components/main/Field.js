@@ -6,9 +6,7 @@ const Field = props => {
   if (props.className === 'button') {
     return (
       <div className={props.className}>
-        <button disabled={props.disabled} type={props.type}>
-          {props.text}
-        </button>
+        <button type={props.type}>{props.text}</button>
         <style jsx>{`
           .button {
             grid-area: bookingButton;
@@ -117,7 +115,6 @@ const Field = props => {
 Field.propTypes = {
   props: PropTypes.shape({
     className: PropTypes.string.isRequired,
-    disabled: PropTypes.bool.isRequired,
     onChange: PropTypes.func.isRequired,
     text: PropTypes.string.isRequired,
     type: PropTypes.string,

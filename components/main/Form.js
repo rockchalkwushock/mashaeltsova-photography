@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { styles } from '../../lib'
 import Field from './Field'
 
-const Form = ({ disabled, messages, onChange, onSubmit, values }) => (
+const Form = ({ messages, onChange, onSubmit, values }) => (
   <form onSubmit={onSubmit}>
     <Field
       className="firstName"
@@ -40,12 +40,7 @@ const Form = ({ disabled, messages, onChange, onSubmit, values }) => (
       type="text"
       value={values.message}
     />
-    <Field
-      className="button"
-      disabled={disabled}
-      text={messages.buttonBooking}
-      type="submit"
-    />
+    <Field className="button" text={messages.buttonBooking} type="submit" />
     <style jsx>{`
       form {
         background-color: ${styles.colors.white};

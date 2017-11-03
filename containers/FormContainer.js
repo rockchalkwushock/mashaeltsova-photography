@@ -11,7 +11,6 @@ class BookingForm extends Component {
   state = {
     message: '',
     status: {
-      disabled: true,
       error: false,
       loading: false,
       success: false
@@ -73,7 +72,6 @@ class BookingForm extends Component {
   render() {
     return (
       <Form
-        disabled={this.state.status.disabled}
         messages={this.props.messages}
         onChange={this.handleOnChange}
         onSubmit={this.handleOnSubmit}
