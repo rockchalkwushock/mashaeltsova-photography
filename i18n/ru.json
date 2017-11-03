@@ -6,7 +6,7 @@
   "formLastName": "Фамилия",
   "formMessage": "Сообщение",
   "formPhone": "Телефон",
-  "formErrorEmailPattern": "FIXME",
+  "formErrorEmailPattern": "неправильная электронная почта",
   "formErrorNamePattern": "FIXME",
   "formErrorMessagePattern":
     "Может содержать заглавные и строчные буквы, цифры, и .!?,;'",
