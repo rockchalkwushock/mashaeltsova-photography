@@ -10,16 +10,29 @@ const yearToDisplay = year === 2017 ? year : `2017 - ${year}`
 const Icon = ({ icon, size, url }) => {
   if (icon === 'copyright') {
     return (
-      <a href={url}>
-        <span>{`Designed by RCWS Development ${yearToDisplay}`}</span>
+      <div>
+        <a href={url}>
+          <span>Designed by RCWS Development</span>
+        </a>
+        <span>
+          All images <FontAwesome name={icon} size={size} /> {yearToDisplay}{' '}
+          Masha Eltsova Photography
+        </span>
         <style jsx>{`
+          div {
+            display: flex;
+            flex-direction: column;
+          }
           @media (max-width: 321px) {
+            div {
+              font-size: 0.85em;
+            }
             span {
-              font-size: 0.95em;
+              font-size: 0.85em;
             }
           }
         `}</style>
-      </a>
+      </div>
     )
   }
   return (

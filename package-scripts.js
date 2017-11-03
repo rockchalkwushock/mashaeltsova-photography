@@ -8,7 +8,7 @@ module.exports = {
     clean: series(rimraf('coverage'), rimraf('.next')),
     commit: 'git cz',
     lint: {
-      default: 'eslint __mocks__ __tests__ components lib pages',
+      default: 'eslint __tests__ components containers lib pages',
       fix: series.nps('lint --fix')
     },
     reportCoverage: 'codecov',

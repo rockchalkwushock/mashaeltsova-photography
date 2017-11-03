@@ -4,9 +4,12 @@
   "license": "MIT",
   "private": true,
   "description": "Photography Business Website for Masha Eltsova.",
-  "author": "Cody Brunner <rockchalkwushock@icloud.com> (https://rcws-development.com)",
-  "repository": "https://github.com/rockchalkwushock/mashaeltsova-photography.git",
-  "homepage": "https://github.com/rockchalkwushock/mashaeltsova-photography#readme",
+  "author":
+    "Cody Brunner <rockchalkwushock@icloud.com> (https://rcws-development.com)",
+  "repository":
+    "https://github.com/rockchalkwushock/mashaeltsova-photography.git",
+  "homepage":
+    "https://github.com/rockchalkwushock/mashaeltsova-photography#readme",
   "bugs": "https://github.com/rockchalkwushock/mashaeltsova-photography/issues",
   "scripts": {
     "commit": "nps commit",
@@ -39,22 +42,15 @@
         "statements": 30
       }
     },
-    "setupFiles": [
-      "./jest.setup.js"
-    ],
-    "snapshotSerializers": [
-      "enzyme-to-json/serializer"
-    ],
+    "setupFiles": ["./jest.setup.js"],
+    "snapshotSerializers": ["enzyme-to-json/serializer"],
     "testEnvironment": "jsdom"
   },
   "lint-staged": {
-    "*.js": [
-      "yarn prettier",
-      "git add"
-    ]
+    "*.js": ["yarn prettier", "git add"]
   },
   "now": {
-    "alias": "mashaeltsova-beta",
+    "alias": "mashaeltsovaphotography.com",
     "env": {
       "NODE_ENV": "production"
     },
@@ -64,6 +60,7 @@
       "./i18n",
       "./lib",
       "./pages",
+      "./static",
       ".babelrc",
       "env-config.js",
       "next.config.js",
@@ -71,7 +68,7 @@
       "server.js",
       "yarn.lock"
     ],
-    "name": "rework-mashaeltsova-photography"
+    "name": "mashaeltsova-photography"
   },
   "dependencies": {
     "accepts": "^1.3.4",
@@ -109,7 +106,6 @@
     "nps-utils": "~1.5.0",
     "prettier": "~1.7.3",
     "react-test-renderer": "~16.0.0",
-    "webpack-bundle-analyzer": "~2.9.0",
-    "why-did-you-update": "^0.0.8"
+    "webpack-bundle-analyzer": "~2.9.0"
   }
 }

@@ -5,8 +5,6 @@ const { ANALYZE } = process.env
 /**
  * NOTE
  *
- * IgnorePlugin
- * @see https://arunoda.me/blog/ssr-and-server-only-modules
  * Babel-Cache issue
  * @see https://github.com/zeit/next.js/issues/1103#issuecomment-279529809
  */
@@ -14,7 +12,7 @@ const { ANALYZE } = process.env
 module.exports = {
   webpack: (config, { dev }) => {
     // Will only run for `yarn start analyze`
-    if (dev && ANALYZE) {
+    if (!dev && ANALYZE) {
       const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
       config.plugins.push(
         new BundleAnalyzerPlugin({

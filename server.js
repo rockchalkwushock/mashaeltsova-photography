@@ -42,7 +42,7 @@ const getMessages = locale => require(`./i18n/${locale}.json`)
 app.prepare().then(() => {
   createServer((req, res) => {
     const accept = accepts(req)
-    const locale = accept.language(dev ? ['en'] : languages)
+    const locale = accept.language(dev ? ['ru'] : languages)
     req.locale = locale
     req.localeDataScript = getLocaleDataScript(locale)
     // req.messages = dev ? {} : getMessages(locale)

@@ -1,10 +1,38 @@
 import LazyLoad from 'react-lazyload'
+import FontAwesome from 'react-fontawesome'
 import PropTypes from 'prop-types'
 
 import { createUrl } from '../../lib'
 
+const Placeholder = () => (
+  <div className="placeholder">
+    <FontAwesome name="spinner" size="4x" pulse />
+    <style jsx>{`
+      div.placeholder {
+        align-items: center;
+        display: flex;
+        height: 300px;
+        justify-content: center;
+        width: 300px;
+      }
+    `}</style>
+  </div>
+)
+
 const Logo = ({ alt, publicId }) => (
   <picture>
+    <source
+      media="(min-width: 1024px)"
+      srcSet={createUrl(true, publicId, 525)}
+    />
+    <source
+      media="(min-width: 768px)"
+      srcSet={createUrl(true, publicId, 400)}
+    />
+    <source
+      media="(min-width: 540px) and (orientation: landscape)"
+      srcSet={createUrl(true, publicId, 300)}
+    />
     <source
       media="(min-width: 540px)"
       srcSet={createUrl(true, publicId, 440)}
@@ -18,7 +46,7 @@ const Logo = ({ alt, publicId }) => (
 )
 
 const Image = ({ publicId }) => (
-  <LazyLoad height={100} offset={100} once>
+  <LazyLoad height={400} offset={-200} once placeholder={<Placeholder />}>
     <picture>
       <source
         media="(min-width: 1024px)"
@@ -27,6 +55,10 @@ const Image = ({ publicId }) => (
       <source
         media="(min-width: 768px)"
         srcSet={createUrl(false, publicId, 360)}
+      />
+      <source
+        media="(min-width: 600px) and (orientation: landscape)"
+        srcSet={createUrl(false, publicId, 275)}
       />
       <source
         media="(min-width: 540px)"

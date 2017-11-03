@@ -3,7 +3,6 @@ const GalleryGrid = ({ children }) => (
     {children}
     <style jsx>{`
       div {
-        border: 2px solid lime;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(320px, auto));
         grid-gap: 0.5em;

@@ -13,6 +13,9 @@ const Nav = ({ children }) => (
         justify-content: space-around;
         padding: 0.5em;
       }
+      @media (max-width: 375px) {
+        flex-direction: column;
+      }
     `}</style>
   </nav>
 )

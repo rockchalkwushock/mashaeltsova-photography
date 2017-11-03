@@ -64,7 +64,7 @@ export class Gallery extends Component {
         ? this.props.ids
         : this.state.images
     return (
-      <Layout url={this.props.url}>
+      <Layout messages={this.props.messages} url={this.props.url}>
         <Head>
           <title>Masha Eltsova Photography | Gallery</title>
           {/* SEO */}

@@ -24,6 +24,7 @@ Router.onRouteChangeError = () => NProgress.done()
 
 class Layout extends Component {
   static propTypes = {
+    messages: PropTypes.object.isRequired,
     url: PropTypes.shape({
       pathname: PropTypes.string.isRequired
     })
@@ -47,7 +48,7 @@ class Layout extends Component {
       <Wrapper>
         <Raven dsn={process.env.SENTRY} />
         <Meta />
-        <Menu />
+        <Menu messages={this.props.messages} />
         <Header className={location}>
           <Photo
             alt="Masha Eltsova Photography Logo"

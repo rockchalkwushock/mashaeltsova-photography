@@ -43,15 +43,12 @@ const NavLink = ({ className, text, url }) => (
           -ms-flex-item-align: center;
           align-self: center;
           background-color: ${styles.colors.peach};
-          border: 0;
           -webkit-box-shadow: 0 0 20px rgba(54, 69, 79, 0.7);
           box-shadow: 0 0 20px rgba(54, 69, 79, 0.7);
           color: rgba(223, 116, 74, 0.9);
           cursor: pointer;
           font-family: ${styles.fonts.courgette};
-          height: 2em;
           letter-spacing: 0.25em;
-          outline: 0;
           position: absolute;
         }
         .linkToGallery:focus,
@@ -59,15 +56,34 @@ const NavLink = ({ className, text, url }) => (
           -ms-flex-item-align: center;
           align-self: center;
           background-color: ${styles.colors.peach};
-          border: 0;
           color: ${styles.colors.warm};
           font-size: 1.4em;
-          height: 2em;
-          outline: 0;
           padding: 0.5em;
           -webkit-transition: 0.2s ease;
           -moz-transition: 0.2s ease;
           transition: 0.2s ease;
+        }
+        .mobileNavLink {
+          display: block;
+          font-family: ${styles.fonts.courgette};
+          font-size: 1.5em;
+          -webkit-transition: 0.3s;
+          -moz-transition: 0.3s;
+          transition: 0.3s;
+        }
+        .mobileNavLink:hover {
+          background-color: ${styles.colors.warm};
+          color: ${styles.colors.peach};
+        }
+        @media (max-width: 480px) {
+          .linkToGallery {
+            font-size: 0.75em;
+          }
+        }
+        @media (max-width: 320px) {
+          .linkToGallery {
+            font-size: 0.55em;
+          }
         }
       `}</style>
     </a>

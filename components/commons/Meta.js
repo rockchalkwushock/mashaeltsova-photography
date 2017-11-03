@@ -3,12 +3,9 @@ import { styles } from '../../lib'
 
 /**
  * TODO
- * 1. Add Google Site Verification <meta name="google-site-verification" content="getTokenFromGoogle" />
- * 2. Add /static/ & Favicon icons.
+ * 1. Have Masha make a Page on Facebook & an ad.
+ * 2. Have Masha make her IG account a business account.
  * 3. Add Facebook Page Insights <meta name="fb:admins" content="fbUserID" />
- *
- * 5. Cleanup Tags based on duplicates twitter vs og
- * @see https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/markup
  */
 
 export default () => (
@@ -33,20 +30,20 @@ export default () => (
       />
       <meta
         itemProp="image"
-        content="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,q_auto:best,w_600/mep_png_logo.png"
+        content="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,q_auto:best/mep_png_logo.png"
       />
       {/* TWITTER */}
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:title" content="Masha Eltsova Photography" />
-      <meta name="twitter:site" content="@RockChalkDev" />
-      <meta name="twitter:creator" content="@RockChalkDev" />
+      <meta name="twitter:site" content="@MASHAELTSOVA" />
+      <meta name="twitter:creator" content="@MASHAELTSOVA" />
       <meta
         name="twitter:description"
         content="Masha Eltsova is a professional photographer in Moscow, Russia who offers family, portraits, wedding, & engagement photography. Schedule a shoot with her today!"
       />
       <meta
         name="twitter:image"
-        content="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,q_auto:best,w_600/mep_png_logo.png"
+        content="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,q_auto:best/mep_png_logo.png"
       />
       <meta name="twitter:image:alt" content="Masha Eltsova Photography" />
       <meta name="twitter:url" content="https://mashaeltsovaphotography.com" />
@@ -58,25 +55,57 @@ export default () => (
       />
       <meta
         name="og:image"
-        content="http://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,q_auto:best,w_600/mep_png_logo.png"
+        content="http://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,q_auto:best/mep_png_logo.png"
       />
       <meta
         name="og:image:secure_url"
-        content="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,q_auto:best,w_600/mep_png_logo.png"
+        content="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,q_auto:best/mep_png_logo.png"
       />
       <meta name="og:image:alt" content="Masha Eltsova Photography" />
       <meta name="og:url" content="https://mashaeltsovaphotography.com" />
       <meta name="og:site_name" content="Masha Eltsova Photography" />
-      <meta name="og:locale" content="ru_RU" />
-      <meta name="og:locale:alternate" content="en_US" />
+      <meta name="og:locale" content="ru" />
       <meta name="og:locale:alternate" content="en_GB" />
       <meta name="og:type" content="website" />
       {/* SPIDERS & BOTS */}
       <meta name="robots" content="index,follow,archive" />
       <meta name="googlebot" content="all" />
       {/* GOOGLE SITE VERIFICATION */}
+      <meta
+        name="google-site-verification"
+        content="lOInQICWdMc50btwczBfjiy-7vFREiBO-hngKZzJs1s"
+      />
       {/* FACEBOOK PAGE ANALYTICS */}
       {/* FAVICONS & TOUCH ICONS */}
+      <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="/static/images/apple-touch-icon.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="/static/images/favicon-32x32.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="/static/images/favicon-16x16.png"
+      />
+      <link rel="manifest" href="/static/images/manifest.json" />
+      <link
+        rel="mask-icon"
+        href="/static/images/safari-pinned-tab.svg"
+        color={styles.colors.warm}
+      />
+      <link rel="shortcut icon" href="/static/images/favicon.ico" />
+      <meta
+        name="msapplication-config"
+        content="/static/images/browserconfig.xml"
+      />
+      <meta name="theme-color" content={styles.colors.warm} />
       {/* EXTERNAL STYLESHEETS */}
       {/* Normalize CDN */}
       <link
@@ -102,16 +131,22 @@ export default () => (
         padding: 0;
       }
       a {
+        border: 0;
         color: ${styles.colors.warm};
+        outline: 0;
         padding: 0.25em;
         text-decoration: none;
       }
       a:visited {
+        border: 0;
         color: ${styles.colors.warm};
+        outline: 0;
       }
       a:focus,
       a:hover {
+        border: 0;
         color: ${styles.colors.powder};
+        outline: 0;
       }
       button {
         border: 0;

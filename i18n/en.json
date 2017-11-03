@@ -12,7 +12,7 @@
   "formErrorMessagePattern":
     "May only contain upper & lower case letters, numbers, and .!?,;'",
   "formErrorPhonePattern":
-    "Should be match one of the following: +1-234-567-8901, +61-234-567-89-01 +46-234 5678901",
+    "Should be match one of the following: +1-234-567-8901, +61-234-567-89-01",
   "formErrorRequired": "Please fill this in.",
   "formErrorTooLong": "Max length 140 characters.",
   "formErrorTooShort": "Minimum length 2 characters.",

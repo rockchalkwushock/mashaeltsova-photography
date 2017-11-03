@@ -17,7 +17,7 @@ export const Index = ({ messages, url }) => {
   const [message, services] = messages.sectionServices.split(': ')
   const list = services.split(',').map(s => <Li key={s} text={s} />)
   return (
-    <Layout url={url}>
+    <Layout messages={messages} url={url}>
       <Section className="about">
         <P className="about">{messages.sectionAbout}</P>
       </Section>

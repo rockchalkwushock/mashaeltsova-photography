@@ -28,7 +28,6 @@ const Field = props => {
           button:hover {
             background-color: ${styles.colors.powder};
             color: ${styles.colors.warm};
-            font-size: 1.2em;
             -webkit-transition: background-color 0.3s ease-out;
             -moz-transition: background-color 0.3s ease-out;
             transition: background-color 0.3s ease-out;

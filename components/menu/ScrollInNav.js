@@ -1,9 +1,11 @@
 import { Component } from 'react'
+import PropTypes from 'prop-types'
 import FontAwesome from 'react-fontawesome'
 import Link from 'next/link'
 import raf from 'raf'
 
 import Icon from '../commons/Icon'
+import { A } from '../commons'
 import { styles } from '../../lib'
 
 /**
@@ -13,6 +15,9 @@ import { styles } from '../../lib'
  */
 
 export default class ScrollInNav extends Component {
+  static propTypes = {
+    messages: PropTypes.object.isRequired
+  }
   state = {
     handlingScrollUpdate: false,
     navHidden: true,
@@ -117,7 +122,7 @@ export default class ScrollInNav extends Component {
     renderStyle = this.state.navHidden
       ? { ...renderStyle, ...this.hiddenStyle }
       : { ...renderStyle, ...this.scrolledInStyle }
-
+    const [home, gallery] = this.props.messages.sideNav.split(',')
     return (
       <div className="scroll-in-nav" style={renderStyle}>
         <nav className="navbar">
@@ -130,12 +135,8 @@ export default class ScrollInNav extends Component {
           </span>
         </nav>
         <div id="mobile-menu" className="mobile-nav">
-          <Link href="/">
-            <a>Home</a>
-          </Link>
-          <Link href="/gallery">
-            <a>Gallery</a>
-          </Link>
+          <A className="mobileNavLink" navigate text={home} url="/" />
+          <A className="mobileNavLink" navigate text={gallery} url="/gallery" />
           <div className="social">
             <Icon
               icon="facebook"
@@ -148,12 +149,18 @@ export default class ScrollInNav extends Component {
               url="https://www.instagram.com/mashaeltcovaphotography"
             />
             <Icon icon="vk" size="2x" url="https://www.vk.com/club65938200" />
-            <Icon icon="twitter" size="2x" url="#" />
+            <Icon
+              icon="twitter"
+              size="2x"
+              url="https://twitter.com/MASHAELTSOVA"
+            />
           </div>
         </div>
         <style jsx>{`
           nav {
             background-color: rgba(254, 220, 210, 0.9);
+            -webkit-box-shadow: 0 0 20px rgba(54, 69, 79, 0.7);
+            box-shadow: 0 0 20px rgba(54, 69, 79, 0.7);
             display: flex;
             height: 70px;
             justify-content: space-between;
@@ -176,18 +183,6 @@ export default class ScrollInNav extends Component {
             transition: 0.5s;
             width: 100%;
             z-index: 1;
-          }
-          .mobile-nav a {
-            display: block;
-            font-family: ${styles.fonts.courgette};
-            font-size: 1.5em;
-            -webkit-transition: 0.3s;
-            -moz-transition: 0.3s;
-            transition: 0.3s;
-          }
-          .mobile-nav a:hover {
-            background-color: ${styles.colors.warm};
-            color: ${styles.colors.peach};
           }
           .social {
             padding: 0.5em;
