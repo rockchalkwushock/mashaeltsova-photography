@@ -6,7 +6,9 @@ import { styles } from '../../lib'
  * 1. Add Google Site Verification <meta name="google-site-verification" content="getTokenFromGoogle" />
  * 2. Add /static/ & Favicon icons.
  * 3. Add Facebook Page Insights <meta name="fb:admins" content="fbUserID" />
- * 4. Finish Filling in empty keys.
+ *
+ * 5. Cleanup Tags based on duplicates twitter vs og
+ * @see https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/markup
  */
 
 export default () => (
@@ -29,7 +31,10 @@ export default () => (
         itemProp="description"
         content="Masha Eltsova is a professional photographer in Moscow, Russia who offers family, portraits, wedding, & engagement photography. Schedule a shoot with her today!"
       />
-      <meta itemProp="image" content="" />
+      <meta
+        itemProp="image"
+        content="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,dpr_auto,f_auto,q_auto:best,w_800/mep_png_logo.png"
+      />
       {/* TWITTER */}
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:title" content="Masha Eltsova Photography" />
@@ -39,7 +44,10 @@ export default () => (
         name="twitter:description"
         content="Masha Eltsova is a professional photographer in Moscow, Russia who offers family, portraits, wedding, & engagement photography. Schedule a shoot with her today!"
       />
-      <meta name="twitter:image" content="" />
+      <meta
+        name="twitter:image"
+        content="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,dpr_auto,f_auto,q_auto:best,w_800/mep_png_logo.png"
+      />
       <meta name="twitter:image:alt" content="Masha Eltsova Photography" />
       <meta name="twitter:url" content="https://mashaeltsovaphotography.com" />
       {/* FACEBOOK, PINTREST, GOOGLE+ */}
@@ -48,8 +56,14 @@ export default () => (
         name="og:description"
         content="Masha Eltsova is a professional photographer in Moscow, Russia who offers family, portraits, wedding, & engagement photography. Schedule a shoot with her today!"
       />
-      <meta name="og:image" content="" />
-      <meta name="og:image:secure_url" content="" />
+      <meta
+        name="og:image"
+        content="http://res.cloudinary.com/mashaeltsovaphotography/c_scale,dpr_auto,f_auto,q_auto:best,w_800/mep_png_logo.png"
+      />
+      <meta
+        name="og:image:secure_url"
+        content="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,dpr_auto,f_auto,q_auto:best,w_800/mep_png_logo.png"
+      />
       <meta name="og:image:alt" content="Masha Eltsova Photography" />
       <meta name="og:url" content="https://mashaeltsovaphotography.com" />
       <meta name="og:site_name" content="Masha Eltsova Photography" />
