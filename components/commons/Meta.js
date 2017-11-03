@@ -33,7 +33,7 @@ export default () => (
       />
       <meta
         itemProp="image"
-        content="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,dpr_auto,f_auto,q_auto:best,w_800/mep_png_logo.png"
+        content="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,q_auto:best,w_600/mep_png_logo.png"
       />
       {/* TWITTER */}
       <meta name="twitter:card" content="summary" />
@@ -46,7 +46,7 @@ export default () => (
       />
       <meta
         name="twitter:image"
-        content="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,dpr_auto,f_auto,q_auto:best,w_800/mep_png_logo.png"
+        content="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,q_auto:best,w_600/mep_png_logo.png"
       />
       <meta name="twitter:image:alt" content="Masha Eltsova Photography" />
       <meta name="twitter:url" content="https://mashaeltsovaphotography.com" />
@@ -58,11 +58,11 @@ export default () => (
       />
       <meta
         name="og:image"
-        content="http://res.cloudinary.com/mashaeltsovaphotography/c_scale,dpr_auto,f_auto,q_auto:best,w_800/mep_png_logo.png"
+        content="http://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,q_auto:best,w_600/mep_png_logo.png"
       />
       <meta
         name="og:image:secure_url"
-        content="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,dpr_auto,f_auto,q_auto:best,w_800/mep_png_logo.png"
+        content="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,q_auto:best,w_600/mep_png_logo.png"
       />
       <meta name="og:image:alt" content="Masha Eltsova Photography" />
       <meta name="og:url" content="https://mashaeltsovaphotography.com" />

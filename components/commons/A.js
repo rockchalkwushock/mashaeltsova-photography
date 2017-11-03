@@ -3,8 +3,8 @@ import PropTypes from 'prop-types'
 
 import { styles } from '../../lib'
 
-const NavButton = ({ onClick, text }) => (
-  <button name={text.toLowerCase()} onClick={onClick}>
+const NavButton = ({ className, onClick, text }) => (
+  <button className={className} name={text.toLowerCase()} onClick={onClick}>
     {text}
     <style jsx>{`
       button {
@@ -16,13 +16,19 @@ const NavButton = ({ onClick, text }) => (
         -ms-flex: 1 1 auto;
         flex: 1 1 auto;
         font-family: ${styles.fonts.courgette};
+        -webkit-appearance: none;
+        margin: 0.2em;
       }
       button:focus,
       button:hover {
+        -webkit-appearance: none;
         background-color: ${styles.colors.warm};
         color: ${styles.colors.peach};
         font-size: 1.2em;
         font-weight: 900;
+      }
+      .galleryButton {
+        background-color: ${styles.colors.peach};
       }
     `}</style>
   </button>
@@ -84,6 +90,7 @@ A.propTypes = {
 }
 
 NavButton.propTypes = {
+  className: PropTypes.string,
   onClick: PropTypes.func.isRequired,
   text: PropTypes.string.isRequired
 }

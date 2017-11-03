@@ -50,7 +50,14 @@ export class Gallery extends Component {
   renderButtons = () =>
     this.props.messages.galleryNav
       .split(',')
-      .map(t => <A key={t} onClick={this.handleOnClick} text={t} />)
+      .map(t => (
+        <A
+          className="galleryButton"
+          key={t}
+          onClick={this.handleOnClick}
+          text={t}
+        />
+      ))
   render() {
     const imgs =
       this.state.currentView === 'family' || this.state.currentView === 'Семья'
@@ -89,6 +96,10 @@ export class Gallery extends Component {
           <meta
             name="og:description"
             content="Masha Eltsova Photography professional gallery and portfolio."
+          />
+          <meta
+            name="og:site_name"
+            content="Masha Eltsova Photography | Gallery"
           />
           <meta
             name="og:url"

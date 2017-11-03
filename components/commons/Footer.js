@@ -16,6 +16,7 @@ const Footer = () => (
         url="https://www.instagram.com/mashaeltcovaphotography"
       />
       <Icon icon="vk" size="2x" url="https://www.vk.com/club65938200" />
+      <Icon icon="twitter" size="2x" url="#" />
     </Container>
     <Container className="copyright">
       <Icon icon="copyright" size="lg" url="https://rcws-development.com" />

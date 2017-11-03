@@ -1,4 +1,5 @@
 import { Component } from 'react'
+import FontAwesome from 'react-fontawesome'
 import Link from 'next/link'
 import raf from 'raf'
 
@@ -16,17 +17,14 @@ export default class ScrollInNav extends Component {
     handlingScrollUpdate: false,
     navHidden: true,
     offsetHeight: null,
-    sliderHidden: true,
-    viewPort: null
+    sliderHidden: true
   }
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll)
     const arr = window.document.getElementsByClassName('header')
-    const viewPort = window.innerWidth
     this.setState(state => ({
       ...state,
-      offsetHeight: arr[0].offsetHeight,
-      viewPort
+      offsetHeight: arr[0].offsetHeight
     }))
   }
   componentWillUnmount() {
@@ -54,32 +52,34 @@ export default class ScrollInNav extends Component {
     }
   }
   update = () => {
+    const { offsetHeight, sliderHidden } = this.state
     const currentScrollY = this.getScrollY()
-    console.log(
-      currentScrollY,
-      this.state.offsetHeight,
-      this.state.navHidden,
-      this.state.sliderHidden
-    )
+    if (!sliderHidden) {
+      document.getElementById('mobile-menu').style.height = '0'
+      this.setState(state => ({
+        ...state,
+        handlingScrollUpdate: false,
+        navHidden: currentScrollY < offsetHeight,
+        sliderHidden: true
+      }))
+    }
     this.setState(state => ({
       ...state,
       handlingScrollUpdate: false,
-      navHidden: currentScrollY < this.state.offsetHeight
+      navHidden: currentScrollY < offsetHeight
     }))
   }
   toggleMobileMenu = () => {
-    const { navHidden, sliderHidden, viewPort } = this.state
-    // 1. If viewPort is >= 768px do not allow the slider to work.
-    if (viewPort >= 768) return
-    else if (!navHidden && sliderHidden) {
-      // 2. If navigation is visible and slider is not: toggle open.
+    const { navHidden, sliderHidden } = this.state
+    if (!navHidden && sliderHidden) {
+      // 1. If navigation is visible and slider is not: toggle open.
       document.getElementById('mobile-menu').style.height = '100vh'
       this.setState(state => ({
         ...state,
         sliderHidden: false
       }))
     } else if (!navHidden && !sliderHidden) {
-      // 3. If navigation is visible and slider is visible: toggle closed.
+      // 2. If navigation is visible and slider is visible: toggle closed.
       document.getElementById('mobile-menu').style.height = '0'
       this.setState(state => ({
         ...state,
@@ -122,32 +122,12 @@ export default class ScrollInNav extends Component {
       <div className="scroll-in-nav" style={renderStyle}>
         <nav className="navbar">
           <span className="open-slide">
-            <svg width="30" height="30" onClick={this.toggleMobileMenu}>
-              <path d="M0,5 30,5" stroke={styles.colors.warm} strokeWidth="5" />
-              <path
-                d="M0,14 30,14"
-                stroke={styles.colors.warm}
-                strokeWidth="5"
-              />
-              <path
-                d="M0,23 30,23"
-                stroke={styles.colors.warm}
-                strokeWidth="5"
-              />
-            </svg>
+            <FontAwesome
+              name="bars"
+              size="2x"
+              onClick={this.toggleMobileMenu}
+            />
           </span>
-          <ul className="navbar-nav">
-            <li>
-              <Link href="/">
-                <a>Home</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/gallery">
-                <a>Gallery</a>
-              </Link>
-            </li>
-          </ul>
         </nav>
         <div id="mobile-menu" className="mobile-nav">
           <Link href="/">
@@ -156,7 +136,7 @@ export default class ScrollInNav extends Component {
           <Link href="/gallery">
             <a>Gallery</a>
           </Link>
-          <div>
+          <div className="social">
             <Icon
               icon="facebook"
               size="2x"
@@ -168,6 +148,7 @@ export default class ScrollInNav extends Component {
               url="https://www.instagram.com/mashaeltcovaphotography"
             />
             <Icon icon="vk" size="2x" url="https://www.vk.com/club65938200" />
+            <Icon icon="twitter" size="2x" url="#" />
           </div>
         </div>
         <style jsx>{`
@@ -196,7 +177,6 @@ export default class ScrollInNav extends Component {
             width: 100%;
             z-index: 1;
           }
-
           .mobile-nav a {
             display: block;
             font-family: ${styles.fonts.courgette};
@@ -209,19 +189,8 @@ export default class ScrollInNav extends Component {
             background-color: ${styles.colors.warm};
             color: ${styles.colors.peach};
           }
-          @media (max-width: 768px) {
-            .navbar-nav {
-              display: none;
-            }
-          }
-          @media (min-width: 768px) {
-            nav {
-              background-color: rgba(255, 255, 255, 0.7);
-            }
-            .navbar-nav {
-              align-items: center;
-              display: flex;
-            }
+          .social {
+            padding: 0.5em;
           }
         `}</style>
       </div>

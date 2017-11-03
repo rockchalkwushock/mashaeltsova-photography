@@ -64,6 +64,7 @@ const Field = props => {
           color: ${styles.colors.charcoal};
           outline: 0;
           padding: 0 0.5em;
+          -webkit-appearance: none;
           width: 100%;
         }
         .errors {

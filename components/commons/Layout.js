@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { Component } from 'react'
+import Raven from 'react-raven'
 import Router from 'next/router'
 import NProgress from 'nprogress'
 import PropTypes from 'prop-types'
@@ -41,12 +42,10 @@ class Layout extends Component {
       location = 'index'
     } else if (pathname === '/gallery') {
       location = 'gallery'
-    } else {
-      // FIXME Temporary
-      location = '/'
     }
     return (
       <Wrapper>
+        <Raven dsn={process.env.SENTRY} />
         <Meta />
         <Menu />
         <Header className={location}>

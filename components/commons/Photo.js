@@ -6,20 +6,12 @@ import { createUrl } from '../../lib'
 const Logo = ({ alt, publicId }) => (
   <picture>
     <source
-      media="(min-width: 1024px)"
-      srcSet={createUrl(true, publicId, 1024)}
-    />
-    <source
-      media="(min-width: 768px)"
-      srcSet={createUrl(true, publicId, 768)}
-    />
-    <source
       media="(min-width: 540px)"
-      srcSet={createUrl(true, publicId, 540)}
+      srcSet={createUrl(true, publicId, 440)}
     />
     <source
       media="(min-width: 425px)"
-      srcSet={createUrl(true, publicId, 425)}
+      srcSet={createUrl(true, publicId, 375)}
     />
     <img src={createUrl(true, publicId, 320)} alt={alt} />
   </picture>
@@ -45,6 +37,13 @@ const Image = ({ publicId }) => (
         srcSet={createUrl(false, publicId, 375)}
       />
       <img src={createUrl(false, publicId, 300)} />
+      <style jsx>{`
+        img {
+          -webkit-box-shadow: 6px 6px 6px rgba(54, 69, 79, 0.7);
+          box-shadow: 6px 6px 6px rgba(54, 69, 79, 0.7);
+          border-radius: 15px;
+        }
+      `}</style>
     </picture>
   </LazyLoad>
 )
