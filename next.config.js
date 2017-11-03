@@ -1,4 +1,5 @@
 /* eslint-disable no-new-require, no-param-reassign  */
+const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin')
 
 const { ANALYZE } = process.env
 
@@ -29,6 +30,21 @@ module.exports = {
       }
       return rule
     })
+    config.plugins.push(
+      new SWPrecacheWebpackPlugin({
+        // verbose: true,
+        cacheId: 'masha-eltsova-photography',
+        minify: true,
+        staticFileGlobs: ['static/images/**.*'],
+        staticFileGlobsIgnorePatterns: [/\.next\//],
+        runtimeCaching: [
+          {
+            handler: 'networkFirst',
+            urlPattern: /^https?.*/
+          }
+        ]
+      })
+    )
 
     return config
   }

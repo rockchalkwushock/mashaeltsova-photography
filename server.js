@@ -7,7 +7,8 @@ Intl.NumberFormat = IntlPolyfill.NumberFormat
 Intl.DateTimeFormat = IntlPolyfill.DateTimeFormat
 
 const { readFileSync } = require('fs')
-const { basename } = require('path')
+const { basename, join } = require('path')
+const { parse } = require('url')
 const { createServer } = require('http')
 const accepts = require('accepts')
 const glob = require('glob')
@@ -41,13 +42,19 @@ const getMessages = locale => require(`./i18n/${locale}.json`)
 
 app.prepare().then(() => {
   createServer((req, res) => {
+    const parsedUrl = parse(req.url, true)
+    const { pathname } = parsedUrl
     const accept = accepts(req)
     const locale = accept.language(dev ? ['ru'] : languages)
     req.locale = locale
     req.localeDataScript = getLocaleDataScript(locale)
-    // req.messages = dev ? {} : getMessages(locale)
     req.messages = getMessages(locale)
-    handle(req, res)
+    if (pathname === '/service-worker.js') {
+      const filePath = join(__dirname, '.next', pathname)
+      app.serveStatic(req, res, filePath)
+    } else {
+      handle(req, res, parsedUrl)
+    }
   }).listen(port, err => {
     if (err) throw err
     console.log(`> Ready on http://localhost:${port}`)

@@ -111,16 +111,19 @@ export default () => (
       <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+        async
       />
       {/* Font Awesome CDN */}
       <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        async
       />
       {/* Google Fonts CDN */}
       <link
         rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Courgette|Nunito"
+        async
       />
     </Head>
     <style jsx global>{`
