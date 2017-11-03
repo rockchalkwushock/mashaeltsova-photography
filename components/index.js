@@ -1,4 +1,4 @@
-import { A, Layout, Li, P, Photo, SubNav, Ul } from './commons'
+import { A, Layout, Li, Modal, P, Photo, SubNav, Ul } from './commons'
 import { GalleryGrid } from './gallery'
 import { CollagePhoto, Form, Plug, Section } from './main'
 
@@ -9,6 +9,7 @@ export {
   GalleryGrid,
   Layout,
   Li,
+  Modal,
   P,
   Photo,
   Plug,

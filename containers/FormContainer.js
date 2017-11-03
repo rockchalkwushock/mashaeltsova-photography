@@ -1,7 +1,7 @@
 import { Component } from 'react'
 import PropTypes from 'prop-types'
 
-import { Form } from '../components'
+import { Form, Modal } from '../components'
 import { sendDataToMicroService, validate } from '../lib'
 
 class BookingForm extends Component {
@@ -40,31 +40,27 @@ class BookingForm extends Component {
   }
   handleOnSubmit = async e => {
     // 1. Validate Form
-    if (this.validateForm(this.state)) {
-      // 2. prevent the reset by HTML
+    if (!this.validateForm(this.state)) {
       e.preventDefault()
-      try {
-        // 3. SEND REQUEST & AWAIT PROMISE
-        const res = await sendDataToMicroService(this.state)
-        // 4. HANDLE API ERROR RESPONSE
-        if (res.error) {
-          // 4a. SET ERROR STATE
-          this.setState({
-            message: res.error,
-            status: { ...this.state.status, error: true, loading: false },
-            values: {
-              email: '',
-              firstName: '',
-              lastName: '',
-              message: '',
-              phone: ''
-            }
-          })
-        }
-        // 4b. SET SUCCESS STATE
+      return
+    }
+    // 2. prevent the reset by HTML
+    e.preventDefault()
+    this.setState({
+      status: {
+        ...this.state.status,
+        loading: true
+      }
+    })
+    try {
+      // 3. SEND REQUEST & AWAIT PROMISE
+      const res = await sendDataToMicroService(this.state)
+      // 4. HANDLE API ERROR RESPONSE
+      if (res.error) {
+        // 4a. SET ERROR STATE
         this.setState({
-          message: res.message,
-          status: { ...this.state.status, loading: false, success: true },
+          message: res.error,
+          status: { ...this.state.status, error: true, loading: false },
           values: {
             email: '',
             firstName: '',
@@ -73,18 +69,27 @@ class BookingForm extends Component {
             phone: ''
           }
         })
-      } catch (err) {
-        // TODO: Send to a service that will tell me of failure like Sentry.
-        throw err
       }
+      // 4b. SET SUCCESS STATE
+      this.setState({
+        message: res.message,
+        status: { ...this.state.status, loading: false, success: true },
+        values: {
+          email: '',
+          firstName: '',
+          lastName: '',
+          message: '',
+          phone: ''
+        }
+      })
+    } catch (err) {
+      // TODO: Send to a service that will tell me of failure like Sentry.
+      throw err
     }
-    e.preventDefault()
   }
   validateForm = ({ values }) => {
-    console.log(values)
     const errors = validate(this.props.messages, values)
     const isValid = !Object.keys(errors).some(key => errors[key])
-    console.log(isValid)
     if (!isValid) {
       this.setState({
         formErrors: {
@@ -97,6 +102,11 @@ class BookingForm extends Component {
     return isValid
   }
   render() {
+    const { error, loading, success } = this.state.status
+    const { modalError, modalLoading, modalSuccess } = this.props.messages
+    if (loading) return <Modal msg={modalLoading} status="loading" />
+    if (error) return <Modal msg={modalError} status="error" />
+    if (success) return <Modal msg={modalSuccess} status="success" />
     return (
       <Form
         errors={this.state.formErrors}
