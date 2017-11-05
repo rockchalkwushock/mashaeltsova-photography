@@ -1,9 +1,9 @@
 import FontAwesome from 'react-fontawesome'
 import PropTypes from 'prop-types'
 
-import { styles } from '../../lib'
+import { styles } from '../../../lib'
 
-const Modal = ({ msg, status }) => {
+const FormModal = ({ msg, status }) => {
   let icon
   if (status === 'error') {
     icon = <FontAwesome name="times-circle" size="3x" />
@@ -44,9 +44,9 @@ const Modal = ({ msg, status }) => {
   )
 }
 
-Modal.propTypes = {
+FormModal.propTypes = {
   msg: PropTypes.string.isRequired,
   status: PropTypes.string.isRequired
 }
 
-export default Modal
+export default FormModal

@@ -8,12 +8,12 @@ import PropTypes from 'prop-types'
 import Footer from './Footer'
 import Header from './Header'
 import Main from './Main'
-import Menu from '../menu'
+import Menu from './Menu'
 import Meta from './Meta'
-import Photo from './Photo'
 import Wrapper from './Wrapper'
 
-import { initGA, logPageView } from '../../lib'
+import { Photo } from '../commons'
+import { initGA, isProd, logPageView } from '../../lib'
 
 // Set up NProgress for routing changes
 Router.onRouteChangeStart = url => {
@@ -21,8 +21,6 @@ Router.onRouteChangeStart = url => {
 }
 Router.onRouteChangeComplete = () => NProgress.done()
 Router.onRouteChangeError = () => NProgress.done()
-
-const isProd = process.env.NODE_ENV === 'production'
 
 class Layout extends Component {
   static propTypes = {
@@ -33,14 +31,7 @@ class Layout extends Component {
   }
   componentDidMount() {
     if ('serviceWorker' in navigator && isProd) {
-      navigator.serviceWorker
-        .register('/service-worker.js')
-        .then(registration => {
-          console.log('service worker registration successful')
-        })
-        .catch(err => {
-          console.warn('service worker registration failed', err.message)
-        })
+      navigator.serviceWorker.register('/service-worker.js')
     }
     if (!window.GA_INITIALIZED) {
       initGA()
@@ -56,9 +47,10 @@ class Layout extends Component {
     } else if (pathname === '/gallery') {
       location = 'gallery'
     }
+    const sentry = isProd ? <Raven dsn={process.env.SENTRY} /> : null
     return (
       <Wrapper>
-        <Raven dsn={process.env.SENTRY} />
+        {sentry}
         <Meta />
         <Menu messages={this.props.messages} />
         <Header className={location}>

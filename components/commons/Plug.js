@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 
-import { P } from '../commons'
+import P from './P'
 import { styles } from '../../lib'
 
 const Plug = ({ messages }) => (

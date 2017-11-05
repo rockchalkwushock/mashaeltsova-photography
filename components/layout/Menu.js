@@ -1,12 +1,9 @@
 import { Component } from 'react'
 import PropTypes from 'prop-types'
 import FontAwesome from 'react-fontawesome'
-import Link from 'next/link'
 import raf from 'raf'
 
-import Icon from '../commons/Icon'
-import { A } from '../commons'
-import { styles } from '../../lib'
+import { A, Icon } from '../commons'
 
 /**
  * Many thanks to @brthornbury for this component architecture.
@@ -14,7 +11,7 @@ import { styles } from '../../lib'
  * @see https://gist.github.com/brthornbury/27531e4616b68131e512fc622a61baba
  */
 
-export default class ScrollInNav extends Component {
+export default class Menu extends Component {
   static propTypes = {
     messages: PropTypes.object.isRequired
   }

@@ -1,5 +1,4 @@
-import Container from './Container'
-import Icon from './Icon'
+import { Container, Icon } from '../commons'
 import { styles } from '../../lib'
 
 const Footer = () => (

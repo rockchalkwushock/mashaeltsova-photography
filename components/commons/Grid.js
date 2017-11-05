@@ -1,16 +1,16 @@
-const GalleryGrid = ({ children }) => (
+const Grid = ({ children }) => (
   <div>
     {children}
     <style jsx>{`
       div {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(320px, auto));
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
         grid-gap: 0.5em;
         justify-items: center;
-        padding-top: 0.5em;
+        padding: 1em;
       }
     `}</style>
   </div>
 )
 
-export default GalleryGrid
+export default Grid

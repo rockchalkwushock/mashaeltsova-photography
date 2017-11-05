@@ -1,7 +1,7 @@
 import { Component } from 'react'
 import PropTypes from 'prop-types'
 
-import { Form, Modal } from '../components'
+import { Form, FormModal } from '../components'
 import { sendDataToMicroService, validate } from '../lib'
 
 class BookingForm extends Component {
@@ -83,7 +83,6 @@ class BookingForm extends Component {
         }
       })
     } catch (err) {
-      // TODO: Send to a service that will tell me of failure like Sentry.
       throw err
     }
   }
@@ -104,9 +103,9 @@ class BookingForm extends Component {
   render() {
     const { error, loading, success } = this.state.status
     const { modalError, modalLoading, modalSuccess } = this.props.messages
-    if (loading) return <Modal msg={modalLoading} status="loading" />
-    if (error) return <Modal msg={modalError} status="error" />
-    if (success) return <Modal msg={modalSuccess} status="success" />
+    if (loading) return <FormModal msg={modalLoading} status="loading" />
+    if (error) return <FormModal msg={modalError} status="error" />
+    if (success) return <FormModal msg={modalSuccess} status="success" />
     return (
       <Form
         errors={this.state.formErrors}

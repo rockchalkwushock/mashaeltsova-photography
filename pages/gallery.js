@@ -4,9 +4,7 @@ import PropTypes from 'prop-types'
 import NProgress from 'nprogress'
 import { loadGetInitialProps } from 'next/dist/lib/utils'
 
-import { Grid, Modal, Thumb } from '../_components'
-
-import { A, Layout, SubNav } from '../components'
+import { A, Grid, Layout, Photo, SubNav, Thumb } from '../components'
 import { fetchData, translate, withIntl } from '../lib'
 
 export class Gallery extends Component {
@@ -36,7 +34,6 @@ export class Gallery extends Component {
     modal: false
   }
   dismissModal = () => {
-    console.log('Modal Dismissed!')
     this.setState(state => ({
       ...state,
       image: null,
@@ -73,7 +70,6 @@ export class Gallery extends Component {
     }
   }
   showPhoto = id => {
-    console.log('Get photo')
     this.setState(state => ({
       ...state,
       image: id,
@@ -98,7 +94,10 @@ export class Gallery extends Component {
         : this.state.images
     if (this.state.modal) {
       return (
-        <Modal onDismiss={() => this.dismissModal()} id={this.state.image} />
+        <Photo
+          onDismiss={() => this.dismissModal()}
+          publicId={this.state.image}
+        />
       )
     }
     return imgs.map(id => (

@@ -1,15 +1,6 @@
 import PropTypes from 'prop-types'
 
-import {
-  A,
-  CollagePhoto,
-  Layout,
-  Li,
-  P,
-  Plug,
-  Section,
-  Ul
-} from '../components'
+import { A, Collage, Layout, Li, P, Plug, Section, Ul } from '../components'
 import { BookingForm } from '../containers'
 import { withIntl } from '../lib'
 
@@ -26,7 +17,7 @@ export const Index = ({ messages, url }) => {
         <Ul>{list}</Ul>
       </Section>
       <Section className="gallery">
-        <CollagePhoto />
+        <Collage />
         <A
           className="linkToGallery"
           navigate

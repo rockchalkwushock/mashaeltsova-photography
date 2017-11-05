@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 
-import { styles } from '../../lib'
+import { styles } from '../../../lib'
 
 const Field = props => {
   if (props.className === 'button') {

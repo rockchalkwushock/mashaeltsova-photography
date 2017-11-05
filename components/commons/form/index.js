@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 
-import { styles } from '../../lib'
+import { styles } from '../../../lib'
 import Field from './Field'
 
 const Form = ({ errors, messages, onChange, onSubmit, values }) => (

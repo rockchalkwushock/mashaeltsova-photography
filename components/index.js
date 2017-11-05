@@ -1,19 +1,33 @@
-import { A, Layout, Li, Modal, P, Photo, SubNav, Ul } from './commons'
-import { GalleryGrid } from './gallery'
-import { CollagePhoto, Form, Plug, Section } from './main'
-
-export {
+import {
   A,
-  CollagePhoto,
+  Collage,
   Form,
-  GalleryGrid,
-  Layout,
+  FormModal,
+  Grid,
   Li,
-  Modal,
   P,
   Photo,
   Plug,
   Section,
   SubNav,
+  Thumb,
+  Ul
+} from './commons'
+import Layout from './layout'
+
+export {
+  A,
+  Collage,
+  Form,
+  FormModal,
+  Grid,
+  Layout,
+  Li,
+  P,
+  Photo,
+  Plug,
+  Section,
+  SubNav,
+  Thumb,
   Ul
 }
