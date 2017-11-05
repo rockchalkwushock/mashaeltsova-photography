@@ -22,6 +22,8 @@ Router.onRouteChangeStart = url => {
 Router.onRouteChangeComplete = () => NProgress.done()
 Router.onRouteChangeError = () => NProgress.done()
 
+const isProd = process.env.NODE_ENV === 'production'
+
 class Layout extends Component {
   static propTypes = {
     messages: PropTypes.object.isRequired,
@@ -30,7 +32,7 @@ class Layout extends Component {
     })
   }
   componentDidMount() {
-    if ('serviceWorker' in navigator) {
+    if ('serviceWorker' in navigator && isProd) {
       navigator.serviceWorker
         .register('/service-worker.js')
         .then(registration => {
