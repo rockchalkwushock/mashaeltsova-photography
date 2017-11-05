@@ -5,12 +5,8 @@ import { createUrl } from '../../../lib'
 const Logo = ({ publicId }) => (
   <picture>
     <source
-      media="(min-width: 1024px)"
-      srcSet={createUrl(true, publicId, 525)}
-    />
-    <source
       media="(min-width: 768px)"
-      srcSet={createUrl(true, publicId, 400)}
+      srcSet={createUrl(true, publicId, 575)}
     />
     <source
       media="(min-width: 540px) and (orientation: landscape)"

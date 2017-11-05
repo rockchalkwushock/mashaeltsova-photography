@@ -9,6 +9,11 @@ const Grid = ({ children }) => (
         justify-items: center;
         padding: 1em;
       }
+      @media (min-width: 768px) {
+        div {
+          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+      }
     `}</style>
   </div>
 )

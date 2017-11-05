@@ -40,12 +40,7 @@ const Header = ({ children, className }) => (
         height: 95vh;
       }
       .gallery {
-        height: 25vh;
-      }
-      @media (orientation: landscape) {
-        .gallery {
-          height: 50vh;
-        }
+        height: 50vh;
       }
     `}</style>
   </header>

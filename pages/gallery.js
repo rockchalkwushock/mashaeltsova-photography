@@ -31,13 +31,13 @@ export class Gallery extends Component {
     error: false,
     image: null,
     images: null,
-    modal: false
+    modalPhoto: false
   }
   dismissModal = () => {
     this.setState(state => ({
       ...state,
       image: null,
-      modal: false
+      modalPhoto: false
     }))
   }
   handleOnClick = async e => {
@@ -52,7 +52,7 @@ export class Gallery extends Component {
           error: true,
           image: null,
           images: ids,
-          modal: false
+          modalPhoto: false
         }))
         NProgress.done()
         // FIXME: Handle ERROR STATE VIEW.
@@ -62,7 +62,7 @@ export class Gallery extends Component {
         currentView: target,
         image: null,
         images: ids,
-        modal: false
+        modalPhoto: false
       }))
       NProgress.done()
     } catch (err) {
@@ -73,7 +73,7 @@ export class Gallery extends Component {
     this.setState(state => ({
       ...state,
       image: id,
-      modal: true
+      modalPhoto: true
     }))
   }
   renderButtons = () =>
@@ -92,7 +92,7 @@ export class Gallery extends Component {
       this.state.currentView === 'family' || this.state.currentView === 'Семья'
         ? this.props.photos
         : this.state.images
-    if (this.state.modal) {
+    if (this.state.modalPhoto) {
       return (
         <Photo
           onDismiss={() => this.dismissModal()}

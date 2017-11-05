@@ -1,11 +1,17 @@
+import PropTypes from 'prop-types'
+
 import { createThumbnail, styles } from '../../lib'
 
 const Thumb = ({ onClick, publicId, view }) => (
   <picture>
+    <source
+      media="(min-width: 768px)"
+      srcSet={createThumbnail(view, publicId, 200, 200)}
+    />
     <img
       alt={publicId}
       onClick={onClick}
-      src={createThumbnail(view, publicId)}
+      src={createThumbnail(view, publicId, 100, 100)}
     />
     <style jsx>{`
       picture img {
@@ -19,5 +25,11 @@ const Thumb = ({ onClick, publicId, view }) => (
     `}</style>
   </picture>
 )
+
+Thumb.propTypes = {
+  onClick: PropTypes.func.isRequired,
+  publicId: PropTypes.string.isRequired,
+  view: PropTypes.string.isRequired
+}
 
 export default Thumb
