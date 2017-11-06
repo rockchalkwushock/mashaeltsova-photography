@@ -52,6 +52,10 @@ app.prepare().then(() => {
     if (pathname === '/service-worker.js') {
       const filePath = join(__dirname, '.next', pathname)
       app.serveStatic(req, res, filePath)
+    } else if (pathname === '/') {
+      app.render(req, res, '/')
+    } else if (pathname === '/gallery') {
+      app.render(req, res, '/gallery')
     } else {
       handle(req, res, parsedUrl)
     }

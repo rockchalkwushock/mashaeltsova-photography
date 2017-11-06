@@ -31,6 +31,7 @@ export class Gallery extends Component {
     error: false,
     image: null,
     images: null,
+    message: '',
     modalPhoto: false
   }
   dismissModal = () => {
@@ -44,18 +45,18 @@ export class Gallery extends Component {
     const target = translate(e.currentTarget.name)
     try {
       NProgress.start()
-      const { ids } = await fetchData(target)
-      if (ids.length === 1) {
+      const { error, ids } = await fetchData(target)
+      if (error) {
         this.setState(state => ({
           ...state,
           currentView: target,
           error: true,
           image: null,
           images: ids,
+          message: error,
           modalPhoto: false
         }))
         NProgress.done()
-        // FIXME: Handle ERROR STATE VIEW.
       }
       this.setState(state => ({
         ...state,
@@ -87,9 +88,10 @@ export class Gallery extends Component {
           text={t}
         />
       ))
+  renderError = () => <h1>{this.state.message}</h1>
   renderView() {
     const imgs =
-      this.state.currentView === 'family' || this.state.currentView === 'Семья'
+      this.state.currentView === 'family'
         ? this.props.photos
         : this.state.images
     if (this.state.modalPhoto) {
@@ -139,22 +141,25 @@ export class Gallery extends Component {
             content="https://mashaeltsovaphotography.com/gallery"
           />
           {/* FACEBOOK, PINTREST, GOOGLE+ */}
-          <meta name="og:title" content="Masha Eltsova Photography | Gallery" />
           <meta
-            name="og:description"
-            content="Masha Eltsova Photography professional gallery and portfolio."
-          />
-          <meta
-            name="og:site_name"
+            property="og:title"
             content="Masha Eltsova Photography | Gallery"
           />
           <meta
-            name="og:url"
+            property="og:description"
+            content="Masha Eltsova Photography professional gallery and portfolio."
+          />
+          <meta
+            property="og:site_name"
+            content="Masha Eltsova Photography | Gallery"
+          />
+          <meta
+            property="og:url"
             content="https://mashaeltsovaphotography.com/gallery"
           />
         </Head>
         <SubNav>{this.renderButtons()}</SubNav>
-        <Grid>{this.renderView()}</Grid>
+        <Grid>{this.state.error ? this.renderError() : this.renderView()}</Grid>
       </Layout>
     )
   }

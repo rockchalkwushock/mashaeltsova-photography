@@ -5,7 +5,6 @@ import { styles } from '../../lib'
  * TODO
  * 1. Have Masha make a Page on Facebook & an ad.
  * 2. Have Masha make her IG account a business account.
- * 3. Add Facebook Page Insights <meta name="fb:admins" content="fbUserID" />
  */
 
 export default () => (
@@ -48,25 +47,26 @@ export default () => (
       <meta name="twitter:image:alt" content="Masha Eltsova Photography" />
       <meta name="twitter:url" content="https://mashaeltsovaphotography.com" />
       {/* FACEBOOK, PINTREST, GOOGLE+ */}
-      <meta name="og:title" content="Masha Eltsova Photography" />
+      <meta property="og:title" content="Masha Eltsova Photography" />
       <meta
-        name="og:description"
+        property="og:description"
         content="Masha Eltsova is a professional photographer in Moscow, Russia who offers family, portraits, wedding, & engagement photography. Schedule a shoot with her today!"
       />
       <meta
-        name="og:image"
+        property="og:image"
         content="http://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,q_auto:best/mep_png_logo.png"
       />
       <meta
-        name="og:image:secure_url"
+        property="og:image:secure_url"
         content="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,q_auto:best/mep_png_logo.png"
       />
-      <meta name="og:image:alt" content="Masha Eltsova Photography" />
-      <meta name="og:url" content="https://mashaeltsovaphotography.com" />
-      <meta name="og:site_name" content="Masha Eltsova Photography" />
-      <meta name="og:locale" content="ru" />
-      <meta name="og:locale:alternate" content="en_GB" />
-      <meta name="og:type" content="website" />
+      <meta property="og:image:alt" content="Masha Eltsova Photography" />
+      <meta property="og:url" content="https://mashaeltsovaphotography.com" />
+      <meta property="og:site_name" content="Masha Eltsova Photography" />
+      <meta property="og:locale" content="ru" />
+      <meta property="og:locale:alternate" content="en_GB" />
+      <meta property="og:type" content="website" />
+      <meta property="fb:admins" content="1196109507189054" />
       {/* SPIDERS & BOTS */}
       <meta name="robots" content="index,follow,archive" />
       <meta name="googlebot" content="all" />

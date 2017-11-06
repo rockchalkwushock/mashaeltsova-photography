@@ -15,6 +15,14 @@ import Wrapper from './Wrapper'
 import { Photo } from '../commons'
 import { initGA, isProd, logPageView } from '../../lib'
 
+/**
+ * This should solve the problem of version mismatching with BUILD_ID in /.next
+ * @see https://github.com/zeit/next.js/wiki/Handle-BUILD_ID-Mismatch-Error
+ */
+Router.onAppUpdated = function(nextRoute) {
+  location.href = nextRoute
+}
+
 // Set up NProgress for routing changes
 Router.onRouteChangeStart = url => {
   NProgress.start()
@@ -47,10 +55,9 @@ class Layout extends Component {
     } else if (pathname === '/gallery') {
       location = 'gallery'
     }
-    const sentry = isProd ? <Raven dsn={process.env.SENTRY} /> : null
     return (
       <Wrapper>
-        {sentry}
+        {isProd ? <Raven dsn={process.env.SENTRY} /> : null}
         <Meta />
         <Menu messages={this.props.messages} />
         <Header className={location}>
