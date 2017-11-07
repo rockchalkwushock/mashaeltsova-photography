@@ -60,6 +60,9 @@ const Field = props => {
         input {
           border: 0;
           border-bottom: 1px solid ${styles.colors.warm};
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          border-radius: 0;
           color: ${styles.colors.charcoal};
           outline: 0;
           padding: 0 0.5em;

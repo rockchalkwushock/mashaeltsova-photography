@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 
-import { createUrl } from '../../../lib'
+import { createUrl, fadeIn } from '../../../lib'
 
 const Image = ({ onDismiss, publicId }) => (
   <picture onClick={onDismiss}>
@@ -24,7 +24,12 @@ const Image = ({ onDismiss, publicId }) => (
       media="(min-width: 400px)"
       srcSet={createUrl(false, publicId, 375)}
     />
-    <img alt={publicId} src={createUrl(false, publicId, 300)} />
+    <img
+      alt={publicId}
+      className="fadeIn"
+      src={createUrl(false, publicId, 300)}
+    />
+    <style jsx>{fadeIn}</style>
     <style jsx>{`
       img {
         -webkit-box-shadow: 6px 6px 6px rgba(54, 69, 79, 0.7);

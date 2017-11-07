@@ -4,12 +4,9 @@
   "license": "MIT",
   "private": true,
   "description": "Photography Business Website for Masha Eltsova.",
-  "author":
-    "Cody Brunner <rockchalkwushock@icloud.com> (https://rcws-development.com)",
-  "repository":
-    "https://github.com/rockchalkwushock/mashaeltsova-photography.git",
-  "homepage":
-    "https://github.com/rockchalkwushock/mashaeltsova-photography#readme",
+  "author": "Cody Brunner <rockchalkwushock@icloud.com> (https://rcws-development.com)",
+  "repository": "https://github.com/rockchalkwushock/mashaeltsova-photography.git",
+  "homepage": "https://github.com/rockchalkwushock/mashaeltsova-photography#readme",
   "bugs": "https://github.com/rockchalkwushock/mashaeltsova-photography/issues",
   "scripts": {
     "commit": "nps commit",
@@ -42,12 +39,19 @@
         "statements": 30
       }
     },
-    "setupFiles": ["./jest.setup.js"],
-    "snapshotSerializers": ["enzyme-to-json/serializer"],
+    "setupFiles": [
+      "./jest.setup.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
     "testEnvironment": "jsdom"
   },
   "lint-staged": {
-    "*.js": ["yarn prettier", "git add"]
+    "*.js": [
+      "yarn prettier",
+      "git add"
+    ]
   },
   "now": {
     "alias": "mashaeltsovaphotography.com",

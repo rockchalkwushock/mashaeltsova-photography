@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 
-import { createUrl } from '../../../lib'
+import { createUrl, fadeIn } from '../../../lib'
 
 const Logo = ({ publicId }) => (
   <picture>
@@ -21,9 +21,11 @@ const Logo = ({ publicId }) => (
       srcSet={createUrl(true, publicId, 375)}
     />
     <img
-      src={createUrl(true, publicId, 320)}
       alt="Masha Eltsova Photography Logo"
+      className="fadeIn"
+      src={createUrl(true, publicId, 320)}
     />
+    <style jsx>{fadeIn}</style>
   </picture>
 )
 

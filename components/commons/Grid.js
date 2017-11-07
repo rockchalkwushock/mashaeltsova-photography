@@ -7,6 +7,7 @@ const Grid = ({ children }) => (
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
         grid-gap: 0.5em;
         justify-items: center;
+        min-height: 60vh; /* REVIEW MUST HAVE THIS OR YOU WILL GET JUMPING EFFECT OF FOOTER */
         padding: 1em;
       }
       @media (min-width: 768px) {

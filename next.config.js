@@ -35,7 +35,7 @@ module.exports = {
         // verbose: true,
         cacheId: 'masha-eltsova-photography',
         minify: true,
-        staticFileGlobs: ['static/images/**.*'],
+        staticFileGlobs: ['static/icons/**.*'],
         staticFileGlobsIgnorePatterns: [/\.next\//],
         runtimeCaching: [
           {

@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 
-import { createThumbnail } from '../../lib'
+import { createThumbnail, fadeIn } from '../../lib'
 
 const Thumb = ({ onClick, publicId, view }) => (
   <picture>
@@ -10,9 +10,11 @@ const Thumb = ({ onClick, publicId, view }) => (
     />
     <img
       alt={publicId}
+      className="fadeIn"
       onClick={onClick}
       src={createThumbnail(view, publicId, 100, 100)}
     />
+    <style jsx>{fadeIn}</style>
     <style jsx>{`
       picture img {
         -webkit-box-shadow: 6px 6px 6px rgba(54, 69, 79, 0.7);

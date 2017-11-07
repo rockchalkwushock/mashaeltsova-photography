@@ -29,7 +29,7 @@ export default () => (
       />
       <meta
         itemProp="image"
-        content="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,h_360,q_auto:best,w_600/mep_png_logo.png"
+        content="https://mashaeltsovaphotography.com/static/icons/logo.jpg"
       />
       {/* TWITTER */}
       <meta name="twitter:site" content="@MASHAELTSOVA" />
@@ -44,22 +44,17 @@ export default () => (
       />
       <meta
         property="og:image"
-        content="http://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,h_360,q_auto:best,w_600/mep_png_logo.png"
-      />
-      <meta
-        property="og:image:secure_url"
-        content="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,h_360,q_auto:best,w_600/mep_png_logo.png"
+        content="https://mashaeltsovaphotography.com/static/icons/logo.jpg"
       />
       <meta property="og:image:alt" content="Masha Eltsova Photography" />
-      <meta property="og:image:type" content="image/png" />
-      <meta property="og:image:height" content="360" />
-      <meta property="og:image:width" content="600" />
+      <meta property="og:image:type" content="image/jpg" />
+      <meta property="og:image:height" content="1256" />
+      <meta property="og:image:width" content="2400" />
       <meta property="og:url" content="https://mashaeltsovaphotography.com" />
       <meta property="og:site_name" content="Masha Eltsova Photography" />
       <meta property="og:locale" content="ru_RU" />
       <meta property="og:locale:alternate" content="en_US" />
       <meta property="og:type" content="website" />
-      <meta property="fb:app_id" content="1196109507189054" />
       {/* SPIDERS & BOTS */}
       <meta name="robots" content="index,follow,archive" />
       <meta name="googlebot" content="all" />
@@ -69,36 +64,46 @@ export default () => (
         content="lOInQICWdMc50btwczBfjiy-7vFREiBO-hngKZzJs1s"
       />
       {/* FACEBOOK PAGE ANALYTICS */}
+      <meta property="fb:app_id" content="1196109507189054" />
       {/* FAVICONS & TOUCH ICONS */}
       <link
         rel="apple-touch-icon"
         sizes="180x180"
-        href="/static/images/apple-touch-icon.png"
+        href="/static/icons/apple-touch-icon.png"
       />
       <link
         rel="icon"
         type="image/png"
         sizes="32x32"
-        href="/static/images/favicon-32x32.png"
+        href="/static/icons/favicon-32x32.png"
       />
       <link
         rel="icon"
         type="image/png"
         sizes="16x16"
-        href="/static/images/favicon-16x16.png"
+        href="/static/icons/favicon-16x16.png"
       />
-      <link rel="manifest" href="/static/images/manifest.json" />
+      <link rel="manifest" href="/static/icons/manifest.json" />
       <link
         rel="mask-icon"
-        href="/static/images/safari-pinned-tab.svg"
-        color={styles.colors.warm}
+        href="/static/icons/safari-pinned-tab.svg"
+        color="#ffffff"
       />
-      <link rel="shortcut icon" href="/static/images/favicon.ico" />
+      <meta
+        name="apple-mobile-web-app-title"
+        content="Masha Eltsova Photography"
+      />
+      <meta name="application-name" content="Masha Eltsova Photography" />
+      <meta name="msapplication-TileColor" content="#ffffff" />
+      <meta
+        name="msapplication-TileImage"
+        content="/static/icons/mstile-144x144.png"
+      />
       <meta
         name="msapplication-config"
-        content="/static/images/browserconfig.xml"
+        content="/static/icons/browserconfig.xml"
       />
-      <meta name="theme-color" content={styles.colors.warm} />
+      <meta name="theme-color" content="#ffffff" />
       {/* EXTERNAL STYLESHEETS */}
       {/* Normalize CDN */}
       <link
