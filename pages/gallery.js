@@ -129,14 +129,6 @@ export class Gallery extends Component {
           />
           {/* TWITTER */}
           <meta
-            name="twitter:title"
-            content="Masha Eltsova Photography | Gallery"
-          />
-          <meta
-            name="twitter:description"
-            content="Masha Eltsova Photography professional gallery and portfolio."
-          />
-          <meta
             name="twitter:url"
             content="https://mashaeltsovaphotography.com/gallery"
           />

@@ -29,21 +29,11 @@ export default () => (
       />
       <meta
         itemProp="image"
-        content="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,q_auto:best/mep_png_logo.png"
+        content="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,h_360,q_auto:best,w_600/mep_png_logo.png"
       />
       {/* TWITTER */}
-      <meta name="twitter:card" content="summary" />
-      <meta name="twitter:title" content="Masha Eltsova Photography" />
       <meta name="twitter:site" content="@MASHAELTSOVA" />
       <meta name="twitter:creator" content="@MASHAELTSOVA" />
-      <meta
-        name="twitter:description"
-        content="Masha Eltsova is a professional photographer in Moscow, Russia who offers family, portraits, wedding, & engagement photography. Schedule a shoot with her today!"
-      />
-      <meta
-        name="twitter:image"
-        content="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,q_auto:best/mep_png_logo.png"
-      />
       <meta name="twitter:image:alt" content="Masha Eltsova Photography" />
       <meta name="twitter:url" content="https://mashaeltsovaphotography.com" />
       {/* FACEBOOK, PINTREST, GOOGLE+ */}
@@ -54,19 +44,22 @@ export default () => (
       />
       <meta
         property="og:image"
-        content="http://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,q_auto:best/mep_png_logo.png"
+        content="http://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,h_360,q_auto:best,w_600/mep_png_logo.png"
       />
       <meta
         property="og:image:secure_url"
-        content="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,q_auto:best/mep_png_logo.png"
+        content="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,h_360,q_auto:best,w_600/mep_png_logo.png"
       />
       <meta property="og:image:alt" content="Masha Eltsova Photography" />
+      <meta property="og:image:type" content="image/png" />
+      <meta property="og:image:height" content="360" />
+      <meta property="og:image:width" content="600" />
       <meta property="og:url" content="https://mashaeltsovaphotography.com" />
       <meta property="og:site_name" content="Masha Eltsova Photography" />
-      <meta property="og:locale" content="ru" />
-      <meta property="og:locale:alternate" content="en_GB" />
+      <meta property="og:locale" content="ru_RU" />
+      <meta property="og:locale:alternate" content="en_US" />
       <meta property="og:type" content="website" />
-      <meta property="fb:admins" content="1196109507189054" />
+      <meta property="fb:app_id" content="1196109507189054" />
       {/* SPIDERS & BOTS */}
       <meta name="robots" content="index,follow,archive" />
       <meta name="googlebot" content="all" />
