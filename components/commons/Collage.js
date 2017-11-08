@@ -1,5 +1,7 @@
 import LazyLoad from 'react-lazyload'
 
+import { fadeIn } from '../../lib'
+
 const CollagePhoto = () => (
   <LazyLoad height={200} offset={100} once>
     <picture>
@@ -24,10 +26,12 @@ const CollagePhoto = () => (
           .CLOUD_NAME}/c_scale,f_auto,q_auto:best,w_150/c_scale,h_100,l_model_headshot_laying_down,w_150,x_150/c_scale,h_100,l_ireland_oceanside,w_150,x_75,y_100/c_scale,h_100,l_mother_son_black_white,w_150,x_-75,y_50/young_girl_posing.jpg`}
       />
       <img
+        alt="collage"
+        className="fadeIn"
         src={`https://res.cloudinary.com/${process.env
           .CLOUD_NAME}/c_scale,f_auto,q_auto:best,w_125/c_scale,h_83,l_model_headshot_laying_down,w_125,x_125/c_scale,h_83,l_ireland_oceanside,w_125,x_62,y_83/c_scale,h_83,l_mother_son_black_white,w_125,x_-63,y_41/young_girl_posing.jpg`}
-        alt="collage"
       />
+      <style jsx>{fadeIn}</style>
       <style jsx>{`
         picture {
           display: -webkit-box;
@@ -38,6 +42,9 @@ const CollagePhoto = () => (
         picture img {
           -ms-flex-item-align: center;
           align-self: center;
+          -webkit-box-shadow: 6px 6px 6px rgba(54, 69, 79, 0.7);
+          box-shadow: 6px 6px 6px rgba(54, 69, 79, 0.7);
+          border-radius: 15px;
         }
       `}</style>
     </picture>
