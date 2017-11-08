@@ -4,7 +4,7 @@ import { A, Collage, Layout, Li, P, Plug, Section, Ul } from '../components'
 import { BookingForm } from '../containers'
 import { withIntl } from '../lib'
 
-export const Index = ({ messages, url }) => {
+export const Index = ({ locale, messages, url }) => {
   const [message, services] = messages.sectionServices.split(': ')
   const list = services.split(',').map(s => <Li key={s} text={s} />)
   return (
@@ -27,7 +27,7 @@ export const Index = ({ messages, url }) => {
       </Section>
       <Section className="booking">
         <Plug messages={messages} />
-        <BookingForm messages={messages} />
+        <BookingForm locale={locale} messages={messages} />
       </Section>
     </Layout>
   )

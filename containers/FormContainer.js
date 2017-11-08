@@ -6,6 +6,7 @@ import { sendDataToMicroService, validate } from '../lib'
 
 class BookingForm extends Component {
   static propTypes = {
+    locale: PropTypes.string.isRequired,
     messages: PropTypes.object.isRequired
   }
   state = {
@@ -39,6 +40,7 @@ class BookingForm extends Component {
     })
   }
   handleOnSubmit = async e => {
+    e.preventDefault()
     // 1. Validate Form
     if (!this.validateForm(this.state)) {
       e.preventDefault()
@@ -87,7 +89,9 @@ class BookingForm extends Component {
     }
   }
   validateForm = ({ values }) => {
-    const errors = validate(this.props.messages, values)
+    // NOTE Pass this.props and deconstruct on other end
+    // need both {messages} & locale string.
+    const errors = validate(this.props, values)
     const isValid = !Object.keys(errors).some(key => errors[key])
     if (!isValid) {
       this.setState({
