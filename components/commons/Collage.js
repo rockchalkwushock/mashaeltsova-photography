@@ -42,9 +42,13 @@ const CollagePhoto = () => (
         picture img {
           -ms-flex-item-align: center;
           align-self: center;
-          -webkit-box-shadow: 6px 6px 6px rgba(54, 69, 79, 0.7);
-          box-shadow: 6px 6px 6px rgba(54, 69, 79, 0.7);
-          border-radius: 15px;
+        }
+        @media (max-width: 768px) {
+          picture img {
+            -webkit-box-shadow: 6px 6px 6px rgba(54, 69, 79, 0.7);
+            box-shadow: 6px 6px 6px rgba(54, 69, 79, 0.7);
+            border-radius: 15px;
+          }
         }
       `}</style>
     </picture>
