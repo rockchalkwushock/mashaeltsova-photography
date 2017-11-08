@@ -87,6 +87,7 @@
     "raven-js": "^3.19.1",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
+    "react-fastclick-alt": "^2.0.0",
     "react-fontawesome": "^1.6.1",
     "react-ga": "^2.3.5",
     "react-intl": "^2.4.0",

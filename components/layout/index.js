@@ -2,6 +2,7 @@
 import { Component } from 'react'
 import Raven from 'react-raven'
 import Router from 'next/router'
+import FastClick from 'react-fastclick-alt'
 import NProgress from 'nprogress'
 import PropTypes from 'prop-types'
 
@@ -76,20 +77,22 @@ class Layout extends Component {
       location = 'gallery'
     }
     return (
-      <Wrapper>
-        {isProd ? <Raven dsn={process.env.SENTRY} /> : null}
-        <Meta />
-        <Menu messages={this.props.messages} />
-        <Header className={location}>
-          <Photo
-            alt="Masha Eltsova Photography Logo"
-            logo
-            publicId="watermark"
-          />
-        </Header>
-        <Main className={location}>{this.props.children}</Main>
-        <Footer />
-      </Wrapper>
+      <FastClick>
+        <Wrapper>
+          {isProd ? <Raven dsn={process.env.SENTRY} /> : null}
+          <Meta />
+          <Menu messages={this.props.messages} />
+          <Header className={location}>
+            <Photo
+              alt="Masha Eltsova Photography Logo"
+              logo
+              publicId="watermark"
+            />
+          </Header>
+          <Main className={location}>{this.props.children}</Main>
+          <Footer />
+        </Wrapper>
+      </FastClick>
     )
   }
 }
