@@ -10,9 +10,9 @@
   "formErrorNamePattern":
     "Not a valid pattern. May only contain upper and lowercase letters.",
   "formErrorMessagePattern":
-    "May only contain upper & lower case letters, numbers, and .!?,;'",
+    "May only contain upper & lower case letters and numbers.",
   "formErrorPhonePattern":
-    "Should be match one of the following: +1-234-567-8901, +61-234-567-89-01",
+    "Should be match one of the following: +11231231234, 11231231234, 1231231234,",
   "formErrorRequired": "Please fill this in.",
   "formErrorTooLong": "Max length 140 characters.",
   "formErrorTooShort": "Minimum length 2 characters.",

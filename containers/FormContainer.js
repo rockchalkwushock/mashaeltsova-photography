@@ -40,7 +40,6 @@ class BookingForm extends Component {
     })
   }
   handleOnSubmit = async e => {
-    e.preventDefault()
     // 1. Validate Form
     if (!this.validateForm(this.state)) {
       e.preventDefault()
@@ -94,10 +93,16 @@ class BookingForm extends Component {
     const errors = validate(this.props, values)
     const isValid = !Object.keys(errors).some(key => errors[key])
     if (!isValid) {
+      // NOTE Do this instead of ...this.state.formErrors ...errors
+      // This is because the only thing spread will be whatever error is present in {errors}
+      // Now valid fields will still present an error message and that is no bueno!
       this.setState({
         formErrors: {
-          ...this.state.formErrors,
-          ...errors
+          email: errors.email ? errors.email : '',
+          firstName: errors.firstName ? errors.firstName : '',
+          lastName: errors.lastName ? errors.lastName : '',
+          message: errors.message ? errors.message : '',
+          phone: errors.phone ? errors.phone : ''
         }
       })
       return isValid
