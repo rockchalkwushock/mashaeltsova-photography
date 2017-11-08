@@ -83,11 +83,7 @@ class Layout extends Component {
           <Meta />
           <Menu messages={this.props.messages} />
           <Header className={location}>
-            <Photo
-              alt="Masha Eltsova Photography Logo"
-              logo
-              publicId="watermark"
-            />
+            <Photo logo publicId="watermark" />
           </Header>
           <Main className={location}>{this.props.children}</Main>
           <Footer />

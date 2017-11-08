@@ -1,90 +1,124 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Component: Layout Renders without exploding as .gallery 1`] = `
-<div
-  class="jsx-3955059306 wrapper"
->
+exports[`Component: Layout English Renders without exploding as .gallery 1`] = `
+<span>
   <div
-    class="jsx-592563972"
-  />
-  <div
-    class="jsx-503300710 scroll-in-nav"
-    style="position:fixed;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;top:0;left:0;right:0;z-index:1;-webkit-transform:translateY(-100%);-ms-transform:translateY(-100%);transform:translateY(-100%)"
+    class="jsx-3955059306 wrapper"
   >
-    <nav
-      class="jsx-503300710 navbar"
-    >
-      <span
-        class="jsx-503300710 open-slide"
-      >
-        <svg
-          class="jsx-503300710"
-          height="30"
-          width="30"
-        >
-          <path
-            class="jsx-503300710"
-            d="M0,5 30,5"
-            stroke="#DF744A"
-            stroke-width="5"
-          />
-          <path
-            class="jsx-503300710"
-            d="M0,14 30,14"
-            stroke="#DF744A"
-            stroke-width="5"
-          />
-          <path
-            class="jsx-503300710"
-            d="M0,23 30,23"
-            stroke="#DF744A"
-            stroke-width="5"
-          />
-        </svg>
-      </span>
-      <ul
-        class="jsx-503300710 navbar-nav"
-      >
-        <li
-          class="jsx-503300710"
-        >
-          <a
-            class="jsx-503300710"
-            href="/"
-          >
-            Home
-          </a>
-        </li>
-        <li
-          class="jsx-503300710"
-        >
-          <a
-            class="jsx-503300710"
-            href="/gallery"
-          >
-            Gallery
-          </a>
-        </li>
-      </ul>
-    </nav>
     <div
-      class="jsx-503300710 mobile-nav"
-      id="mobile-menu"
+      class="jsx-2368259117"
+    />
+    <div
+      class="jsx-1529086272 scroll-in-nav"
+      style="position:fixed;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;top:0;left:0;right:0;z-index:1;-webkit-transform:translateY(-100%);-ms-transform:translateY(-100%);transform:translateY(-100%)"
     >
-      <a
-        class="jsx-503300710"
-        href="/"
+      <nav
+        class="jsx-1529086272 navbar"
       >
-        Home
-      </a>
-      <a
-        class="jsx-503300710"
-        href="/gallery"
-      >
-        Gallery
-      </a>
+        <span
+          class="jsx-1529086272 open-slide"
+        >
+          <span
+            aria-hidden="true"
+            class="fa fa-bars fa-2x"
+          />
+        </span>
+      </nav>
       <div
-        class="jsx-503300710"
+        class="jsx-1529086272 mobile-nav"
+        id="mobile-menu"
+      >
+        <a
+          class="jsx-2241836341 mobileNavLink"
+          href="/"
+        >
+          Home
+        </a>
+        <a
+          class="jsx-2241836341 mobileNavLink"
+          href="/gallery"
+        >
+          Gallery
+        </a>
+        <div
+          class="jsx-1529086272 social"
+        >
+          <a
+            href="https://www.facebook.com/masha.eltsova"
+          >
+            <span
+              aria-hidden="true"
+              class="fa fa-facebook fa-2x"
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/mashaeltcovaphotography"
+          >
+            <span
+              aria-hidden="true"
+              class="fa fa-instagram fa-2x"
+            />
+          </a>
+          <a
+            href="https://www.vk.com/club65938200"
+          >
+            <span
+              aria-hidden="true"
+              class="fa fa-vk fa-2x"
+            />
+          </a>
+          <a
+            href="https://twitter.com/MASHAELTSOVA"
+          >
+            <span
+              aria-hidden="true"
+              class="fa fa-twitter fa-2x"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+    <header
+      class="jsx-3692150445 header gallery"
+    >
+      <picture
+        class="jsx-3672796762"
+      >
+        <source
+          class="jsx-3672796762"
+          media="(min-width: 768px)"
+          srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_575/watermark"
+        />
+        <source
+          class="jsx-3672796762"
+          media="(min-width: 540px) and (orientation: landscape)"
+          srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_300/watermark"
+        />
+        <source
+          class="jsx-3672796762"
+          media="(min-width: 540px)"
+          srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_440/watermark"
+        />
+        <source
+          class="jsx-3672796762"
+          media="(min-width: 425px)"
+          srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_375/watermark"
+        />
+        <img
+          alt="Masha Eltsova Photography Logo"
+          class="jsx-3672796762 fadeIn"
+          src="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_320/watermark"
+        />
+      </picture>
+    </header>
+    <main
+      class="jsx-1845556999 gallery"
+    />
+    <footer
+      class="jsx-747610455"
+    >
+      <div
+        class="jsx-590062731 social"
       >
         <a
           href="https://www.facebook.com/masha.eltsova"
@@ -110,172 +144,167 @@ exports[`Component: Layout Renders without exploding as .gallery 1`] = `
             class="fa fa-vk fa-2x"
           />
         </a>
-      </div>
-    </div>
-  </div>
-  <header
-    class="jsx-2312722649 header gallery"
-  >
-    <picture>
-      <source
-        media="(min-width: 1024px)"
-        srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_1024/watermark"
-      />
-      <source
-        media="(min-width: 768px)"
-        srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_768/watermark"
-      />
-      <source
-        media="(min-width: 540px)"
-        srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_540/watermark"
-      />
-      <source
-        media="(min-width: 425px)"
-        srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_425/watermark"
-      />
-      <img
-        alt="Masha Eltsova Photography Logo"
-        src="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_320/watermark"
-      />
-    </picture>
-  </header>
-  <main
-    class="jsx-1845556999 gallery"
-  />
-  <footer
-    class="jsx-747610455"
-  >
-    <div
-      class="jsx-590062731 social"
-    >
-      <a
-        href="https://www.facebook.com/masha.eltsova"
-      >
-        <span
-          aria-hidden="true"
-          class="fa fa-facebook fa-2x"
-        />
-      </a>
-      <a
-        href="https://www.instagram.com/mashaeltcovaphotography"
-      >
-        <span
-          aria-hidden="true"
-          class="fa fa-instagram fa-2x"
-        />
-      </a>
-      <a
-        href="https://www.vk.com/club65938200"
-      >
-        <span
-          aria-hidden="true"
-          class="fa fa-vk fa-2x"
-        />
-      </a>
-    </div>
-    <div
-      class="jsx-590062731 copyright"
-    >
-      <a
-        class="jsx-1299221301"
-        href="https://rcws-development.com"
-      >
-        <span
-          class="jsx-1299221301"
+        <a
+          href="https://twitter.com/MASHAELTSOVA"
         >
-          Designed by RCWS Development 2017
-        </span>
-      </a>
-    </div>
-  </footer>
-</div>
+          <span
+            aria-hidden="true"
+            class="fa fa-twitter fa-2x"
+          />
+        </a>
+      </div>
+      <div
+        class="jsx-590062731 copyright"
+      >
+        <div
+          class="jsx-1032329529"
+        >
+          <a
+            class="jsx-1032329529"
+            href="https://rcws-development.com"
+          >
+            <span
+              class="jsx-1032329529"
+            >
+              Designed by RCWS Development
+            </span>
+          </a>
+          <span
+            class="jsx-1032329529"
+          >
+            All images 
+            <span
+              aria-hidden="true"
+              class="fa fa-copyright fa-lg"
+            />
+             2017 Masha Eltsova Photography
+          </span>
+        </div>
+      </div>
+    </footer>
+  </div>
+</span>
 `;
 
-exports[`Component: Layout Renders without exploding as .index 1`] = `
-<div
-  class="jsx-3955059306 wrapper"
->
+exports[`Component: Layout English Renders without exploding as .index 1`] = `
+<span>
   <div
-    class="jsx-592563972"
-  />
-  <div
-    class="jsx-503300710 scroll-in-nav"
-    style="position:fixed;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;top:0;left:0;right:0;z-index:1;-webkit-transform:translateY(-100%);-ms-transform:translateY(-100%);transform:translateY(-100%)"
+    class="jsx-3955059306 wrapper"
   >
-    <nav
-      class="jsx-503300710 navbar"
-    >
-      <span
-        class="jsx-503300710 open-slide"
-      >
-        <svg
-          class="jsx-503300710"
-          height="30"
-          width="30"
-        >
-          <path
-            class="jsx-503300710"
-            d="M0,5 30,5"
-            stroke="#DF744A"
-            stroke-width="5"
-          />
-          <path
-            class="jsx-503300710"
-            d="M0,14 30,14"
-            stroke="#DF744A"
-            stroke-width="5"
-          />
-          <path
-            class="jsx-503300710"
-            d="M0,23 30,23"
-            stroke="#DF744A"
-            stroke-width="5"
-          />
-        </svg>
-      </span>
-      <ul
-        class="jsx-503300710 navbar-nav"
-      >
-        <li
-          class="jsx-503300710"
-        >
-          <a
-            class="jsx-503300710"
-            href="/"
-          >
-            Home
-          </a>
-        </li>
-        <li
-          class="jsx-503300710"
-        >
-          <a
-            class="jsx-503300710"
-            href="/gallery"
-          >
-            Gallery
-          </a>
-        </li>
-      </ul>
-    </nav>
     <div
-      class="jsx-503300710 mobile-nav"
-      id="mobile-menu"
+      class="jsx-2368259117"
+    />
+    <div
+      class="jsx-1529086272 scroll-in-nav"
+      style="position:fixed;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;top:0;left:0;right:0;z-index:1;-webkit-transform:translateY(-100%);-ms-transform:translateY(-100%);transform:translateY(-100%)"
     >
-      <a
-        class="jsx-503300710"
-        href="/"
+      <nav
+        class="jsx-1529086272 navbar"
       >
-        Home
-      </a>
-      <a
-        class="jsx-503300710"
-        href="/gallery"
-      >
-        Gallery
-      </a>
+        <span
+          class="jsx-1529086272 open-slide"
+        >
+          <span
+            aria-hidden="true"
+            class="fa fa-bars fa-2x"
+          />
+        </span>
+      </nav>
       <div
-        class="jsx-503300710"
+        class="jsx-1529086272 mobile-nav"
+        id="mobile-menu"
+      >
+        <a
+          class="jsx-2241836341 mobileNavLink"
+          href="/"
+        >
+          Home
+        </a>
+        <a
+          class="jsx-2241836341 mobileNavLink"
+          href="/gallery"
+        >
+          Gallery
+        </a>
+        <div
+          class="jsx-1529086272 social"
+        >
+          <a
+            href="https://www.facebook.com/masha.eltsova"
+          >
+            <span
+              aria-hidden="true"
+              class="fa fa-facebook fa-2x"
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/mashaeltcovaphotography"
+          >
+            <span
+              aria-hidden="true"
+              class="fa fa-instagram fa-2x"
+            />
+          </a>
+          <a
+            href="https://www.vk.com/club65938200"
+          >
+            <span
+              aria-hidden="true"
+              class="fa fa-vk fa-2x"
+            />
+          </a>
+          <a
+            href="https://twitter.com/MASHAELTSOVA"
+          >
+            <span
+              aria-hidden="true"
+              class="fa fa-twitter fa-2x"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+    <header
+      class="jsx-3692150445 header index"
+    >
+      <picture
+        class="jsx-3672796762"
+      >
+        <source
+          class="jsx-3672796762"
+          media="(min-width: 768px)"
+          srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_575/watermark"
+        />
+        <source
+          class="jsx-3672796762"
+          media="(min-width: 540px) and (orientation: landscape)"
+          srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_300/watermark"
+        />
+        <source
+          class="jsx-3672796762"
+          media="(min-width: 540px)"
+          srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_440/watermark"
+        />
+        <source
+          class="jsx-3672796762"
+          media="(min-width: 425px)"
+          srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_375/watermark"
+        />
+        <img
+          alt="Masha Eltsova Photography Logo"
+          class="jsx-3672796762 fadeIn"
+          src="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_320/watermark"
+        />
+      </picture>
+    </header>
+    <main
+      class="jsx-1845556999 index"
+    />
+    <footer
+      class="jsx-747610455"
+    >
+      <div
+        class="jsx-590062731 social"
       >
         <a
           href="https://www.facebook.com/masha.eltsova"
@@ -301,83 +330,416 @@ exports[`Component: Layout Renders without exploding as .index 1`] = `
             class="fa fa-vk fa-2x"
           />
         </a>
+        <a
+          href="https://twitter.com/MASHAELTSOVA"
+        >
+          <span
+            aria-hidden="true"
+            class="fa fa-twitter fa-2x"
+          />
+        </a>
+      </div>
+      <div
+        class="jsx-590062731 copyright"
+      >
+        <div
+          class="jsx-1032329529"
+        >
+          <a
+            class="jsx-1032329529"
+            href="https://rcws-development.com"
+          >
+            <span
+              class="jsx-1032329529"
+            >
+              Designed by RCWS Development
+            </span>
+          </a>
+          <span
+            class="jsx-1032329529"
+          >
+            All images 
+            <span
+              aria-hidden="true"
+              class="fa fa-copyright fa-lg"
+            />
+             2017 Masha Eltsova Photography
+          </span>
+        </div>
+      </div>
+    </footer>
+  </div>
+</span>
+`;
+
+exports[`Component: Layout Russian Renders without exploding as .gallery 1`] = `
+<span>
+  <div
+    class="jsx-3955059306 wrapper"
+  >
+    <div
+      class="jsx-2368259117"
+    />
+    <div
+      class="jsx-1529086272 scroll-in-nav"
+      style="position:fixed;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;top:0;left:0;right:0;z-index:1;-webkit-transform:translateY(-100%);-ms-transform:translateY(-100%);transform:translateY(-100%)"
+    >
+      <nav
+        class="jsx-1529086272 navbar"
+      >
+        <span
+          class="jsx-1529086272 open-slide"
+        >
+          <span
+            aria-hidden="true"
+            class="fa fa-bars fa-2x"
+          />
+        </span>
+      </nav>
+      <div
+        class="jsx-1529086272 mobile-nav"
+        id="mobile-menu"
+      >
+        <a
+          class="jsx-2241836341 mobileNavLink"
+          href="/"
+        >
+          Домашняя страница
+        </a>
+        <a
+          class="jsx-2241836341 mobileNavLink"
+          href="/gallery"
+        >
+          Галерея
+        </a>
+        <div
+          class="jsx-1529086272 social"
+        >
+          <a
+            href="https://www.facebook.com/masha.eltsova"
+          >
+            <span
+              aria-hidden="true"
+              class="fa fa-facebook fa-2x"
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/mashaeltcovaphotography"
+          >
+            <span
+              aria-hidden="true"
+              class="fa fa-instagram fa-2x"
+            />
+          </a>
+          <a
+            href="https://www.vk.com/club65938200"
+          >
+            <span
+              aria-hidden="true"
+              class="fa fa-vk fa-2x"
+            />
+          </a>
+          <a
+            href="https://twitter.com/MASHAELTSOVA"
+          >
+            <span
+              aria-hidden="true"
+              class="fa fa-twitter fa-2x"
+            />
+          </a>
+        </div>
       </div>
     </div>
-  </div>
-  <header
-    class="jsx-2312722649 header index"
-  >
-    <picture>
-      <source
-        media="(min-width: 1024px)"
-        srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_1024/watermark"
-      />
-      <source
-        media="(min-width: 768px)"
-        srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_768/watermark"
-      />
-      <source
-        media="(min-width: 540px)"
-        srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_540/watermark"
-      />
-      <source
-        media="(min-width: 425px)"
-        srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_425/watermark"
-      />
-      <img
-        alt="Masha Eltsova Photography Logo"
-        src="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_320/watermark"
-      />
-    </picture>
-  </header>
-  <main
-    class="jsx-1845556999 index"
-  />
-  <footer
-    class="jsx-747610455"
-  >
-    <div
-      class="jsx-590062731 social"
+    <header
+      class="jsx-3692150445 header gallery"
     >
-      <a
-        href="https://www.facebook.com/masha.eltsova"
+      <picture
+        class="jsx-3672796762"
       >
-        <span
-          aria-hidden="true"
-          class="fa fa-facebook fa-2x"
+        <source
+          class="jsx-3672796762"
+          media="(min-width: 768px)"
+          srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_575/watermark"
         />
-      </a>
-      <a
-        href="https://www.instagram.com/mashaeltcovaphotography"
-      >
-        <span
-          aria-hidden="true"
-          class="fa fa-instagram fa-2x"
+        <source
+          class="jsx-3672796762"
+          media="(min-width: 540px) and (orientation: landscape)"
+          srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_300/watermark"
         />
-      </a>
-      <a
-        href="https://www.vk.com/club65938200"
-      >
-        <span
-          aria-hidden="true"
-          class="fa fa-vk fa-2x"
+        <source
+          class="jsx-3672796762"
+          media="(min-width: 540px)"
+          srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_440/watermark"
         />
-      </a>
-    </div>
-    <div
-      class="jsx-590062731 copyright"
+        <source
+          class="jsx-3672796762"
+          media="(min-width: 425px)"
+          srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_375/watermark"
+        />
+        <img
+          alt="Masha Eltsova Photography Logo"
+          class="jsx-3672796762 fadeIn"
+          src="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_320/watermark"
+        />
+      </picture>
+    </header>
+    <main
+      class="jsx-1845556999 gallery"
+    />
+    <footer
+      class="jsx-747610455"
     >
-      <a
-        class="jsx-1299221301"
-        href="https://rcws-development.com"
+      <div
+        class="jsx-590062731 social"
       >
-        <span
-          class="jsx-1299221301"
+        <a
+          href="https://www.facebook.com/masha.eltsova"
         >
-          Designed by RCWS Development 2017
+          <span
+            aria-hidden="true"
+            class="fa fa-facebook fa-2x"
+          />
+        </a>
+        <a
+          href="https://www.instagram.com/mashaeltcovaphotography"
+        >
+          <span
+            aria-hidden="true"
+            class="fa fa-instagram fa-2x"
+          />
+        </a>
+        <a
+          href="https://www.vk.com/club65938200"
+        >
+          <span
+            aria-hidden="true"
+            class="fa fa-vk fa-2x"
+          />
+        </a>
+        <a
+          href="https://twitter.com/MASHAELTSOVA"
+        >
+          <span
+            aria-hidden="true"
+            class="fa fa-twitter fa-2x"
+          />
+        </a>
+      </div>
+      <div
+        class="jsx-590062731 copyright"
+      >
+        <div
+          class="jsx-1032329529"
+        >
+          <a
+            class="jsx-1032329529"
+            href="https://rcws-development.com"
+          >
+            <span
+              class="jsx-1032329529"
+            >
+              Designed by RCWS Development
+            </span>
+          </a>
+          <span
+            class="jsx-1032329529"
+          >
+            All images 
+            <span
+              aria-hidden="true"
+              class="fa fa-copyright fa-lg"
+            />
+             2017 Masha Eltsova Photography
+          </span>
+        </div>
+      </div>
+    </footer>
+  </div>
+</span>
+`;
+
+exports[`Component: Layout Russian Renders without exploding as .index 1`] = `
+<span>
+  <div
+    class="jsx-3955059306 wrapper"
+  >
+    <div
+      class="jsx-2368259117"
+    />
+    <div
+      class="jsx-1529086272 scroll-in-nav"
+      style="position:fixed;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;top:0;left:0;right:0;z-index:1;-webkit-transform:translateY(-100%);-ms-transform:translateY(-100%);transform:translateY(-100%)"
+    >
+      <nav
+        class="jsx-1529086272 navbar"
+      >
+        <span
+          class="jsx-1529086272 open-slide"
+        >
+          <span
+            aria-hidden="true"
+            class="fa fa-bars fa-2x"
+          />
         </span>
-      </a>
+      </nav>
+      <div
+        class="jsx-1529086272 mobile-nav"
+        id="mobile-menu"
+      >
+        <a
+          class="jsx-2241836341 mobileNavLink"
+          href="/"
+        >
+          Домашняя страница
+        </a>
+        <a
+          class="jsx-2241836341 mobileNavLink"
+          href="/gallery"
+        >
+          Галерея
+        </a>
+        <div
+          class="jsx-1529086272 social"
+        >
+          <a
+            href="https://www.facebook.com/masha.eltsova"
+          >
+            <span
+              aria-hidden="true"
+              class="fa fa-facebook fa-2x"
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/mashaeltcovaphotography"
+          >
+            <span
+              aria-hidden="true"
+              class="fa fa-instagram fa-2x"
+            />
+          </a>
+          <a
+            href="https://www.vk.com/club65938200"
+          >
+            <span
+              aria-hidden="true"
+              class="fa fa-vk fa-2x"
+            />
+          </a>
+          <a
+            href="https://twitter.com/MASHAELTSOVA"
+          >
+            <span
+              aria-hidden="true"
+              class="fa fa-twitter fa-2x"
+            />
+          </a>
+        </div>
+      </div>
     </div>
-  </footer>
-</div>
+    <header
+      class="jsx-3692150445 header index"
+    >
+      <picture
+        class="jsx-3672796762"
+      >
+        <source
+          class="jsx-3672796762"
+          media="(min-width: 768px)"
+          srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_575/watermark"
+        />
+        <source
+          class="jsx-3672796762"
+          media="(min-width: 540px) and (orientation: landscape)"
+          srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_300/watermark"
+        />
+        <source
+          class="jsx-3672796762"
+          media="(min-width: 540px)"
+          srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_440/watermark"
+        />
+        <source
+          class="jsx-3672796762"
+          media="(min-width: 425px)"
+          srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_375/watermark"
+        />
+        <img
+          alt="Masha Eltsova Photography Logo"
+          class="jsx-3672796762 fadeIn"
+          src="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_320/watermark"
+        />
+      </picture>
+    </header>
+    <main
+      class="jsx-1845556999 index"
+    />
+    <footer
+      class="jsx-747610455"
+    >
+      <div
+        class="jsx-590062731 social"
+      >
+        <a
+          href="https://www.facebook.com/masha.eltsova"
+        >
+          <span
+            aria-hidden="true"
+            class="fa fa-facebook fa-2x"
+          />
+        </a>
+        <a
+          href="https://www.instagram.com/mashaeltcovaphotography"
+        >
+          <span
+            aria-hidden="true"
+            class="fa fa-instagram fa-2x"
+          />
+        </a>
+        <a
+          href="https://www.vk.com/club65938200"
+        >
+          <span
+            aria-hidden="true"
+            class="fa fa-vk fa-2x"
+          />
+        </a>
+        <a
+          href="https://twitter.com/MASHAELTSOVA"
+        >
+          <span
+            aria-hidden="true"
+            class="fa fa-twitter fa-2x"
+          />
+        </a>
+      </div>
+      <div
+        class="jsx-590062731 copyright"
+      >
+        <div
+          class="jsx-1032329529"
+        >
+          <a
+            class="jsx-1032329529"
+            href="https://rcws-development.com"
+          >
+            <span
+              class="jsx-1032329529"
+            >
+              Designed by RCWS Development
+            </span>
+          </a>
+          <span
+            class="jsx-1032329529"
+          >
+            All images 
+            <span
+              aria-hidden="true"
+              class="fa fa-copyright fa-lg"
+            />
+             2017 Masha Eltsova Photography
+          </span>
+        </div>
+      </div>
+    </footer>
+  </div>
+</span>
 `;

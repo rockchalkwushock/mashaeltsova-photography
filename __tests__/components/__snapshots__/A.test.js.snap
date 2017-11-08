@@ -2,7 +2,7 @@
 
 exports[`Component: A Renders without exploding as button 1`] = `
 <button
-  class="jsx-3153731447"
+  class="jsx-4223119375 "
   name="family"
 >
   Family
@@ -11,7 +11,7 @@ exports[`Component: A Renders without exploding as button 1`] = `
 
 exports[`Component: A Renders without exploding as navigation link 1`] = `
 <a
-  class="jsx-2214171906 linkToGallery"
+  class="jsx-2241836341 linkToGallery"
   href="/gallery"
 >
   Visit Gallery

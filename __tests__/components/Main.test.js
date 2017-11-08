@@ -1,7 +1,7 @@
 import React from 'react'
 import { render } from 'enzyme'
 
-import Main from '../../components/commons/Main'
+import Main from '../../components/layout/Main'
 
 describe('Component: Main', () => {
   test('Renders without exploding as .index', () => {

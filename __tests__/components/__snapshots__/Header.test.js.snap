@@ -2,12 +2,12 @@
 
 exports[`Component: Header Renders without exploding from / 1`] = `
 <header
-  class="jsx-2312722649 header index"
+  class="jsx-3692150445 header index"
 />
 `;
 
 exports[`Component: Header Renders without exploding from /gallery 1`] = `
 <header
-  class="jsx-2312722649 header gallery"
+  class="jsx-3692150445 header gallery"
 />
 `;

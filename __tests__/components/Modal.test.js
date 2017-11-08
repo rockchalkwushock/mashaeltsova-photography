@@ -1,7 +1,7 @@
 import React from 'react'
 import { render } from 'enzyme'
 
-import Modal from '../../components/commons/Modal'
+import Modal from '../../components/commons/form/FormModal'
 import en from '../../i18n/en.json'
 import ru from '../../i18n/ru.json'
 

@@ -1,33 +1,70 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Component: Photo Renders without exploding as a regular image 1`] = `
-<div
-  class="lazyload-placeholder"
-  style="height:100px"
-/>
+<picture
+  class="jsx-213633227 jsx-3672796762"
+>
+  <source
+    class="jsx-213633227 jsx-3672796762"
+    media="(min-width: 1024px)"
+    srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,q_auto:best,w_900/family_black_white"
+  />
+  <source
+    class="jsx-213633227 jsx-3672796762"
+    media="(min-width: 768px)"
+    srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,q_auto:best,w_650/family_black_white"
+  />
+  <source
+    class="jsx-213633227 jsx-3672796762"
+    media="(min-width: 600px) and (orientation: landscape)"
+    srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,q_auto:best,w_575/family_black_white"
+  />
+  <source
+    class="jsx-213633227 jsx-3672796762"
+    media="(min-width: 540px)"
+    srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,q_auto:best,w_475/family_black_white"
+  />
+  <source
+    class="jsx-213633227 jsx-3672796762"
+    media="(min-width: 400px)"
+    srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,q_auto:best,w_375/family_black_white"
+  />
+  <img
+    alt="family_black_white"
+    class="jsx-213633227 jsx-3672796762 fadeIn"
+    src="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,q_auto:best,w_300/family_black_white"
+  />
+</picture>
 `;
 
 exports[`Component: Photo Renders without exploding as site logo 1`] = `
-<picture>
+<picture
+  class="jsx-3672796762"
+>
   <source
-    media="(min-width: 1024px)"
-    srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_1024/watermark"
-  />
-  <source
+    class="jsx-3672796762"
     media="(min-width: 768px)"
-    srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_768/watermark"
+    srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_575/watermark"
   />
   <source
+    class="jsx-3672796762"
+    media="(min-width: 540px) and (orientation: landscape)"
+    srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_300/watermark"
+  />
+  <source
+    class="jsx-3672796762"
     media="(min-width: 540px)"
-    srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_540/watermark"
+    srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_440/watermark"
   />
   <source
+    class="jsx-3672796762"
     media="(min-width: 425px)"
-    srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_425/watermark"
+    srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_375/watermark"
   />
   <img
     alt="Masha Eltsova Photography Logo"
-    src="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_320/watermark"
+    class="jsx-3672796762 fadeIn"
+    src="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_320/watermark"
   />
 </picture>
 `;

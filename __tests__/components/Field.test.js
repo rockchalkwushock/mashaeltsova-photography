@@ -1,7 +1,7 @@
 import React from 'react'
 import { render } from 'enzyme'
 
-import Field from '../../components/main/Field'
+import Field from '../../components/commons/form/Field'
 import en from '../../i18n/en.json'
 import ru from '../../i18n/ru.json'
 

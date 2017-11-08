@@ -1,90 +1,308 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Component: Index Renders without exploding in English 1`] = `
-<div
-  class="jsx-3955059306 wrapper"
->
+<span>
   <div
-    class="jsx-592563972"
-  />
-  <div
-    class="jsx-503300710 scroll-in-nav"
-    style="position:fixed;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;top:0;left:0;right:0;z-index:1;-webkit-transform:translateY(-100%);-ms-transform:translateY(-100%);transform:translateY(-100%)"
+    class="jsx-3955059306 wrapper"
   >
-    <nav
-      class="jsx-503300710 navbar"
-    >
-      <span
-        class="jsx-503300710 open-slide"
-      >
-        <svg
-          class="jsx-503300710"
-          height="30"
-          width="30"
-        >
-          <path
-            class="jsx-503300710"
-            d="M0,5 30,5"
-            stroke="#DF744A"
-            stroke-width="5"
-          />
-          <path
-            class="jsx-503300710"
-            d="M0,14 30,14"
-            stroke="#DF744A"
-            stroke-width="5"
-          />
-          <path
-            class="jsx-503300710"
-            d="M0,23 30,23"
-            stroke="#DF744A"
-            stroke-width="5"
-          />
-        </svg>
-      </span>
-      <ul
-        class="jsx-503300710 navbar-nav"
-      >
-        <li
-          class="jsx-503300710"
-        >
-          <a
-            class="jsx-503300710"
-            href="/"
-          >
-            Home
-          </a>
-        </li>
-        <li
-          class="jsx-503300710"
-        >
-          <a
-            class="jsx-503300710"
-            href="/gallery"
-          >
-            Gallery
-          </a>
-        </li>
-      </ul>
-    </nav>
     <div
-      class="jsx-503300710 mobile-nav"
-      id="mobile-menu"
+      class="jsx-2368259117"
+    />
+    <div
+      class="jsx-1529086272 scroll-in-nav"
+      style="position:fixed;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;top:0;left:0;right:0;z-index:1;-webkit-transform:translateY(-100%);-ms-transform:translateY(-100%);transform:translateY(-100%)"
     >
-      <a
-        class="jsx-503300710"
-        href="/"
+      <nav
+        class="jsx-1529086272 navbar"
       >
-        Home
-      </a>
-      <a
-        class="jsx-503300710"
-        href="/gallery"
-      >
-        Gallery
-      </a>
+        <span
+          class="jsx-1529086272 open-slide"
+        >
+          <span
+            aria-hidden="true"
+            class="fa fa-bars fa-2x"
+          />
+        </span>
+      </nav>
       <div
-        class="jsx-503300710"
+        class="jsx-1529086272 mobile-nav"
+        id="mobile-menu"
+      >
+        <a
+          class="jsx-2241836341 mobileNavLink"
+          href="/"
+        >
+          Home
+        </a>
+        <a
+          class="jsx-2241836341 mobileNavLink"
+          href="/gallery"
+        >
+          Gallery
+        </a>
+        <div
+          class="jsx-1529086272 social"
+        >
+          <a
+            href="https://www.facebook.com/masha.eltsova"
+          >
+            <span
+              aria-hidden="true"
+              class="fa fa-facebook fa-2x"
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/mashaeltcovaphotography"
+          >
+            <span
+              aria-hidden="true"
+              class="fa fa-instagram fa-2x"
+            />
+          </a>
+          <a
+            href="https://www.vk.com/club65938200"
+          >
+            <span
+              aria-hidden="true"
+              class="fa fa-vk fa-2x"
+            />
+          </a>
+          <a
+            href="https://twitter.com/MASHAELTSOVA"
+          >
+            <span
+              aria-hidden="true"
+              class="fa fa-twitter fa-2x"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+    <header
+      class="jsx-3692150445 header index"
+    >
+      <picture
+        class="jsx-3672796762"
+      >
+        <source
+          class="jsx-3672796762"
+          media="(min-width: 768px)"
+          srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_575/watermark"
+        />
+        <source
+          class="jsx-3672796762"
+          media="(min-width: 540px) and (orientation: landscape)"
+          srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_300/watermark"
+        />
+        <source
+          class="jsx-3672796762"
+          media="(min-width: 540px)"
+          srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_440/watermark"
+        />
+        <source
+          class="jsx-3672796762"
+          media="(min-width: 425px)"
+          srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_375/watermark"
+        />
+        <img
+          alt="Masha Eltsova Photography Logo"
+          class="jsx-3672796762 fadeIn"
+          src="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_320/watermark"
+        />
+      </picture>
+    </header>
+    <main
+      class="jsx-1845556999 index"
+    >
+      <section
+        class="jsx-483107097 about"
+      >
+        <p
+          class="jsx-3204703105 about"
+        >
+          For many years now I have had a great passion for capturing a moment in time and sharing the beauty of that moment with the world. I enjoy taking pictures for many varying events. When I am not doing photo shoots you will find me preforming English tutoring, or practicing my other passion, surfing.
+        </p>
+      </section>
+      <section
+        class="jsx-483107097 services"
+      >
+        <p
+          class="jsx-3204703105 services"
+        >
+          I am willing to negotiate other requested services, however the below are what I primarily offer:
+        </p>
+        <ul
+          class="jsx-630089860"
+        >
+          <li
+            class="jsx-2559750438"
+          >
+            Baby Portraits
+          </li>
+          <li
+            class="jsx-2559750438"
+          >
+            Family Portraits
+          </li>
+          <li
+            class="jsx-2559750438"
+          >
+            Self-Portraits
+          </li>
+          <li
+            class="jsx-2559750438"
+          >
+            Engagements
+          </li>
+          <li
+            class="jsx-2559750438"
+          >
+            Weddings
+          </li>
+        </ul>
+      </section>
+      <section
+        class="jsx-483107097 gallery"
+      >
+        <div
+          class="lazyload-placeholder"
+          style="height:200px"
+        />
+        <a
+          class="jsx-2241836341 linkToGallery"
+          href="/gallery"
+        >
+          View my work here!
+        </a>
+      </section>
+      <section
+        class="jsx-483107097 booking"
+      >
+        <div
+          class="jsx-3428991023"
+        >
+          <p
+            class="jsx-3204703105 plug"
+          >
+            Contact me if you want to relive those precious moments for years to come!
+          </p>
+        </div>
+        <form
+          class="jsx-1188712385"
+        >
+          <div
+            class="jsx-2142180042 firstName"
+          >
+            <label
+              class="jsx-2142180042"
+              for="firstName"
+            >
+              First Name
+            </label>
+            <input
+              class="jsx-2142180042"
+              name="firstName"
+              type="text"
+              value=""
+            />
+            <span
+              class="jsx-2142180042 errors"
+            />
+          </div>
+          <div
+            class="jsx-2142180042 lastName"
+          >
+            <label
+              class="jsx-2142180042"
+              for="lastName"
+            >
+              Last Name
+            </label>
+            <input
+              class="jsx-2142180042"
+              name="lastName"
+              type="text"
+              value=""
+            />
+            <span
+              class="jsx-2142180042 errors"
+            />
+          </div>
+          <div
+            class="jsx-2142180042 email"
+          >
+            <label
+              class="jsx-2142180042"
+              for="email"
+            >
+              Email
+            </label>
+            <input
+              class="jsx-2142180042"
+              name="email"
+              type="email"
+              value=""
+            />
+            <span
+              class="jsx-2142180042 errors"
+            />
+          </div>
+          <div
+            class="jsx-2142180042 phone"
+          >
+            <label
+              class="jsx-2142180042"
+              for="phone"
+            >
+              Phone
+            </label>
+            <input
+              class="jsx-2142180042"
+              name="phone"
+              type="tel"
+              value=""
+            />
+            <span
+              class="jsx-2142180042 errors"
+            />
+          </div>
+          <div
+            class="jsx-2142180042 message"
+          >
+            <label
+              class="jsx-2142180042"
+              for="message"
+            >
+              Short Message
+            </label>
+            <input
+              class="jsx-2142180042"
+              name="message"
+              type="text"
+              value=""
+            />
+            <span
+              class="jsx-2142180042 errors"
+            />
+          </div>
+          <div
+            class="jsx-601574895 button"
+          >
+            <button
+              class="jsx-601574895"
+              type="submit"
+            >
+              Book Now!
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer
+      class="jsx-747610455"
+    >
+      <div
+        class="jsx-590062731 social"
       >
         <a
           href="https://www.facebook.com/masha.eltsova"
@@ -110,381 +328,346 @@ exports[`Component: Index Renders without exploding in English 1`] = `
             class="fa fa-vk fa-2x"
           />
         </a>
+        <a
+          href="https://twitter.com/MASHAELTSOVA"
+        >
+          <span
+            aria-hidden="true"
+            class="fa fa-twitter fa-2x"
+          />
+        </a>
       </div>
-    </div>
-  </div>
-  <header
-    class="jsx-2312722649 header index"
-  >
-    <picture>
-      <source
-        media="(min-width: 1024px)"
-        srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_1024/watermark"
-      />
-      <source
-        media="(min-width: 768px)"
-        srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_768/watermark"
-      />
-      <source
-        media="(min-width: 540px)"
-        srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_540/watermark"
-      />
-      <source
-        media="(min-width: 425px)"
-        srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_425/watermark"
-      />
-      <img
-        alt="Masha Eltsova Photography Logo"
-        src="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_320/watermark"
-      />
-    </picture>
-  </header>
-  <main
-    class="jsx-1845556999 index"
-  >
-    <section
-      class="jsx-483107097 about"
-    >
-      <p
-        class="jsx-3204703105 about"
-      >
-        For many years now I have had a great passion for capturing a moment in time and sharing the beauty of that moment with the world. I enjoy taking pictures for many varying events. When I am not doing photo shoots you will find me preforming English tutoring, or practicing my other passion, surfing.
-      </p>
-    </section>
-    <section
-      class="jsx-483107097 services"
-    >
-      <p
-        class="jsx-3204703105 services"
-      >
-        I am willing to negotiate other requested services, however the below are what I primarily offer:
-      </p>
-      <ul
-        class="jsx-630089860"
-      >
-        <li
-          class="jsx-2559750438"
-        >
-          Baby Portraits
-        </li>
-        <li
-          class="jsx-2559750438"
-        >
-          Family Portraits
-        </li>
-        <li
-          class="jsx-2559750438"
-        >
-          Self-Portraits
-        </li>
-        <li
-          class="jsx-2559750438"
-        >
-          Engagements
-        </li>
-        <li
-          class="jsx-2559750438"
-        >
-          Weddings
-        </li>
-      </ul>
-    </section>
-    <section
-      class="jsx-483107097 gallery"
-    >
-      <picture
-        class="jsx-2134046235"
-      >
-        <source
-          class="jsx-2134046235"
-          media="(min-width: 1024px)"
-          srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_fill,dpr_1.0,f_webp,fl_awebp,q_auto:best,r_15,w_300/c_fill,dpr_1.0,f_webp,h_200,l_model_headshot_laying_down,r_15,w_300,x_150,y_150/c_fill,dpr_1.0,h_200,r_15,u_ireland_oceanside,w_300,x_250,y_-75/c_fill,dpr_1.0,h_200,l_mother_son_black_white,r_15,w_300,x_325,y_75/c_fill,dpr_1.0,f_auto,h_200,r_15,u_bride_groom_outside,w_300,x_410,y_-75/young_girl_posing.jpg"
-        />
-        <source
-          class="jsx-2134046235"
-          media="(min-width: 768px)"
-          srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,dpr_auto,f_auto,q_auto:best,r_15,w_150/c_scale,dpr_auto,f_auto,h_100,l_model_headshot_laying_down,r_15,w_150,x_80,y_75/c_scale,dpr_auto,f_auto,h_100,r_15,u_ireland_oceanside,w_150,x_160,y_-37/c_scale,dpr_auto,f_auto,h_100,l_mother_son_black_white,r_15,w_150,x_200,y_38/c_scale,h_100,r_15,u_bride_groom_outside,w_150,x_250,y_-37/young_girl_posing.jpg"
-        />
-        <source
-          class="jsx-2134046235"
-          media="(min-width: 540px)"
-          srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,dpr_auto,f_auto,q_auto:best,w_200/c_scale,dpr_auto,f_auto,h_133,l_model_headshot_laying_down,w_200,x_200/c_scale,dpr_auto,f_auto,h_133,l_ireland_oceanside,w_200,x_100,y_133/c_scale,dpr_auto,f_auto,h_133,l_mother_son_black_white,w_200,x_-100,y_66/young_girl_posing.jpg"
-        />
-        <source
-          class="jsx-2134046235"
-          media="(min-width: 425px)"
-          srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,dpr_auto,f_auto,q_auto:best,w_150/c_scale,dpr_auto,f_auto,h_100,l_model_headshot_laying_down,w_150,x_150/c_scale,dpr_auto,f_auto,h_100,l_ireland_oceanside,w_150,x_75,y_100/c_scale,dpr_auto,f_auto,h_100,l_mother_son_black_white,w_150,x_-75,y_50/young_girl_posing.jpg"
-        />
-        <img
-          alt="collage"
-          class="jsx-2134046235"
-          src="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,dpr_auto,f_auto,q_auto:best,w_125/c_scale,dpr_auto,f_auto,h_83,l_model_headshot_laying_down,w_125,x_125/c_scale,dpr_auto,f_auto,h_83,l_ireland_oceanside,w_125,x_62,y_83/c_scale,dpr_auto,f_auto,h_83,l_mother_son_black_white,w_125,x_-63,y_41/young_girl_posing.jpg"
-        />
-      </picture>
-      <a
-        class="jsx-2214171906 linkToGallery"
-        href="/gallery"
-      >
-        View my work here!
-      </a>
-    </section>
-    <section
-      class="jsx-483107097 booking"
-    >
       <div
-        class="jsx-3428991023"
+        class="jsx-590062731 copyright"
       >
-        <p
-          class="jsx-3204703105 plug"
+        <div
+          class="jsx-1032329529"
         >
-          Contact me if you want to relive those precious moments for years to come!
-        </p>
+          <a
+            class="jsx-1032329529"
+            href="https://rcws-development.com"
+          >
+            <span
+              class="jsx-1032329529"
+            >
+              Designed by RCWS Development
+            </span>
+          </a>
+          <span
+            class="jsx-1032329529"
+          >
+            All images 
+            <span
+              aria-hidden="true"
+              class="fa fa-copyright fa-lg"
+            />
+             2017 Masha Eltsova Photography
+          </span>
+        </div>
       </div>
-      <form
-        class="jsx-1188712385"
-      >
-        <div
-          class="jsx-894113413 firstName"
-        >
-          <label
-            class="jsx-894113413"
-            for="firstName"
-          >
-            First Name
-          </label>
-          <input
-            class="jsx-894113413"
-            name="firstName"
-            type="text"
-            value=""
-          />
-          <span
-            class="jsx-894113413 errors"
-          />
-        </div>
-        <div
-          class="jsx-894113413 lastName"
-        >
-          <label
-            class="jsx-894113413"
-            for="lastName"
-          >
-            Last Name
-          </label>
-          <input
-            class="jsx-894113413"
-            name="lastName"
-            type="text"
-            value=""
-          />
-          <span
-            class="jsx-894113413 errors"
-          />
-        </div>
-        <div
-          class="jsx-894113413 email"
-        >
-          <label
-            class="jsx-894113413"
-            for="email"
-          >
-            Email
-          </label>
-          <input
-            class="jsx-894113413"
-            name="email"
-            type="email"
-            value=""
-          />
-          <span
-            class="jsx-894113413 errors"
-          />
-        </div>
-        <div
-          class="jsx-894113413 phone"
-        >
-          <label
-            class="jsx-894113413"
-            for="phone"
-          >
-            Phone
-          </label>
-          <input
-            class="jsx-894113413"
-            name="phone"
-            type="tel"
-            value=""
-          />
-          <span
-            class="jsx-894113413 errors"
-          />
-        </div>
-        <div
-          class="jsx-894113413 message"
-        >
-          <label
-            class="jsx-894113413"
-            for="message"
-          >
-            Short Message
-          </label>
-          <input
-            class="jsx-894113413"
-            name="message"
-            type="text"
-            value=""
-          />
-          <span
-            class="jsx-894113413 errors"
-          />
-        </div>
-        <div
-          class="jsx-4021739229 button"
-        >
-          <button
-            class="jsx-4021739229"
-            type="submit"
-          >
-            Book Now!
-          </button>
-        </div>
-      </form>
-    </section>
-  </main>
-  <footer
-    class="jsx-747610455"
-  >
-    <div
-      class="jsx-590062731 social"
-    >
-      <a
-        href="https://www.facebook.com/masha.eltsova"
-      >
-        <span
-          aria-hidden="true"
-          class="fa fa-facebook fa-2x"
-        />
-      </a>
-      <a
-        href="https://www.instagram.com/mashaeltcovaphotography"
-      >
-        <span
-          aria-hidden="true"
-          class="fa fa-instagram fa-2x"
-        />
-      </a>
-      <a
-        href="https://www.vk.com/club65938200"
-      >
-        <span
-          aria-hidden="true"
-          class="fa fa-vk fa-2x"
-        />
-      </a>
-    </div>
-    <div
-      class="jsx-590062731 copyright"
-    >
-      <a
-        class="jsx-1299221301"
-        href="https://rcws-development.com"
-      >
-        <span
-          class="jsx-1299221301"
-        >
-          Designed by RCWS Development 2017
-        </span>
-      </a>
-    </div>
-  </footer>
-</div>
+    </footer>
+  </div>
+</span>
 `;
 
 exports[`Component: Index Renders without exploding in Russian 1`] = `
-<div
-  class="jsx-3955059306 wrapper"
->
+<span>
   <div
-    class="jsx-592563972"
-  />
-  <div
-    class="jsx-503300710 scroll-in-nav"
-    style="position:fixed;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;top:0;left:0;right:0;z-index:1;-webkit-transform:translateY(-100%);-ms-transform:translateY(-100%);transform:translateY(-100%)"
+    class="jsx-3955059306 wrapper"
   >
-    <nav
-      class="jsx-503300710 navbar"
-    >
-      <span
-        class="jsx-503300710 open-slide"
-      >
-        <svg
-          class="jsx-503300710"
-          height="30"
-          width="30"
-        >
-          <path
-            class="jsx-503300710"
-            d="M0,5 30,5"
-            stroke="#DF744A"
-            stroke-width="5"
-          />
-          <path
-            class="jsx-503300710"
-            d="M0,14 30,14"
-            stroke="#DF744A"
-            stroke-width="5"
-          />
-          <path
-            class="jsx-503300710"
-            d="M0,23 30,23"
-            stroke="#DF744A"
-            stroke-width="5"
-          />
-        </svg>
-      </span>
-      <ul
-        class="jsx-503300710 navbar-nav"
-      >
-        <li
-          class="jsx-503300710"
-        >
-          <a
-            class="jsx-503300710"
-            href="/"
-          >
-            Home
-          </a>
-        </li>
-        <li
-          class="jsx-503300710"
-        >
-          <a
-            class="jsx-503300710"
-            href="/gallery"
-          >
-            Gallery
-          </a>
-        </li>
-      </ul>
-    </nav>
     <div
-      class="jsx-503300710 mobile-nav"
-      id="mobile-menu"
+      class="jsx-2368259117"
+    />
+    <div
+      class="jsx-1529086272 scroll-in-nav"
+      style="position:fixed;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;top:0;left:0;right:0;z-index:1;-webkit-transform:translateY(-100%);-ms-transform:translateY(-100%);transform:translateY(-100%)"
     >
-      <a
-        class="jsx-503300710"
-        href="/"
+      <nav
+        class="jsx-1529086272 navbar"
       >
-        Home
-      </a>
-      <a
-        class="jsx-503300710"
-        href="/gallery"
-      >
-        Gallery
-      </a>
+        <span
+          class="jsx-1529086272 open-slide"
+        >
+          <span
+            aria-hidden="true"
+            class="fa fa-bars fa-2x"
+          />
+        </span>
+      </nav>
       <div
-        class="jsx-503300710"
+        class="jsx-1529086272 mobile-nav"
+        id="mobile-menu"
+      >
+        <a
+          class="jsx-2241836341 mobileNavLink"
+          href="/"
+        >
+          Домашняя страница
+        </a>
+        <a
+          class="jsx-2241836341 mobileNavLink"
+          href="/gallery"
+        >
+          Галерея
+        </a>
+        <div
+          class="jsx-1529086272 social"
+        >
+          <a
+            href="https://www.facebook.com/masha.eltsova"
+          >
+            <span
+              aria-hidden="true"
+              class="fa fa-facebook fa-2x"
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/mashaeltcovaphotography"
+          >
+            <span
+              aria-hidden="true"
+              class="fa fa-instagram fa-2x"
+            />
+          </a>
+          <a
+            href="https://www.vk.com/club65938200"
+          >
+            <span
+              aria-hidden="true"
+              class="fa fa-vk fa-2x"
+            />
+          </a>
+          <a
+            href="https://twitter.com/MASHAELTSOVA"
+          >
+            <span
+              aria-hidden="true"
+              class="fa fa-twitter fa-2x"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+    <header
+      class="jsx-3692150445 header index"
+    >
+      <picture
+        class="jsx-3672796762"
+      >
+        <source
+          class="jsx-3672796762"
+          media="(min-width: 768px)"
+          srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_575/watermark"
+        />
+        <source
+          class="jsx-3672796762"
+          media="(min-width: 540px) and (orientation: landscape)"
+          srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_300/watermark"
+        />
+        <source
+          class="jsx-3672796762"
+          media="(min-width: 540px)"
+          srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_440/watermark"
+        />
+        <source
+          class="jsx-3672796762"
+          media="(min-width: 425px)"
+          srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_375/watermark"
+        />
+        <img
+          alt="Masha Eltsova Photography Logo"
+          class="jsx-3672796762 fadeIn"
+          src="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_320/watermark"
+        />
+      </picture>
+    </header>
+    <main
+      class="jsx-1845556999 index"
+    >
+      <section
+        class="jsx-483107097 about"
+      >
+        <p
+          class="jsx-3204703105 about"
+        >
+          Уже много лет я занимаюсь фотографией и мне нравится моя работа. Мне нравится общаться и фотографировать людей. Если я не фотографирую то, путешествую или учу английский язык, или просто наслаждаюсь жизнью.
+        </p>
+      </section>
+      <section
+        class="jsx-483107097 services"
+      >
+        <p
+          class="jsx-3204703105 services"
+        >
+          Открыта к обсуждению съемок, специализируюсь на следующих съемках:
+        </p>
+        <ul
+          class="jsx-630089860"
+        >
+          <li
+            class="jsx-2559750438"
+          >
+            Детская и семейная съемка
+          </li>
+          <li
+            class="jsx-2559750438"
+          >
+            Портреты
+          </li>
+          <li
+            class="jsx-2559750438"
+          >
+            Помолвки
+          </li>
+          <li
+            class="jsx-2559750438"
+          >
+            Свадьбы
+          </li>
+        </ul>
+      </section>
+      <section
+        class="jsx-483107097 gallery"
+      >
+        <div
+          class="lazyload-placeholder"
+          style="height:200px"
+        />
+        <a
+          class="jsx-2241836341 linkToGallery"
+          href="/gallery"
+        >
+          Мои работы можно посмотреть тут!
+        </a>
+      </section>
+      <section
+        class="jsx-483107097 booking"
+      >
+        <div
+          class="jsx-3428991023"
+        >
+          <p
+            class="jsx-3204703105 plug"
+          >
+            Связитесь со мной , если хотите обсудить съемку!
+          </p>
+        </div>
+        <form
+          class="jsx-1188712385"
+        >
+          <div
+            class="jsx-2142180042 firstName"
+          >
+            <label
+              class="jsx-2142180042"
+              for="firstName"
+            >
+              Имя
+            </label>
+            <input
+              class="jsx-2142180042"
+              name="firstName"
+              type="text"
+              value=""
+            />
+            <span
+              class="jsx-2142180042 errors"
+            />
+          </div>
+          <div
+            class="jsx-2142180042 lastName"
+          >
+            <label
+              class="jsx-2142180042"
+              for="lastName"
+            >
+              Фамилия
+            </label>
+            <input
+              class="jsx-2142180042"
+              name="lastName"
+              type="text"
+              value=""
+            />
+            <span
+              class="jsx-2142180042 errors"
+            />
+          </div>
+          <div
+            class="jsx-2142180042 email"
+          >
+            <label
+              class="jsx-2142180042"
+              for="email"
+            >
+              Электронный адрес
+            </label>
+            <input
+              class="jsx-2142180042"
+              name="email"
+              type="email"
+              value=""
+            />
+            <span
+              class="jsx-2142180042 errors"
+            />
+          </div>
+          <div
+            class="jsx-2142180042 phone"
+          >
+            <label
+              class="jsx-2142180042"
+              for="phone"
+            >
+              Телефон
+            </label>
+            <input
+              class="jsx-2142180042"
+              name="phone"
+              type="tel"
+              value=""
+            />
+            <span
+              class="jsx-2142180042 errors"
+            />
+          </div>
+          <div
+            class="jsx-2142180042 message"
+          >
+            <label
+              class="jsx-2142180042"
+              for="message"
+            >
+              Сообщение
+            </label>
+            <input
+              class="jsx-2142180042"
+              name="message"
+              type="text"
+              value=""
+            />
+            <span
+              class="jsx-2142180042 errors"
+            />
+          </div>
+          <div
+            class="jsx-601574895 button"
+          >
+            <button
+              class="jsx-601574895"
+              type="submit"
+            >
+              Забронировать сейчас!
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer
+      class="jsx-747610455"
+    >
+      <div
+        class="jsx-590062731 social"
       >
         <a
           href="https://www.facebook.com/masha.eltsova"
@@ -510,287 +693,44 @@ exports[`Component: Index Renders without exploding in Russian 1`] = `
             class="fa fa-vk fa-2x"
           />
         </a>
+        <a
+          href="https://twitter.com/MASHAELTSOVA"
+        >
+          <span
+            aria-hidden="true"
+            class="fa fa-twitter fa-2x"
+          />
+        </a>
       </div>
-    </div>
-  </div>
-  <header
-    class="jsx-2312722649 header index"
-  >
-    <picture>
-      <source
-        media="(min-width: 1024px)"
-        srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_1024/watermark"
-      />
-      <source
-        media="(min-width: 768px)"
-        srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_768/watermark"
-      />
-      <source
-        media="(min-width: 540px)"
-        srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_540/watermark"
-      />
-      <source
-        media="(min-width: 425px)"
-        srcset="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_425/watermark"
-      />
-      <img
-        alt="Masha Eltsova Photography Logo"
-        src="https://res.cloudinary.com/undefined/c_scale,dpr_auto,f_auto,o_90,q_auto:best,w_320/watermark"
-      />
-    </picture>
-  </header>
-  <main
-    class="jsx-1845556999 index"
-  >
-    <section
-      class="jsx-483107097 about"
-    >
-      <p
-        class="jsx-3204703105 about"
-      >
-        Уже много лет я занимаюсь фотографией и мне нравится моя работа. Мне нравится общаться и фотографировать людей. Если я не фотографирую то, путешествую или учу английский язык, или просто наслаждаюсь жизнью.
-      </p>
-    </section>
-    <section
-      class="jsx-483107097 services"
-    >
-      <p
-        class="jsx-3204703105 services"
-      >
-        Открыта к обсуждению съемок, специализируюсь на следующих съемках:
-      </p>
-      <ul
-        class="jsx-630089860"
-      >
-        <li
-          class="jsx-2559750438"
-        >
-          Детская и семейная съемка
-        </li>
-        <li
-          class="jsx-2559750438"
-        >
-          Портреты
-        </li>
-        <li
-          class="jsx-2559750438"
-        >
-          Помолвки
-        </li>
-        <li
-          class="jsx-2559750438"
-        >
-          Свадьбы
-        </li>
-      </ul>
-    </section>
-    <section
-      class="jsx-483107097 gallery"
-    >
-      <picture
-        class="jsx-2134046235"
-      >
-        <source
-          class="jsx-2134046235"
-          media="(min-width: 1024px)"
-          srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_fill,dpr_1.0,f_webp,fl_awebp,q_auto:best,r_15,w_300/c_fill,dpr_1.0,f_webp,h_200,l_model_headshot_laying_down,r_15,w_300,x_150,y_150/c_fill,dpr_1.0,h_200,r_15,u_ireland_oceanside,w_300,x_250,y_-75/c_fill,dpr_1.0,h_200,l_mother_son_black_white,r_15,w_300,x_325,y_75/c_fill,dpr_1.0,f_auto,h_200,r_15,u_bride_groom_outside,w_300,x_410,y_-75/young_girl_posing.jpg"
-        />
-        <source
-          class="jsx-2134046235"
-          media="(min-width: 768px)"
-          srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,dpr_auto,f_auto,q_auto:best,r_15,w_150/c_scale,dpr_auto,f_auto,h_100,l_model_headshot_laying_down,r_15,w_150,x_80,y_75/c_scale,dpr_auto,f_auto,h_100,r_15,u_ireland_oceanside,w_150,x_160,y_-37/c_scale,dpr_auto,f_auto,h_100,l_mother_son_black_white,r_15,w_150,x_200,y_38/c_scale,h_100,r_15,u_bride_groom_outside,w_150,x_250,y_-37/young_girl_posing.jpg"
-        />
-        <source
-          class="jsx-2134046235"
-          media="(min-width: 540px)"
-          srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,dpr_auto,f_auto,q_auto:best,w_200/c_scale,dpr_auto,f_auto,h_133,l_model_headshot_laying_down,w_200,x_200/c_scale,dpr_auto,f_auto,h_133,l_ireland_oceanside,w_200,x_100,y_133/c_scale,dpr_auto,f_auto,h_133,l_mother_son_black_white,w_200,x_-100,y_66/young_girl_posing.jpg"
-        />
-        <source
-          class="jsx-2134046235"
-          media="(min-width: 425px)"
-          srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,dpr_auto,f_auto,q_auto:best,w_150/c_scale,dpr_auto,f_auto,h_100,l_model_headshot_laying_down,w_150,x_150/c_scale,dpr_auto,f_auto,h_100,l_ireland_oceanside,w_150,x_75,y_100/c_scale,dpr_auto,f_auto,h_100,l_mother_son_black_white,w_150,x_-75,y_50/young_girl_posing.jpg"
-        />
-        <img
-          alt="collage"
-          class="jsx-2134046235"
-          src="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,dpr_auto,f_auto,q_auto:best,w_125/c_scale,dpr_auto,f_auto,h_83,l_model_headshot_laying_down,w_125,x_125/c_scale,dpr_auto,f_auto,h_83,l_ireland_oceanside,w_125,x_62,y_83/c_scale,dpr_auto,f_auto,h_83,l_mother_son_black_white,w_125,x_-63,y_41/young_girl_posing.jpg"
-        />
-      </picture>
-      <a
-        class="jsx-2214171906 linkToGallery"
-        href="/gallery"
-      >
-        Мои работы можно посмотреть тут!
-      </a>
-    </section>
-    <section
-      class="jsx-483107097 booking"
-    >
       <div
-        class="jsx-3428991023"
+        class="jsx-590062731 copyright"
       >
-        <p
-          class="jsx-3204703105 plug"
+        <div
+          class="jsx-1032329529"
         >
-          Связитесь со мной , если хотите обсудить съемку!
-        </p>
+          <a
+            class="jsx-1032329529"
+            href="https://rcws-development.com"
+          >
+            <span
+              class="jsx-1032329529"
+            >
+              Designed by RCWS Development
+            </span>
+          </a>
+          <span
+            class="jsx-1032329529"
+          >
+            All images 
+            <span
+              aria-hidden="true"
+              class="fa fa-copyright fa-lg"
+            />
+             2017 Masha Eltsova Photography
+          </span>
+        </div>
       </div>
-      <form
-        class="jsx-1188712385"
-      >
-        <div
-          class="jsx-894113413 firstName"
-        >
-          <label
-            class="jsx-894113413"
-            for="firstName"
-          >
-            Имя
-          </label>
-          <input
-            class="jsx-894113413"
-            name="firstName"
-            type="text"
-            value=""
-          />
-          <span
-            class="jsx-894113413 errors"
-          />
-        </div>
-        <div
-          class="jsx-894113413 lastName"
-        >
-          <label
-            class="jsx-894113413"
-            for="lastName"
-          >
-            Фамилия
-          </label>
-          <input
-            class="jsx-894113413"
-            name="lastName"
-            type="text"
-            value=""
-          />
-          <span
-            class="jsx-894113413 errors"
-          />
-        </div>
-        <div
-          class="jsx-894113413 email"
-        >
-          <label
-            class="jsx-894113413"
-            for="email"
-          >
-            Электронный адрес
-          </label>
-          <input
-            class="jsx-894113413"
-            name="email"
-            type="email"
-            value=""
-          />
-          <span
-            class="jsx-894113413 errors"
-          />
-        </div>
-        <div
-          class="jsx-894113413 phone"
-        >
-          <label
-            class="jsx-894113413"
-            for="phone"
-          >
-            Телефон
-          </label>
-          <input
-            class="jsx-894113413"
-            name="phone"
-            type="tel"
-            value=""
-          />
-          <span
-            class="jsx-894113413 errors"
-          />
-        </div>
-        <div
-          class="jsx-894113413 message"
-        >
-          <label
-            class="jsx-894113413"
-            for="message"
-          >
-            Сообщение
-          </label>
-          <input
-            class="jsx-894113413"
-            name="message"
-            type="text"
-            value=""
-          />
-          <span
-            class="jsx-894113413 errors"
-          />
-        </div>
-        <div
-          class="jsx-4021739229 button"
-        >
-          <button
-            class="jsx-4021739229"
-            type="submit"
-          >
-            Забронировать сейчас!
-          </button>
-        </div>
-      </form>
-    </section>
-  </main>
-  <footer
-    class="jsx-747610455"
-  >
-    <div
-      class="jsx-590062731 social"
-    >
-      <a
-        href="https://www.facebook.com/masha.eltsova"
-      >
-        <span
-          aria-hidden="true"
-          class="fa fa-facebook fa-2x"
-        />
-      </a>
-      <a
-        href="https://www.instagram.com/mashaeltcovaphotography"
-      >
-        <span
-          aria-hidden="true"
-          class="fa fa-instagram fa-2x"
-        />
-      </a>
-      <a
-        href="https://www.vk.com/club65938200"
-      >
-        <span
-          aria-hidden="true"
-          class="fa fa-vk fa-2x"
-        />
-      </a>
-    </div>
-    <div
-      class="jsx-590062731 copyright"
-    >
-      <a
-        class="jsx-1299221301"
-        href="https://rcws-development.com"
-      >
-        <span
-          class="jsx-1299221301"
-        >
-          Designed by RCWS Development 2017
-        </span>
-      </a>
-    </div>
-  </footer>
-</div>
+    </footer>
+  </div>
+</span>
 `;

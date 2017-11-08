@@ -31,20 +31,42 @@ exports[`Component: Footer Renders without exploding 1`] = `
         class="fa fa-vk fa-2x"
       />
     </a>
+    <a
+      href="https://twitter.com/MASHAELTSOVA"
+    >
+      <span
+        aria-hidden="true"
+        class="fa fa-twitter fa-2x"
+      />
+    </a>
   </div>
   <div
     class="jsx-590062731 copyright"
   >
-    <a
-      class="jsx-1299221301"
-      href="https://rcws-development.com"
+    <div
+      class="jsx-1032329529"
     >
-      <span
-        class="jsx-1299221301"
+      <a
+        class="jsx-1032329529"
+        href="https://rcws-development.com"
       >
-        Designed by RCWS Development 2017
+        <span
+          class="jsx-1032329529"
+        >
+          Designed by RCWS Development
+        </span>
+      </a>
+      <span
+        class="jsx-1032329529"
+      >
+        All images 
+        <span
+          aria-hidden="true"
+          class="fa fa-copyright fa-lg"
+        />
+         2017 Masha Eltsova Photography
       </span>
-    </a>
+    </div>
   </div>
 </footer>
 `;

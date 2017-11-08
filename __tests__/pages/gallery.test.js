@@ -11,13 +11,13 @@ const ids = ['a', 'b', 'c']
 describe('Component: Gallery', () => {
   test('Renders without exploding in English', () => {
     const tree = render(
-      <Gallery {...makeProps('en', en, '/gallery')} ids={ids} />
+      <Gallery {...makeProps('en', en, '/gallery')} photos={ids} />
     )
     expect(tree).toMatchSnapshot()
   })
   test('Renders without exploding in Russian', () => {
     const tree = render(
-      <Gallery {...makeProps('ru', ru, '/gallery')} ids={ids} />
+      <Gallery {...makeProps('ru', ru, '/gallery')} photos={ids} />
     )
     expect(tree).toMatchSnapshot()
   })

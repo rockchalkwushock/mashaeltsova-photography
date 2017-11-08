@@ -1,7 +1,7 @@
 import React from 'react'
 import { render } from 'enzyme'
 
-import Header from '../../components/commons/Header'
+import Header from '../../components/layout/Header'
 
 describe('Component: Header', () => {
   test('Renders without exploding from /', () => {

@@ -2,22 +2,22 @@
 
 exports[`Component: SubNav Renders without exploding 1`] = `
 <nav
-  class="jsx-709412855"
+  class="jsx-615156141"
 >
   <button
-    class="jsx-3153731447"
+    class="jsx-4223119375 "
     name="link 1"
   >
     Link 1
   </button>
   <button
-    class="jsx-3153731447"
+    class="jsx-4223119375 "
     name="link 2"
   >
     Link 2
   </button>
   <button
-    class="jsx-3153731447"
+    class="jsx-4223119375 "
     name="link 3"
   >
     Link 3

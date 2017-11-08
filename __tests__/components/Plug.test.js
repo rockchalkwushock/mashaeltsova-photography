@@ -1,7 +1,7 @@
 import React from 'react'
 import { render } from 'enzyme'
 
-import Plug from '../../components/main/Plug'
+import Plug from '../../components/commons/Plug'
 import en from '../../i18n/en.json'
 import ru from '../../i18n/ru.json'
 

@@ -7,11 +7,11 @@ import ru from '../../i18n/ru.json'
 
 describe('Component: BookingForm', () => {
   test('Renders without exploding in English', () => {
-    const tree = render(<BookingForm messages={en} />)
+    const tree = render(<BookingForm locale="en" messages={en} />)
     expect(tree).toMatchSnapshot()
   })
   test('Renders without exploding in Russian', () => {
-    const tree = render(<BookingForm messages={ru} />)
+    const tree = render(<BookingForm locale="ru" messages={ru} />)
     expect(tree).toMatchSnapshot()
   })
 })

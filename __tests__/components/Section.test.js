@@ -1,7 +1,7 @@
 import React from 'react'
 import { render } from 'enzyme'
 
-import Section from '../../components/main/Section'
+import Section from '../../components/commons/Section'
 
 describe('Component: Section', () => {
   test('Renders without exploding as .about', () => {

@@ -1,11 +1,11 @@
 import React from 'react'
 import { render } from 'enzyme'
 
-import CollagePhoto from '../../components/main/CollagePhoto'
+import Collage from '../../components/commons/Collage'
 
-describe('Component: CollagePhoto', () => {
+describe('Component: Collage', () => {
   test('Renders without exploding', () => {
-    const tree = render(<CollagePhoto />)
+    const tree = render(<Collage />)
     expect(tree).toMatchSnapshot()
   })
 })
