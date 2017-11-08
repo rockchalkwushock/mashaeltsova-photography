@@ -42,8 +42,9 @@ const CollagePhoto = () => (
         picture img {
           -ms-flex-item-align: center;
           align-self: center;
+          background-color: transparent;
         }
-        @media (max-width: 768px) {
+        @media (max-width: 767px) {
           picture img {
             -webkit-box-shadow: 6px 6px 6px rgba(54, 69, 79, 0.7);
             box-shadow: 6px 6px 6px rgba(54, 69, 79, 0.7);
