@@ -47,16 +47,17 @@ Thankfully I did not have to learn Russian for this project to come together...m
 
 ## Stack
 
-- [Next.js]()
-- [React.js]()
-- [React-Intl]()
-- [React-LazyLoad]()
-- [Cloudinary]()
-
+- [Next.js](https://github.com/zeit/next.js)
+- [React.js](https://github.com/facebook/react)
+- [React-Intl](https://github.com/yahoo/react-intl)
+- [React-LazyLoad](https://github.com/jasonslyvia/react-lazyload)
+- [Cloudinary](https://cloudinary.com)
 
 ## Benchmarks
 
 > The following data was collected using the Chrome Developer Tools. The environment the data was gathered in was that of a fast 3G connection with no caching applied.
+
+Other benchmark data can be found in the [benchmarks](https://github.com/rockchalkwushock/mashaeltsova-photography/tree/master/benchmarks) directory. The stats there were gathered using [WebPageTest.org](https://webpagetest.org)
 
 [https://mashaeltsovaphotography.com](https://mashaeltsovaphotography.com)
 
@@ -75,6 +76,16 @@ For context the website discussed earlier on had the following stats:
 | Requests | Data Transferred | Time to First Paint | Load Time |
 |----------|------------------|---------------------|-----------|
 | 53       | 27.3MB           | 6.02s               | 2.6min    |
+
+## Todo
+
+I would like to look into these things as well as do more with:
+
+- SSR Caching
+- Write more concrete tests for the booking form, navigation, & intl.
+- Read up on spinning up my own benchmark tests
+- CSS Grid fallback...it's super bad I don't have anything in place :scream:
+- Read up and implement better accessibility. I don't know anything at all about WARIA or whatever it is called and this really needs to be done!
 
 ## Contributors
 

@@ -3,6 +3,19 @@ import PropTypes from 'prop-types'
 
 import { styles } from '../../lib'
 
+/**
+ * REVIEW
+ * FIXME
+ *
+ * Temporary resolution for touch event vs :hover was to
+ * only apply the :hover & :focus styles a > 1024px in the hope
+ * the user is no longer on a touch enabled device.
+ *
+ * This changes the UX of the button because the styling is only
+ * applied when :active, but for now it will work.
+ *
+ */
+
 const NavButton = ({ className, onClick, text }) => (
   <button className={className} name={text.toLowerCase()} onClick={onClick}>
     {text}
@@ -19,8 +32,7 @@ const NavButton = ({ className, onClick, text }) => (
         -webkit-appearance: none;
         margin: 0.2em;
       }
-      button:focus,
-      button:hover {
+      button:active {
         -webkit-appearance: none;
         background-color: ${styles.colors.warm};
         color: ${styles.colors.peach};
@@ -29,6 +41,16 @@ const NavButton = ({ className, onClick, text }) => (
       }
       .galleryButton {
         background-color: ${styles.colors.peach};
+      }
+      @media (min-width: 1024px) {
+        button:focus,
+        button:hover {
+          -webkit-appearance: none;
+          background-color: ${styles.colors.warm};
+          color: ${styles.colors.peach};
+          font-size: 1.2em;
+          font-weight: 900;
+        }
       }
     `}</style>
   </button>
@@ -51,8 +73,7 @@ const NavLink = ({ className, text, url }) => (
           letter-spacing: 0.25em;
           position: absolute;
         }
-        .linkToGallery:focus,
-        .linkToGallery:hover {
+        .linkToGallery:active {
           -ms-flex-item-align: center;
           align-self: center;
           background-color: ${styles.colors.peach};
@@ -83,6 +104,20 @@ const NavLink = ({ className, text, url }) => (
         @media (max-width: 320px) {
           .linkToGallery {
             font-size: 0.55em;
+          }
+        }
+        @media (min-width: 1024px) {
+          .linkToGallery:focus,
+          .linkToGallery:hover {
+            -ms-flex-item-align: center;
+            align-self: center;
+            background-color: ${styles.colors.peach};
+            color: ${styles.colors.warm};
+            font-size: 1.4em;
+            padding: 0.5em;
+            -webkit-transition: 0.2s ease;
+            -moz-transition: 0.2s ease;
+            transition: 0.2s ease;
           }
         }
       `}</style>
