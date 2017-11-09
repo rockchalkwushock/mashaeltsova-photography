@@ -11,9 +11,6 @@ import { styles } from '../../lib'
  * only apply the :hover & :focus styles a > 1024px in the hope
  * the user is no longer on a touch enabled device.
  *
- * This changes the UX of the button because the styling is only
- * applied when :active, but for now it will work.
- *
  */
 
 const NavButton = ({ className, onClick, text }) => (
@@ -31,13 +28,6 @@ const NavButton = ({ className, onClick, text }) => (
         font-family: ${styles.fonts.courgette};
         -webkit-appearance: none;
         margin: 0.2em;
-      }
-      button:active {
-        -webkit-appearance: none;
-        background-color: ${styles.colors.warm};
-        color: ${styles.colors.peach};
-        font-size: 1.2em;
-        font-weight: 900;
       }
       .galleryButton {
         background-color: ${styles.colors.peach};
@@ -72,17 +62,6 @@ const NavLink = ({ className, text, url }) => (
           font-family: ${styles.fonts.courgette};
           letter-spacing: 0.25em;
           position: absolute;
-        }
-        .linkToGallery:active {
-          -ms-flex-item-align: center;
-          align-self: center;
-          background-color: ${styles.colors.peach};
-          color: ${styles.colors.warm};
-          font-size: 1.4em;
-          padding: 0.5em;
-          -webkit-transition: 0.2s ease;
-          -moz-transition: 0.2s ease;
-          transition: 0.2s ease;
         }
         .mobileNavLink {
           display: block;
