@@ -1,4 +1,4 @@
-# mashaeltsova-photography :camera:
+<img alt="Masha Eltsova Photography" src="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,q_auto:best,w_300/watermark.png" width="300" />
 
 [![Next](https://img.shields.io/badge/built%20with-next.js-orange.svg?style=flat-square)](https://github.com/zeit/next.js)
 [![Now](https://img.shields.io/badge/deployed%20with-now--cli-orange.svg?style=flat-square)](https://github.com/zeit/now-cli)
