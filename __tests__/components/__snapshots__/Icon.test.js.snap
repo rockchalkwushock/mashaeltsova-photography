@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: Icon Renders without exploding as copyright icon 1`] = `
+<div
+  class="jsx-1032329529"
+>
+  <a
+    class="jsx-1032329529"
+    href="https://rcws-development.com"
+  >
+    <span
+      class="jsx-1032329529"
+    >
+      Designed by RCWS Development
+    </span>
+  </a>
+  <span
+    class="jsx-1032329529"
+  >
+    All images 
+    <span
+      aria-hidden="true"
+      class="fa fa-copyright fa-lg"
+    />
+     2017 Masha Eltsova Photography
+  </span>
+</div>
+`;
+
+exports[`Component: Icon Renders without exploding as social icon 1`] = `
+<a
+  href="https://instagram.com"
+>
+  <span
+    aria-hidden="true"
+    class="fa fa-instagram fa-2x"
+  />
+</a>
+`;

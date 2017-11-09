@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: Collage Renders without exploding 1`] = `
+<div
+  class="lazyload-placeholder"
+  style="height:200px"
+/>
+`;

@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: Ul Renders without exploding 1`] = `
+<ul
+  class="jsx-630089860"
+>
+  <li
+    class="jsx-2559750438"
+  >
+    Hello World!
+  </li>
+  <li
+    class="jsx-2559750438"
+  >
+    What is crackalacking?
+  </li>
+  <li
+    class="jsx-2559750438"
+  >
+    Boooooooooooo!
+  </li>
+</ul>
+`;

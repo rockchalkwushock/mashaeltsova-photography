@@ -1,3 +1,3 @@
-import FormContainer from './FormContainer'
+import BookingForm from './FormContainer'
 
-export { FormContainer }
+export { BookingForm }

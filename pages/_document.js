@@ -6,21 +6,30 @@ import { loadGetInitialProps } from 'next/dist/lib/utils'
 
 // The document (which is SSR-only) needs to be customized to expose the locale
 // data for the user's locale for React Intl to work in the browser.
-export default class CustomDocument extends Document {
+export default class NextDocument extends Document {
   static async getInitialProps(ctx) {
-    const { locale, localeDataScript } = ctx.req
-    const props = await loadGetInitialProps(Document, ctx)
-    return {
-      ...props,
-      locale,
-      localeDataScript
+    try {
+      const { locale, localeDataScript } = ctx.req
+      const props = await loadGetInitialProps(Document, ctx)
+      return {
+        ...props,
+        locale,
+        localeDataScript
+      }
+    } catch (e) {
+      throw e
     }
   }
 
   render() {
     const { locale, localeDataScript } = this.props
     return (
-      <html>
+      <html
+        itemScope
+        itemType="http://schema.org/Article"
+        lang={locale}
+        prefix="og: http://ogp.me/ns#"
+      >
         <Head />
         <body>
           <Main />

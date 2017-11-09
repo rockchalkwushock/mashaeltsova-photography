@@ -1,61 +1,51 @@
+import PropTypes from 'prop-types'
 import FontAwesome from 'react-fontawesome'
-
-import { messages, styles } from '../../lib'
-
-/**
- * FIXME
- *
- * Add transformations on hover.
- */
 
 // Get current year from browser.
 const year = new Date().getFullYear()
+// Slick thinking!
+const yearToDisplay = year === 2017 ? year : `2017 - ${year}`
 
-const Icon = ({ icon, intl, size, url }) => {
+// NOTE: She wants this left in English!
+const Icon = ({ icon, size, url }) => {
   if (icon === 'copyright') {
     return (
-      <a className="copyright" href={url}>
+      <div>
+        <a href={url}>
+          <span>Designed by RCWS Development</span>
+        </a>
         <span>
-          <FontAwesome name={icon} size="lg" />{' '}
-          {`${year} ${intl.formatMessage(messages.rcws)}`}
+          All images <FontAwesome name={icon} size={size} /> {yearToDisplay}{' '}
+          Masha Eltsova Photography
         </span>
         <style jsx>{`
-      .copyright {
-        color: ${styles.colors.warm}
-        padding: 0.25em;
-      }
-      .copyright:visited {
-        color: ${styles.colors.warm}
-      }
-      .copyright:hover {
-        color: ${styles.colors.charcoal}
-      }
-    `}</style>
-      </a>
+          div {
+            display: flex;
+            flex-direction: column;
+          }
+          @media (max-width: 321px) {
+            div {
+              font-size: 0.85em;
+            }
+            span {
+              font-size: 0.85em;
+            }
+          }
+        `}</style>
+      </div>
     )
   }
   return (
-    <a className="social-link" href={url}>
+    <a href={url}>
       <FontAwesome name={icon} size={size} />
-      <style jsx>{`
-      .social-link {
-        color: ${styles.colors.warm}
-        padding: 0.25em;
-      }
-      .social-link:visited {
-        color: ${styles.colors.warm}
-      }
-      .social-link:hover {
-        color: ${styles.colors.powder}
-      }
-      @media (min-width: 768px) {
-        .social-link {
-        padding: 0.25em 0.5em;
-      }
-      }
-    `}</style>
     </a>
   )
+}
+
+Icon.propTypes = {
+  icon: PropTypes.string.isRequired,
+  size: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired
 }
 
 export default Icon

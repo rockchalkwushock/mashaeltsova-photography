@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: Plug Renders without exploding in English 1`] = `
+<div
+  class="jsx-3428991023"
+>
+  <p
+    class="jsx-3204703105 plug"
+  >
+    Contact me if you want to relive those precious moments for years to come!
+  </p>
+</div>
+`;
+
+exports[`Component: Plug Renders without exploding in Russian 1`] = `
+<div
+  class="jsx-3428991023"
+>
+  <p
+    class="jsx-3204703105 plug"
+  >
+    Связитесь со мной , если хотите обсудить съемку!
+  </p>
+</div>
+`;

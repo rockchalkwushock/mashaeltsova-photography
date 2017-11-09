@@ -2,34 +2,25 @@ import PropTypes from 'prop-types'
 
 import { styles } from '../../lib'
 
-/**
- * REVIEW
- * FIXME
- *
- * Possibly need to do away with the grid in WithLayout
- * for all gallery pages. I'm losing control of the images.
- * So possibly get rid of it here too.
- *
- */
-const Container = ({ className, children }) => (
+const Container = ({ children, className }) => (
   <div className={className}>
     {children}
     <style jsx>{`
-      .galleryPage {
-        background-color: ${styles.colors.powder};
-        display: grid;
-        grid-gap: 1em;
-        grid-template-columns: repeat(12, 1fr);
+      div {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
       }
-      .gallery {
-        background-color: ${styles.colors.lemon};
-        display: grid;
-        grid-column: span 12;
-        grid-template-columns: repeat(
-          8,
-          1fr
-        ); /* FIXME this needs to be dynamic to 'ids.length' */
-        text-align: center;
+      .copyright {
+        font-family: ${styles.fonts.courgette};
+      }
+      @media (min-width: 768px) {
+        .copyright {
+          text-align: right;
+        }
+        .social {
+          text-align: left;
+        }
       }
     `}</style>
   </div>

@@ -1,0 +1,31 @@
+{
+  "buttonBooking": "Book Now!",
+  "buttonGallery": "View my work here!",
+  "formEmail": "Email",
+  "formFirstName": "First Name",
+  "formLastName": "Last Name",
+  "formMessage": "Short Message",
+  "formPhone": "Phone",
+  "formErrorEmailPattern": "Not a valid email.",
+  "formErrorNamePattern":
+    "Not a valid pattern. May only contain upper and lowercase letters.",
+  "formErrorMessagePattern":
+    "May only contain upper & lower case letters and numbers.",
+  "formErrorPhonePattern":
+    "Should be match one of the following: +11231231234, 11231231234, 1231231234,",
+  "formErrorRequired": "Please fill this in.",
+  "formErrorTooLong": "Max length 140 characters.",
+  "formErrorTooShort": "Minimum length 2 characters.",
+  "formRequiredMessage": "All fields required.",
+  "galleryNav": "Family,Portrait,Travel,Wedding",
+  "modalError": "I'm sorry there seems to be a problem, please try back later.",
+  "modalLoading": "Your request is being sent now.",
+  "modalSuccess": "Your booking inquiry has been sent!",
+  "sectionAbout":
+    "For many years now I have had a great passion for capturing a moment in time and sharing the beauty of that moment with the world. I enjoy taking pictures for many varying events. When I am not doing photo shoots you will find me preforming English tutoring, or practicing my other passion, surfing.",
+  "sectionPlug":
+    "Contact me if you want to relive those precious moments for years to come!",
+  "sectionServices":
+    "I am willing to negotiate other requested services, however the below are what I primarily offer: Baby Portraits,Family Portraits,Self-Portraits,Engagements,Weddings",
+  "sideNav": "Home,Gallery"
+}

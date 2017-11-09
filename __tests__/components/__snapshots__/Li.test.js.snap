@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: Li Renders without exploding 1`] = `
+<li
+  class="jsx-2559750438"
+>
+  Hello World!
+</li>
+`;
