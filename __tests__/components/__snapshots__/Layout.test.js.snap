@@ -87,27 +87,27 @@ exports[`Component: Layout English Renders without exploding as .gallery 1`] = `
         <source
           class="jsx-3672796762"
           media="(min-width: 768px)"
-          srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_575/watermark"
+          srcset="https://res.cloudinary.com/undefined/c_scale,f_auto,o_90,q_auto:best,w_575/watermark"
         />
         <source
           class="jsx-3672796762"
           media="(min-width: 540px) and (orientation: landscape)"
-          srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_300/watermark"
+          srcset="https://res.cloudinary.com/undefined/c_scale,f_auto,o_90,q_auto:best,w_300/watermark"
         />
         <source
           class="jsx-3672796762"
           media="(min-width: 540px)"
-          srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_440/watermark"
+          srcset="https://res.cloudinary.com/undefined/c_scale,f_auto,o_90,q_auto:best,w_440/watermark"
         />
         <source
           class="jsx-3672796762"
           media="(min-width: 425px)"
-          srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_375/watermark"
+          srcset="https://res.cloudinary.com/undefined/c_scale,f_auto,o_90,q_auto:best,w_375/watermark"
         />
         <img
           alt="Masha Eltsova Photography Logo"
           class="jsx-3672796762 fadeIn"
-          src="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_320/watermark"
+          src="https://res.cloudinary.com/undefined/c_scale,f_auto,o_90,q_auto:best,w_320/watermark"
         />
       </picture>
     </header>
@@ -273,27 +273,27 @@ exports[`Component: Layout English Renders without exploding as .index 1`] = `
         <source
           class="jsx-3672796762"
           media="(min-width: 768px)"
-          srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_575/watermark"
+          srcset="https://res.cloudinary.com/undefined/c_scale,f_auto,o_90,q_auto:best,w_575/watermark"
         />
         <source
           class="jsx-3672796762"
           media="(min-width: 540px) and (orientation: landscape)"
-          srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_300/watermark"
+          srcset="https://res.cloudinary.com/undefined/c_scale,f_auto,o_90,q_auto:best,w_300/watermark"
         />
         <source
           class="jsx-3672796762"
           media="(min-width: 540px)"
-          srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_440/watermark"
+          srcset="https://res.cloudinary.com/undefined/c_scale,f_auto,o_90,q_auto:best,w_440/watermark"
         />
         <source
           class="jsx-3672796762"
           media="(min-width: 425px)"
-          srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_375/watermark"
+          srcset="https://res.cloudinary.com/undefined/c_scale,f_auto,o_90,q_auto:best,w_375/watermark"
         />
         <img
           alt="Masha Eltsova Photography Logo"
           class="jsx-3672796762 fadeIn"
-          src="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_320/watermark"
+          src="https://res.cloudinary.com/undefined/c_scale,f_auto,o_90,q_auto:best,w_320/watermark"
         />
       </picture>
     </header>
@@ -459,27 +459,27 @@ exports[`Component: Layout Russian Renders without exploding as .gallery 1`] = `
         <source
           class="jsx-3672796762"
           media="(min-width: 768px)"
-          srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_575/watermark"
+          srcset="https://res.cloudinary.com/undefined/c_scale,f_auto,o_90,q_auto:best,w_575/watermark"
         />
         <source
           class="jsx-3672796762"
           media="(min-width: 540px) and (orientation: landscape)"
-          srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_300/watermark"
+          srcset="https://res.cloudinary.com/undefined/c_scale,f_auto,o_90,q_auto:best,w_300/watermark"
         />
         <source
           class="jsx-3672796762"
           media="(min-width: 540px)"
-          srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_440/watermark"
+          srcset="https://res.cloudinary.com/undefined/c_scale,f_auto,o_90,q_auto:best,w_440/watermark"
         />
         <source
           class="jsx-3672796762"
           media="(min-width: 425px)"
-          srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_375/watermark"
+          srcset="https://res.cloudinary.com/undefined/c_scale,f_auto,o_90,q_auto:best,w_375/watermark"
         />
         <img
           alt="Masha Eltsova Photography Logo"
           class="jsx-3672796762 fadeIn"
-          src="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_320/watermark"
+          src="https://res.cloudinary.com/undefined/c_scale,f_auto,o_90,q_auto:best,w_320/watermark"
         />
       </picture>
     </header>
@@ -645,27 +645,27 @@ exports[`Component: Layout Russian Renders without exploding as .index 1`] = `
         <source
           class="jsx-3672796762"
           media="(min-width: 768px)"
-          srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_575/watermark"
+          srcset="https://res.cloudinary.com/undefined/c_scale,f_auto,o_90,q_auto:best,w_575/watermark"
         />
         <source
           class="jsx-3672796762"
           media="(min-width: 540px) and (orientation: landscape)"
-          srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_300/watermark"
+          srcset="https://res.cloudinary.com/undefined/c_scale,f_auto,o_90,q_auto:best,w_300/watermark"
         />
         <source
           class="jsx-3672796762"
           media="(min-width: 540px)"
-          srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_440/watermark"
+          srcset="https://res.cloudinary.com/undefined/c_scale,f_auto,o_90,q_auto:best,w_440/watermark"
         />
         <source
           class="jsx-3672796762"
           media="(min-width: 425px)"
-          srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_375/watermark"
+          srcset="https://res.cloudinary.com/undefined/c_scale,f_auto,o_90,q_auto:best,w_375/watermark"
         />
         <img
           alt="Masha Eltsova Photography Logo"
           class="jsx-3672796762 fadeIn"
-          src="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_320/watermark"
+          src="https://res.cloudinary.com/undefined/c_scale,f_auto,o_90,q_auto:best,w_320/watermark"
         />
       </picture>
     </header>
