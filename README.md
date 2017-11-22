@@ -15,6 +15,8 @@
 
 ## About
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/rockchalkwushock/mashaeltsova-photography.svg)](https://greenkeeper.io/)
+
 This has been a _work-in-progress_ for almost a year...no no I don't mean this repository, God that would be embarrassing! I told Masha I  would make her a website and over the last year the idea, the design, the what I wanted to do changed time and time again. Not until I put a hard deadline on the project and said this is what I will use and this is how I will do it _"problems be damned!"_ did this project come to life.
 
 The real basis for me tackling this project came from a link sent to me for a photography website that a gentleman had promised to make her many years prior to us knowing each other. No lie at all I will never be able to make a website as visually stunning as this gentleman did, it's just not my skill set; however 9.5 minutes to load on a slow 3G connection with no caching: that I can do better on. So no, this website might not be the sleek and sexy beast that he offered, but in my mind if I can get a customer to your content in mere seconds then lack of sexiness should be less of a factor in converting the user to a customer.
