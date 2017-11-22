@@ -1,7 +1,13 @@
 <img alt="Masha Eltsova Photography" src="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,q_auto:best,w_300/watermark.png" width="300" />
 
+[![CircleCI](https://img.shields.io/circleci/project/github/rockchalkwushock/mashaeltsova-photography.svg?style=flat-square)](https://circleci.com/gh/rockchalkwushock/mashaeltsova-photography)
+[![Codecov](https://img.shields.io/codecov/c/github/rockchalkwushock/mashaeltsova-photography.svg?style=flat-square)](https://codecov.io/gh/rockchalkwushock/mashaeltsova-photography)
+
 [![Next](https://img.shields.io/badge/built%20with-next.js-orange.svg?style=flat-square)](https://github.com/zeit/next.js)
 [![Now](https://img.shields.io/badge/deployed%20with-now--cli-orange.svg?style=flat-square)](https://github.com/zeit/now-cli)
+
+[![NSP Status](https://nodesecurity.io/orgs/rcws-development/projects/3bd70012-3566-4c14-81ac-93d567ad94b1/badge)](https://nodesecurity.io/orgs/rcws-development/projects/3bd70012-3566-4c14-81ac-93d567ad94b1)
+[![Known Vulnerabilities](https://snyk.io/test/github/rockchalkwushock/mashaeltsova-photography/badge.svg)](https://snyk.io/test/github/rockchalkwushock/mashaeltsova-photography)
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square)](http://commitizen.github.io/cz-cli/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/rockchalkwushock/mashaeltsova-photography/pulls)

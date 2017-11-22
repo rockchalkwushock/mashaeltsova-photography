@@ -29,13 +29,13 @@ exports[`Component: Gallery Renders without exploding in English 1`] = `
         id="mobile-menu"
       >
         <a
-          class="jsx-2241836341 mobileNavLink"
+          class="jsx-3323161863 mobileNavLink"
           href="/"
         >
           Home
         </a>
         <a
-          class="jsx-2241836341 mobileNavLink"
+          class="jsx-3323161863 mobileNavLink"
           href="/gallery"
         >
           Gallery
@@ -118,25 +118,25 @@ exports[`Component: Gallery Renders without exploding in English 1`] = `
         class="jsx-615156141"
       >
         <button
-          class="jsx-4223119375 galleryButton"
+          class="jsx-3406940974 galleryButton"
           name="family"
         >
           Family
         </button>
         <button
-          class="jsx-4223119375 galleryButton"
+          class="jsx-3406940974 galleryButton"
           name="portrait"
         >
           Portrait
         </button>
         <button
-          class="jsx-4223119375 galleryButton"
+          class="jsx-3406940974 galleryButton"
           name="travel"
         >
           Travel
         </button>
         <button
-          class="jsx-4223119375 galleryButton"
+          class="jsx-3406940974 galleryButton"
           name="wedding"
         >
           Wedding
@@ -290,13 +290,13 @@ exports[`Component: Gallery Renders without exploding in Russian 1`] = `
         id="mobile-menu"
       >
         <a
-          class="jsx-2241836341 mobileNavLink"
+          class="jsx-3323161863 mobileNavLink"
           href="/"
         >
           Домашняя страница
         </a>
         <a
-          class="jsx-2241836341 mobileNavLink"
+          class="jsx-3323161863 mobileNavLink"
           href="/gallery"
         >
           Галерея
@@ -379,25 +379,25 @@ exports[`Component: Gallery Renders without exploding in Russian 1`] = `
         class="jsx-615156141"
       >
         <button
-          class="jsx-4223119375 galleryButton"
+          class="jsx-3406940974 galleryButton"
           name="семья"
         >
           Семья
         </button>
         <button
-          class="jsx-4223119375 galleryButton"
+          class="jsx-3406940974 galleryButton"
           name="портрет"
         >
           Портрет
         </button>
         <button
-          class="jsx-4223119375 galleryButton"
+          class="jsx-3406940974 galleryButton"
           name="путешествия"
         >
           Путешествия
         </button>
         <button
-          class="jsx-4223119375 galleryButton"
+          class="jsx-3406940974 galleryButton"
           name="свадьбы"
         >
           Свадьбы

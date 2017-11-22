@@ -29,13 +29,13 @@ exports[`Component: Index Renders without exploding in English 1`] = `
         id="mobile-menu"
       >
         <a
-          class="jsx-2241836341 mobileNavLink"
+          class="jsx-3323161863 mobileNavLink"
           href="/"
         >
           Home
         </a>
         <a
-          class="jsx-2241836341 mobileNavLink"
+          class="jsx-3323161863 mobileNavLink"
           href="/gallery"
         >
           Gallery
@@ -169,7 +169,7 @@ exports[`Component: Index Renders without exploding in English 1`] = `
           style="height:200px"
         />
         <a
-          class="jsx-2241836341 linkToGallery"
+          class="jsx-3323161863 linkToGallery"
           href="/gallery"
         >
           View my work here!
@@ -399,13 +399,13 @@ exports[`Component: Index Renders without exploding in Russian 1`] = `
         id="mobile-menu"
       >
         <a
-          class="jsx-2241836341 mobileNavLink"
+          class="jsx-3323161863 mobileNavLink"
           href="/"
         >
           Домашняя страница
         </a>
         <a
-          class="jsx-2241836341 mobileNavLink"
+          class="jsx-3323161863 mobileNavLink"
           href="/gallery"
         >
           Галерея
@@ -534,7 +534,7 @@ exports[`Component: Index Renders without exploding in Russian 1`] = `
           style="height:200px"
         />
         <a
-          class="jsx-2241836341 linkToGallery"
+          class="jsx-3323161863 linkToGallery"
           href="/gallery"
         >
           Мои работы можно посмотреть тут!
