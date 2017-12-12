@@ -3,6 +3,8 @@ const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin')
 
 const { ANALYZE } = process.env
 
+const APP_NAME = 'masha-eltsova-photography'
+
 /**
  * NOTE
  *
@@ -32,8 +34,7 @@ module.exports = {
     })
     config.plugins.push(
       new SWPrecacheWebpackPlugin({
-        // verbose: true,
-        cacheId: 'masha-eltsova-photography',
+        cacheId: APP_NAME,
         minify: true,
         staticFileGlobs: ['static/icons/**.*'],
         staticFileGlobsIgnorePatterns: [/\.next\//],

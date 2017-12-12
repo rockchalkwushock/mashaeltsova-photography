@@ -29,13 +29,13 @@ exports[`Component: Gallery Renders without exploding in English 1`] = `
         id="mobile-menu"
       >
         <a
-          class="jsx-2241836341 mobileNavLink"
+          class="jsx-3323161863 mobileNavLink"
           href="/"
         >
           Home
         </a>
         <a
-          class="jsx-2241836341 mobileNavLink"
+          class="jsx-3323161863 mobileNavLink"
           href="/gallery"
         >
           Gallery
@@ -87,27 +87,27 @@ exports[`Component: Gallery Renders without exploding in English 1`] = `
         <source
           class="jsx-3672796762"
           media="(min-width: 768px)"
-          srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_575/watermark"
+          srcset="https://res.cloudinary.com/undefined/c_scale,f_auto,o_90,q_auto:best,w_575/watermark"
         />
         <source
           class="jsx-3672796762"
           media="(min-width: 540px) and (orientation: landscape)"
-          srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_300/watermark"
+          srcset="https://res.cloudinary.com/undefined/c_scale,f_auto,o_90,q_auto:best,w_300/watermark"
         />
         <source
           class="jsx-3672796762"
           media="(min-width: 540px)"
-          srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_440/watermark"
+          srcset="https://res.cloudinary.com/undefined/c_scale,f_auto,o_90,q_auto:best,w_440/watermark"
         />
         <source
           class="jsx-3672796762"
           media="(min-width: 425px)"
-          srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_375/watermark"
+          srcset="https://res.cloudinary.com/undefined/c_scale,f_auto,o_90,q_auto:best,w_375/watermark"
         />
         <img
           alt="Masha Eltsova Photography Logo"
           class="jsx-3672796762 fadeIn"
-          src="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_320/watermark"
+          src="https://res.cloudinary.com/undefined/c_scale,f_auto,o_90,q_auto:best,w_320/watermark"
         />
       </picture>
     </header>
@@ -118,25 +118,25 @@ exports[`Component: Gallery Renders without exploding in English 1`] = `
         class="jsx-615156141"
       >
         <button
-          class="jsx-4223119375 galleryButton"
+          class="jsx-3406940974 galleryButton"
           name="family"
         >
           Family
         </button>
         <button
-          class="jsx-4223119375 galleryButton"
+          class="jsx-3406940974 galleryButton"
           name="portrait"
         >
           Portrait
         </button>
         <button
-          class="jsx-4223119375 galleryButton"
+          class="jsx-3406940974 galleryButton"
           name="travel"
         >
           Travel
         </button>
         <button
-          class="jsx-4223119375 galleryButton"
+          class="jsx-3406940974 galleryButton"
           name="wedding"
         >
           Wedding
@@ -151,12 +151,12 @@ exports[`Component: Gallery Renders without exploding in English 1`] = `
           <source
             class="jsx-2951999264 jsx-3672796762"
             media="(min-width: 768px)"
-            srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_thumb,f_auto,g_faces:auto,h_200,q_auto:good,w_200/a"
+            srcset="https://res.cloudinary.com/undefined/c_thumb,f_auto,g_faces:auto,h_200,q_auto:good,w_200/a"
           />
           <img
             alt="a"
             class="jsx-2951999264 jsx-3672796762 fadeIn"
-            src="https://res.cloudinary.com/mashaeltsovaphotography/c_thumb,f_auto,g_faces:auto,h_100,q_auto:good,w_100/a"
+            src="https://res.cloudinary.com/undefined/c_thumb,f_auto,g_faces:auto,h_100,q_auto:good,w_100/a"
           />
         </picture>
         <picture
@@ -165,12 +165,12 @@ exports[`Component: Gallery Renders without exploding in English 1`] = `
           <source
             class="jsx-2951999264 jsx-3672796762"
             media="(min-width: 768px)"
-            srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_thumb,f_auto,g_faces:auto,h_200,q_auto:good,w_200/b"
+            srcset="https://res.cloudinary.com/undefined/c_thumb,f_auto,g_faces:auto,h_200,q_auto:good,w_200/b"
           />
           <img
             alt="b"
             class="jsx-2951999264 jsx-3672796762 fadeIn"
-            src="https://res.cloudinary.com/mashaeltsovaphotography/c_thumb,f_auto,g_faces:auto,h_100,q_auto:good,w_100/b"
+            src="https://res.cloudinary.com/undefined/c_thumb,f_auto,g_faces:auto,h_100,q_auto:good,w_100/b"
           />
         </picture>
         <picture
@@ -179,12 +179,12 @@ exports[`Component: Gallery Renders without exploding in English 1`] = `
           <source
             class="jsx-2951999264 jsx-3672796762"
             media="(min-width: 768px)"
-            srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_thumb,f_auto,g_faces:auto,h_200,q_auto:good,w_200/c"
+            srcset="https://res.cloudinary.com/undefined/c_thumb,f_auto,g_faces:auto,h_200,q_auto:good,w_200/c"
           />
           <img
             alt="c"
             class="jsx-2951999264 jsx-3672796762 fadeIn"
-            src="https://res.cloudinary.com/mashaeltsovaphotography/c_thumb,f_auto,g_faces:auto,h_100,q_auto:good,w_100/c"
+            src="https://res.cloudinary.com/undefined/c_thumb,f_auto,g_faces:auto,h_100,q_auto:good,w_100/c"
           />
         </picture>
       </div>
@@ -236,12 +236,12 @@ exports[`Component: Gallery Renders without exploding in English 1`] = `
         >
           <a
             class="jsx-1032329529"
-            href="https://rcws-development.com"
+            href="https://codybrunner.rocks"
           >
             <span
               class="jsx-1032329529"
             >
-              Designed by RCWS Development
+              Designed by Cody Brunner
             </span>
           </a>
           <span
@@ -290,13 +290,13 @@ exports[`Component: Gallery Renders without exploding in Russian 1`] = `
         id="mobile-menu"
       >
         <a
-          class="jsx-2241836341 mobileNavLink"
+          class="jsx-3323161863 mobileNavLink"
           href="/"
         >
           Домашняя страница
         </a>
         <a
-          class="jsx-2241836341 mobileNavLink"
+          class="jsx-3323161863 mobileNavLink"
           href="/gallery"
         >
           Галерея
@@ -348,27 +348,27 @@ exports[`Component: Gallery Renders without exploding in Russian 1`] = `
         <source
           class="jsx-3672796762"
           media="(min-width: 768px)"
-          srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_575/watermark"
+          srcset="https://res.cloudinary.com/undefined/c_scale,f_auto,o_90,q_auto:best,w_575/watermark"
         />
         <source
           class="jsx-3672796762"
           media="(min-width: 540px) and (orientation: landscape)"
-          srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_300/watermark"
+          srcset="https://res.cloudinary.com/undefined/c_scale,f_auto,o_90,q_auto:best,w_300/watermark"
         />
         <source
           class="jsx-3672796762"
           media="(min-width: 540px)"
-          srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_440/watermark"
+          srcset="https://res.cloudinary.com/undefined/c_scale,f_auto,o_90,q_auto:best,w_440/watermark"
         />
         <source
           class="jsx-3672796762"
           media="(min-width: 425px)"
-          srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_375/watermark"
+          srcset="https://res.cloudinary.com/undefined/c_scale,f_auto,o_90,q_auto:best,w_375/watermark"
         />
         <img
           alt="Masha Eltsova Photography Logo"
           class="jsx-3672796762 fadeIn"
-          src="https://res.cloudinary.com/mashaeltsovaphotography/c_scale,f_auto,o_90,q_auto:best,w_320/watermark"
+          src="https://res.cloudinary.com/undefined/c_scale,f_auto,o_90,q_auto:best,w_320/watermark"
         />
       </picture>
     </header>
@@ -379,25 +379,25 @@ exports[`Component: Gallery Renders without exploding in Russian 1`] = `
         class="jsx-615156141"
       >
         <button
-          class="jsx-4223119375 galleryButton"
+          class="jsx-3406940974 galleryButton"
           name="семья"
         >
           Семья
         </button>
         <button
-          class="jsx-4223119375 galleryButton"
+          class="jsx-3406940974 galleryButton"
           name="портрет"
         >
           Портрет
         </button>
         <button
-          class="jsx-4223119375 galleryButton"
+          class="jsx-3406940974 galleryButton"
           name="путешествия"
         >
           Путешествия
         </button>
         <button
-          class="jsx-4223119375 galleryButton"
+          class="jsx-3406940974 galleryButton"
           name="свадьбы"
         >
           Свадьбы
@@ -412,12 +412,12 @@ exports[`Component: Gallery Renders without exploding in Russian 1`] = `
           <source
             class="jsx-2951999264 jsx-3672796762"
             media="(min-width: 768px)"
-            srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_thumb,f_auto,g_faces:auto,h_200,q_auto:good,w_200/a"
+            srcset="https://res.cloudinary.com/undefined/c_thumb,f_auto,g_faces:auto,h_200,q_auto:good,w_200/a"
           />
           <img
             alt="a"
             class="jsx-2951999264 jsx-3672796762 fadeIn"
-            src="https://res.cloudinary.com/mashaeltsovaphotography/c_thumb,f_auto,g_faces:auto,h_100,q_auto:good,w_100/a"
+            src="https://res.cloudinary.com/undefined/c_thumb,f_auto,g_faces:auto,h_100,q_auto:good,w_100/a"
           />
         </picture>
         <picture
@@ -426,12 +426,12 @@ exports[`Component: Gallery Renders without exploding in Russian 1`] = `
           <source
             class="jsx-2951999264 jsx-3672796762"
             media="(min-width: 768px)"
-            srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_thumb,f_auto,g_faces:auto,h_200,q_auto:good,w_200/b"
+            srcset="https://res.cloudinary.com/undefined/c_thumb,f_auto,g_faces:auto,h_200,q_auto:good,w_200/b"
           />
           <img
             alt="b"
             class="jsx-2951999264 jsx-3672796762 fadeIn"
-            src="https://res.cloudinary.com/mashaeltsovaphotography/c_thumb,f_auto,g_faces:auto,h_100,q_auto:good,w_100/b"
+            src="https://res.cloudinary.com/undefined/c_thumb,f_auto,g_faces:auto,h_100,q_auto:good,w_100/b"
           />
         </picture>
         <picture
@@ -440,12 +440,12 @@ exports[`Component: Gallery Renders without exploding in Russian 1`] = `
           <source
             class="jsx-2951999264 jsx-3672796762"
             media="(min-width: 768px)"
-            srcset="https://res.cloudinary.com/mashaeltsovaphotography/c_thumb,f_auto,g_faces:auto,h_200,q_auto:good,w_200/c"
+            srcset="https://res.cloudinary.com/undefined/c_thumb,f_auto,g_faces:auto,h_200,q_auto:good,w_200/c"
           />
           <img
             alt="c"
             class="jsx-2951999264 jsx-3672796762 fadeIn"
-            src="https://res.cloudinary.com/mashaeltsovaphotography/c_thumb,f_auto,g_faces:auto,h_100,q_auto:good,w_100/c"
+            src="https://res.cloudinary.com/undefined/c_thumb,f_auto,g_faces:auto,h_100,q_auto:good,w_100/c"
           />
         </picture>
       </div>
@@ -497,12 +497,12 @@ exports[`Component: Gallery Renders without exploding in Russian 1`] = `
         >
           <a
             class="jsx-1032329529"
-            href="https://rcws-development.com"
+            href="https://codybrunner.rocks"
           >
             <span
               class="jsx-1032329529"
             >
-              Designed by RCWS Development
+              Designed by Cody Brunner
             </span>
           </a>
           <span

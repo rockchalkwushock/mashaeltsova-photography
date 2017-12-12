@@ -9,11 +9,10 @@
   "homepage": "https://github.com/rockchalkwushock/mashaeltsova-photography#readme",
   "bugs": "https://github.com/rockchalkwushock/mashaeltsova-photography/issues",
   "scripts": {
-    "commit": "nps commit",
+    "cm": "nps commit",
     "dev": "node server.js",
     "now-build": "next build",
     "now-start": "NODE_ENV=production node server.js",
-    "precommit": "lint-staged",
     "prettier": "prettier --single-quote --no-semi --write",
     "prod": "yarn now-build && yarn now-start",
     "start": "nps",
@@ -24,12 +23,16 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && nps validate.withCoverage"
+    }
+  },
   "jest": {
     "bail": true,
     "collectCoverageFrom": [
       "components/**/*.js",
-      "containers/*.js",
-      "pages/*.js"
+      "containers/*.js"
     ],
     "coverageThreshold": {
       "global": {
@@ -106,9 +109,9 @@
     "eslint": "^4.10.0",
     "eslint-config-equimper": "^2.2.1",
     "eslint-config-prettier": "^2.7.0",
-    "husky": "^0.14.3",
+    "husky": "^0.15.0-beta.13",
     "jest": "^21.2.1",
-    "lint-staged": "^4.3.0",
+    "lint-staged": "^6.0.0",
     "nps": "^5.7.1",
     "nps-utils": "^1.5.0",
     "prettier": "^1.7.3",

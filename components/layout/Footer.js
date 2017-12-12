@@ -18,7 +18,7 @@ const Footer = () => (
       <Icon icon="twitter" size="2x" url="https://twitter.com/MASHAELTSOVA" />
     </Container>
     <Container className="copyright">
-      <Icon icon="copyright" size="lg" url="https://rcws-development.com" />
+      <Icon icon="copyright" size="lg" url="https://codybrunner.rocks" />
     </Container>
     <style jsx>{`
       footer {
