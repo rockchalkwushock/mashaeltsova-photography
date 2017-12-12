@@ -12,7 +12,7 @@ const Icon = ({ icon, size, url }) => {
     return (
       <div>
         <a href={url}>
-          <span>Designed by RCWS Development</span>
+          <span>Designed by Cody Brunner</span>
         </a>
         <span>
           All images <FontAwesome name={icon} size={size} /> {yearToDisplay}{' '}

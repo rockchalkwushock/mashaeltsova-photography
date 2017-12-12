@@ -236,12 +236,12 @@ exports[`Component: Gallery Renders without exploding in English 1`] = `
         >
           <a
             class="jsx-1032329529"
-            href="https://rcws-development.com"
+            href="https://codybrunner.rocks"
           >
             <span
               class="jsx-1032329529"
             >
-              Designed by RCWS Development
+              Designed by Cody Brunner
             </span>
           </a>
           <span
@@ -497,12 +497,12 @@ exports[`Component: Gallery Renders without exploding in Russian 1`] = `
         >
           <a
             class="jsx-1032329529"
-            href="https://rcws-development.com"
+            href="https://codybrunner.rocks"
           >
             <span
               class="jsx-1032329529"
             >
-              Designed by RCWS Development
+              Designed by Cody Brunner
             </span>
           </a>
           <span
