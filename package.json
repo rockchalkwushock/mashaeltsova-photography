@@ -4,12 +4,9 @@
   "license": "MIT",
   "private": true,
   "description": "Photography Business Website for Masha Eltsova.",
-  "author":
-    "Cody Brunner <rockchalkwushock@icloud.com> (https://rcws-development.com)",
-  "repository":
-    "https://github.com/rockchalkwushock/mashaeltsova-photography.git",
-  "homepage":
-    "https://github.com/rockchalkwushock/mashaeltsova-photography#readme",
+  "author": "Cody Brunner <rockchalkwushock@icloud.com> (https://rcws-development.com)",
+  "repository": "https://github.com/rockchalkwushock/mashaeltsova-photography.git",
+  "homepage": "https://github.com/rockchalkwushock/mashaeltsova-photography#readme",
   "bugs": "https://github.com/rockchalkwushock/mashaeltsova-photography/issues",
   "scripts": {
     "cm": "nps commit",
@@ -33,7 +30,10 @@
   },
   "jest": {
     "bail": true,
-    "collectCoverageFrom": ["components/**/*.js", "containers/*.js"],
+    "collectCoverageFrom": [
+      "components/**/*.js",
+      "containers/*.js"
+    ],
     "coverageThreshold": {
       "global": {
         "branches": 30,
@@ -42,12 +42,19 @@
         "statements": 30
       }
     },
-    "setupFiles": ["./jest.setup.js"],
-    "snapshotSerializers": ["enzyme-to-json/serializer"],
+    "setupFiles": [
+      "./jest.setup.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
     "testEnvironment": "jsdom"
   },
   "lint-staged": {
-    "*.js": ["yarn prettier", "git add"]
+    "*.js": [
+      "yarn prettier",
+      "git add"
+    ]
   },
   "now": {
     "alias": "mashaeltsovaphotography.com",
@@ -104,7 +111,7 @@
     "eslint-config-prettier": "^2.7.0",
     "husky": "^0.15.0-beta.13",
     "jest": "^21.2.1",
-    "lint-staged": "^4.3.0",
+    "lint-staged": "^6.0.0",
     "nps": "^5.7.1",
     "nps-utils": "^1.5.0",
     "prettier": "^1.7.3",
