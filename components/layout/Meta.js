@@ -1,12 +1,6 @@
 import Head from 'next/head'
 import { styles } from '../../lib'
 
-/**
- * TODO
- * 1. Have Masha make a Page on Facebook & an ad.
- * 2. Have Masha make her IG account a business account.
- */
-
 export default () => (
   <div>
     <Head>
@@ -63,8 +57,6 @@ export default () => (
         name="google-site-verification"
         content="lOInQICWdMc50btwczBfjiy-7vFREiBO-hngKZzJs1s"
       />
-      {/* FACEBOOK PAGE ANALYTICS */}
-      <meta property="fb:app_id" content="1196109507189054" />
       {/* FAVICONS & TOUCH ICONS */}
       <link
         rel="apple-touch-icon"
