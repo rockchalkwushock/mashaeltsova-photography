@@ -32,7 +32,6 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/mashaeltsova-photography
-      - run: yarn install
       - run: yarn start test.coverage
       - run: yarn start reportCoverage
       - store_artifacts:
@@ -50,7 +49,6 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/mashaeltsova-photography
-      - run: yarn install
       - run:
           name: yarn build
           command: |
@@ -71,8 +69,8 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/mashaeltsova-photography
-      - run: yarn install
       - run: sudo yarn global add now
+      - run: echo ${CIRCLE_BRANCH}
       - deploy:
           name: Deploy & Alias.
           command: |
@@ -100,11 +98,6 @@ workflows:
       - build:
           requires:
             - test_and_report
-          filters:
-            branches:
-              only:
-                - production
-                - version-2
       - deployment:
           requires:
             - test_and_report
