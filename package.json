@@ -10,6 +10,7 @@
   "scripts": {
     "build":
       "nps clean && SITE_DOMAIN=http://localhost:9000 gatsby build --prefix-paths",
+    "ci_build": "gatsby build --prefix-paths",
     "cm": "nps commit",
     "dev": "nps clean && SITE_DOMAIN=http://localhost:8000 gatsby develop",
     "serve": "gatsby serve",
