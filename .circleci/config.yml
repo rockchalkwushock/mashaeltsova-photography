@@ -70,7 +70,6 @@ jobs:
       - attach_workspace:
           at: ~/mashaeltsova-photography
       - run: sudo yarn global add now
-      - run: echo ${CIRCLE_BRANCH}
       - deploy:
           name: Deploy & Alias.
           command: |
