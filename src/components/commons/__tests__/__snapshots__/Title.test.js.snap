@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: <Title /> should render markup 1`] = `
+.c0 {
+  color: lightcoral;
+}
+
+<Title
+  text="Hello World!"
+>
+  <StyledTitle
+    color="lightcoral"
+  >
+    <h1
+      className="c0"
+      color="lightcoral"
+    >
+      Hello World!
+    </h1>
+  </StyledTitle>
+</Title>
+`;
+
+exports[`Styled Component: <StyledTitle /> should render markup as default 1`] = `
+.c0 {
+  color: lightcoral;
+}
+
+<h1
+  className="c0"
+  color="lightcoral"
+/>
+`;
+
+exports[`Styled Component: <StyledTitle /> should render markup with props 1`] = `
+.c0 {
+  color: blue;
+}
+
+<h1
+  className="c0"
+  color="blue"
+/>
+`;
