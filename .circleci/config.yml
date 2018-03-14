@@ -75,15 +75,13 @@ jobs:
           name: Deploy & Alias.
           command: |
             if [ "${CIRCLE_BRANCH}" == "version-2" ]; then
-              url=$(now public -t ${NOW_TOKEN} -n=mashas-site --static 2>/dev/null)
+              url=$(now public --token=${NOW_TOKEN} -n="mashas-site" --static 2>/dev/null)
               echo "Site deployed to ${url}."
-              now -t ${NOW_TOKEN} alias $url mashas-site-v2
-              echo "${url} aliased to https://mashas-site-v2.now.sh"
+              now --token=${NOW_TOKEN} alias $url mashas-site-v2
             elif [ "${CIRCLE_BRANCH}" == "production" ]; then
-              url=$(now public -t ${NOW_TOKEN} -n=mashas-site --static 2>/dev/null)
+              url=$(now public --token=${NOW_TOKEN} -n="mashas-site" --static 2>/dev/null)
               echo "Site deployed to ${url}."
-              now -t ${NOW_TOKEN} alias $url mashaeltsovaphotography.com
-              echo "${url} aliased to https://mashaeltsovaphotography.com"
+              now --token=${NOW_TOKEN} alias $url mashaeltsovaphotography.com
             else
               echo "This failed miserably!"
             fi
