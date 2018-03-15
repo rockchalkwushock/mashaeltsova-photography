@@ -10,6 +10,7 @@ describe('Styled Component: <HomeGrid />', () => {
   })
   test('should have styles', () => {
     const wrapper = renderWithTheme(<HomeGrid />)
+    expect(wrapper).toHaveStyleRule('display', 'grid')
     expect(wrapper).toHaveStyleRule('grid-gap', '20px')
     expect(wrapper).toHaveStyleRule(
       'grid-template-columns',

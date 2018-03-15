@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 const HomeGrid = styled.div`
+  display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
   justify-content: center;
