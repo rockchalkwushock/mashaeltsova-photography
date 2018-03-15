@@ -1,3 +1,4 @@
+import FlexContainer from './FlexContainer'
 import Title from './Title'
 
-export { Title }
+export { FlexContainer, Title }
