@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Styled Component: <HomeGrid /> should render markup 1`] = `
+.c0 {
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit,minmax(200px,300px));
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+}
+
+@media (min-width:540px) {
+  .c0 {
+    grid-template-columns: repeat(auto-fit,minmax(200px,400px));
+  }
+}
+
+@media (min-width:736px) {
+  .c0 {
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  }
+}
+
+@media (min-width:900px) {
+  .c0 {
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  }
+}
+
+<ThemeProvider
+  theme={
+    Object {
+      "accent": "#df744a",
+      "bg": "#ffffff",
+      "fg": "#bfd8d2",
+      "highlight": "#dcb239",
+      "lowlight": "#36454f",
+      "sizes": Object {
+        "lg": "900px",
+        "md": "736px",
+        "sm": "540px",
+      },
+    }
+  }
+>
+  <HomeGrid>
+    <div
+      className="c0"
+    />
+  </HomeGrid>
+</ThemeProvider>
+`;

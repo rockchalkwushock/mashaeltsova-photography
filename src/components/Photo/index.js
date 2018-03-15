@@ -2,6 +2,8 @@ import React from 'react'
 
 import StyledPhoto from './elements'
 
-const Photo = ({ photo }) => <StyledPhoto resolutions={photo.resolutions} />
+const Photo = ({ alt, photo, title }) => (
+  <StyledPhoto alt={alt} sizes={photo.sizes} title={title} />
+)
 
 export default Photo

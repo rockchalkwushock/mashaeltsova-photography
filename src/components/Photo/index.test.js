@@ -4,7 +4,7 @@ import { mount } from 'enzyme'
 import Photo from './'
 
 const photo = {
-  resolutions: {
+  sizes: {
     base64: '/static/pic.jpg',
     height: 200,
     src: '/static/pic.jpg',
@@ -19,7 +19,7 @@ describe.skip('Component: <Photo />', () => {
   test('should render markup', () => {
     // REVIEW:
     // TypeError: Cannot read property 'src' of undefined
-    const wrapper = mount(<Photo photo={photo.resolutions} />)
+    const wrapper = mount(<Photo alt="pic" size={photo.sizes} title="pic" />)
     expect(wrapper).toMatchSnapshot()
   })
 })
