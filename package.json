@@ -2,14 +2,11 @@
   "name": "mashaeltsova-photography",
   "version": "0.1.0",
   "license": "MIT",
-  "author":
-    "Cody Brunner <rockchalkwushock@icloud.com> (https://codybrunner.me)",
+  "author": "Cody Brunner <rockchalkwushock@icloud.com> (https://codybrunner.me)",
   "description": "Photography portfolio & business website for Masha Eltsova.",
-  "repository":
-    "https://github.com/rockchalkwushock/mashaeltsova-photography.git",
+  "repository": "https://github.com/rockchalkwushock/mashaeltsova-photography.git",
   "scripts": {
-    "build":
-      "nps clean && SITE_DOMAIN=http://localhost:9000 gatsby build --prefix-paths",
+    "build": "nps clean && SITE_DOMAIN=http://localhost:9000 gatsby build --prefix-paths",
     "ci_build": "gatsby build --prefix-paths",
     "cm": "nps commit",
     "dev": "nps clean && SITE_DOMAIN=http://localhost:8000 gatsby develop",
@@ -19,6 +16,7 @@
   },
   "dependencies": {
     "gatsby": "^1.9.232",
+    "gatsby-image": "^1.0.42",
     "gatsby-plugin-react-next": "^1.0.11",
     "gatsby-plugin-styled-components": "^2.0.9",
     "react": "^16.2.0",
@@ -54,7 +52,10 @@
       "jest": true,
       "node": true
     },
-    "extends": ["equimper", "prettier"]
+    "extends": [
+      "equimper",
+      "prettier"
+    ]
   },
   "husky": {
     "hooks": {
@@ -70,7 +71,9 @@
   },
   "jest": {
     "bail": true,
-    "collectCoverageFrom": ["src/**/*.js"],
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
     "coverageThreshold": {
       "global": {
         "branches": 50,
@@ -79,11 +82,18 @@
         "statements": 50
       }
     },
-    "setupFiles": ["./jest.setup.js"],
+    "setupFiles": [
+      "./jest.setup.js"
+    ],
     "setupTestFrameworkScriptFile": "jest-styled-components",
-    "snapshotSerializers": ["enzyme-to-json/serializer"],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
     "testEnvironment": "jsdom",
-    "testPathIgnorePatterns": ["/node_modules/", "/.cache/"],
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/.cache/"
+    ],
     "transform": {
       "^.+\\.js$": "<rootDir>/jest.transform.js"
     }

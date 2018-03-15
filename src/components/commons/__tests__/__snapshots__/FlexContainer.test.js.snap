@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Styled Component: <FlexContainer /> should render markup 1`] = `
+.c0 {
+  -webkit-align-items: inherit;
+  -webkit-box-align: inherit;
+  -ms-flex-align: inherit;
+  align-items: inherit;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: inherit;
+  -webkit-justify-content: inherit;
+  -ms-flex-pack: inherit;
+  justify-content: inherit;
+  text-align: inherit;
+}
+
+<FlexContainer
+  align="inherit"
+  direction="row"
+  justify="inherit"
+  tAlign="inherit"
+>
+  <div
+    className="c0"
+    direction="row"
+  />
+</FlexContainer>
+`;
