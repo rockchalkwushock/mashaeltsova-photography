@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: <Link /> should render markup as ExternalLink 1`] = `
+<ExternalLink
+  aria-label="cnn"
+  href="https://cnn.com"
+>
+  CNN
+</ExternalLink>
+`;
+
+exports[`Component: <Link /> should render markup as InternalLink 1`] = `
+<InternalLink
+  aria-label="home page"
+  to="/"
+>
+  Home
+</InternalLink>
+`;
+
+exports[`Styled Component: <ExternalLink /> should render markup 1`] = `
+<ThemeProvider
+  theme={
+    Object {
+      "sizes": Object {
+        "lg": "1200px",
+        "md": "736px",
+        "sm": "540px",
+      },
+    }
+  }
+>
+  <ExternalLink
+    aria-label="hello"
+    href="https://cnn.com"
+  >
+    <a
+      aria-label="hello"
+      className=""
+      href="https://cnn.com"
+    >
+      CNN
+    </a>
+  </ExternalLink>
+</ThemeProvider>
+`;

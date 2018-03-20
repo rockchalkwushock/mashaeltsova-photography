@@ -133,7 +133,7 @@ exports[`Styled Component: <StyledIcon /> should render markup as Icon 1`] = `
   theme={
     Object {
       "sizes": Object {
-        "lg": "1000px",
+        "lg": "1200px",
         "md": "736px",
         "sm": "540px",
       },
@@ -200,7 +200,7 @@ exports[`Styled Component: <StyledIcon /> should render markup as MenuIcon 1`] =
   theme={
     Object {
       "sizes": Object {
-        "lg": "1000px",
+        "lg": "1200px",
         "md": "736px",
         "sm": "540px",
       },
