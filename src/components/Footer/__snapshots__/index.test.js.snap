@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: <AppFooter /> should render markup 1`] = `
+.c0 {
+  background-color: #333;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: 2em;
+  text-align: center;
+  width: 100vw;
+}
+
+.c1 {
+  text-align: center;
+}
+
+.c2 {
+  text-align: center;
+}
+
+@media (min-width:736px) {
+  .c0 {
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 2em 1em 1em 1em;
+  }
+}
+
+@media (min-width:736px) {
+  .c1 {
+    text-align: left;
+  }
+}
+
+@media (min-width:736px) {
+  .c2 {
+    text-align: right;
+  }
+}
+
+<ThemeProvider
+  theme={
+    Object {
+      "sizes": Object {
+        "lg": "1000px",
+        "md": "736px",
+        "sm": "540px",
+      },
+    }
+  }
+>
+  <AppFooter>
+    <Footer>
+      <footer
+        className="c0"
+      >
+        <FooterContainer
+          left={true}
+        >
+          <div
+            className="c1"
+          >
+            <h2>
+              Left
+            </h2>
+          </div>
+        </FooterContainer>
+        <FooterContainer>
+          <div
+            className="c2"
+          >
+            <h2>
+              Right
+            </h2>
+          </div>
+        </FooterContainer>
+      </footer>
+    </Footer>
+  </AppFooter>
+</ThemeProvider>
+`;

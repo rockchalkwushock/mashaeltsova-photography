@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Styled Component: <FooterContainer /> should render markup 1`] = `
+.c0 {
+  text-align: center;
+}
+
+@media (min-width:736px) {
+  .c0 {
+    text-align: right;
+  }
+}
+
+<ThemeProvider
+  theme={
+    Object {
+      "sizes": Object {
+        "lg": "1000px",
+        "md": "736px",
+        "sm": "540px",
+      },
+    }
+  }
+>
+  <FooterContainer>
+    <div
+      className="c0"
+    />
+  </FooterContainer>
+</ThemeProvider>
+`;
+
+exports[`Styled Component: <FooterContainer /> should render markup 2`] = `
+.c0 {
+  text-align: center;
+}
+
+@media (min-width:736px) {
+  .c0 {
+    text-align: left;
+  }
+}
+
+<ThemeProvider
+  theme={
+    Object {
+      "sizes": Object {
+        "lg": "1000px",
+        "md": "736px",
+        "sm": "540px",
+      },
+    }
+  }
+>
+  <FooterContainer
+    left={true}
+  >
+    <div
+      className="c0"
+    />
+  </FooterContainer>
+</ThemeProvider>
+`;

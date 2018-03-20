@@ -6,13 +6,14 @@ import '../utils/globals'
 // Styled-Components Theme Object
 import theme from '../utils/theme'
 
-import { AppMenu, Wrapper } from '../components'
+import { AppFooter, AppMenu, Wrapper } from '../components'
 
 const TemplateWrapper = ({ children }) => (
   <ThemeProvider theme={theme}>
     <Wrapper>
       <AppMenu />
       {children()}
+      <AppFooter />
     </Wrapper>
   </ThemeProvider>
 )
