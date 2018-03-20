@@ -1,0 +1,289 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: <AppMenu /> should render markup post-click 1`] = `
+.c0 {
+  background-color: #333;
+  box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.3);
+  height: 160px;
+  -webkit-transition: height 0.3s ease-in-out 0.05s;
+  transition: height 0.3s ease-in-out 0.05s;
+  width: 100vw;
+}
+
+.c3 {
+  opacity: 1;
+  pointer-events: none;
+  -webkit-transition: opacity 0.3s ease-in-out 0.1s;
+  transition: opacity 0.3s ease-in-out 0.1s;
+}
+
+.c2 {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(1fr);
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.c1 {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+<AppMenu>
+  <Menu
+    state={true}
+  >
+    <nav
+      className="c0"
+    >
+      <Icon
+        icon="bars"
+        menu={true}
+        onClick={[Function]}
+        size="2x"
+      >
+        <Styled(UnstyledIcon)
+          icon="bars"
+          menu={true}
+          onClick={[Function]}
+          size="2x"
+        >
+          <UnstyledIcon
+            className="c1"
+            icon="bars"
+            menu={true}
+            onClick={[Function]}
+            size="2x"
+          >
+            <FontAwesomeIcon$1
+              border={false}
+              className="c1"
+              fixedWidth={false}
+              flip={null}
+              icon="bars"
+              listItem={false}
+              mask={null}
+              menu={null}
+              name=""
+              onClick={[Function]}
+              pull={null}
+              pulse={false}
+              rotation={null}
+              size="2x"
+              spin={false}
+              symbol={false}
+              transform={null}
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-bars fa-w-14 fa-2x c1"
+                data-icon="bars"
+                data-prefix="fas"
+                menu={null}
+                onClick={[Function]}
+                role="img"
+                style={Object {}}
+                viewBox="0 0 448 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </FontAwesomeIcon$1>
+          </UnstyledIcon>
+        </Styled(UnstyledIcon)>
+      </Icon>
+      <MenuList
+        state={true}
+      >
+        <ul
+          className="c2"
+        >
+          <MenuItem
+            key="0"
+            state={true}
+          >
+            <li
+              className="c3"
+            >
+              Home
+            </li>
+          </MenuItem>
+          <MenuItem
+            key="1"
+            state={true}
+          >
+            <li
+              className="c3"
+            >
+              About
+            </li>
+          </MenuItem>
+          <MenuItem
+            key="2"
+            state={true}
+          >
+            <li
+              className="c3"
+            >
+              Contact
+            </li>
+          </MenuItem>
+        </ul>
+      </MenuList>
+    </nav>
+  </Menu>
+</AppMenu>
+`;
+
+exports[`Component: <AppMenu /> should render markup pre-click 1`] = `
+.c0 {
+  background-color: #333;
+  box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.3);
+  height: 60px;
+  -webkit-transition: height 0.3s ease-in-out 0.05s;
+  transition: height 0.3s ease-in-out 0.05s;
+  width: 100vw;
+}
+
+.c3 {
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: opacity 0.3s ease-in-out 0.1s;
+  transition: opacity 0.3s ease-in-out 0.1s;
+}
+
+.c2 {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(1fr);
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.c1 {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+<AppMenu>
+  <Menu
+    state={false}
+  >
+    <nav
+      className="c0"
+    >
+      <Icon
+        icon="bars"
+        menu={true}
+        onClick={[Function]}
+        size="2x"
+      >
+        <Styled(UnstyledIcon)
+          icon="bars"
+          menu={true}
+          onClick={[Function]}
+          size="2x"
+        >
+          <UnstyledIcon
+            className="c1"
+            icon="bars"
+            menu={true}
+            onClick={[Function]}
+            size="2x"
+          >
+            <FontAwesomeIcon$1
+              border={false}
+              className="c1"
+              fixedWidth={false}
+              flip={null}
+              icon="bars"
+              listItem={false}
+              mask={null}
+              menu={null}
+              name=""
+              onClick={[Function]}
+              pull={null}
+              pulse={false}
+              rotation={null}
+              size="2x"
+              spin={false}
+              symbol={false}
+              transform={null}
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-bars fa-w-14 fa-2x c1"
+                data-icon="bars"
+                data-prefix="fas"
+                menu={null}
+                onClick={[Function]}
+                role="img"
+                style={Object {}}
+                viewBox="0 0 448 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </FontAwesomeIcon$1>
+          </UnstyledIcon>
+        </Styled(UnstyledIcon)>
+      </Icon>
+      <MenuList
+        state={false}
+      >
+        <ul
+          className="c2"
+        >
+          <MenuItem
+            key="0"
+            state={false}
+          >
+            <li
+              className="c3"
+            >
+              Home
+            </li>
+          </MenuItem>
+          <MenuItem
+            key="1"
+            state={false}
+          >
+            <li
+              className="c3"
+            >
+              About
+            </li>
+          </MenuItem>
+          <MenuItem
+            key="2"
+            state={false}
+          >
+            <li
+              className="c3"
+            >
+              Contact
+            </li>
+          </MenuItem>
+        </ul>
+      </MenuList>
+    </nav>
+  </Menu>
+</AppMenu>
+`;

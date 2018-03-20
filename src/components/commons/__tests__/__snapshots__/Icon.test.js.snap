@@ -1,0 +1,260 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: <Icon /> should render markup as Icon 1`] = `
+.c0 {
+  margin-left: unset;
+  margin-top: unset;
+}
+
+<Icon
+  icon="bars"
+  size="2x"
+>
+  <Styled(UnstyledIcon)
+    icon="bars"
+    size="2x"
+  >
+    <UnstyledIcon
+      className="c0"
+      icon="bars"
+      size="2x"
+    >
+      <FontAwesomeIcon$1
+        border={false}
+        className="c0"
+        fixedWidth={false}
+        flip={null}
+        icon="bars"
+        listItem={false}
+        mask={null}
+        menu={null}
+        name=""
+        pull={null}
+        pulse={false}
+        rotation={null}
+        size="2x"
+        spin={false}
+        symbol={false}
+        transform={null}
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-bars fa-w-14 fa-2x c0"
+          data-icon="bars"
+          data-prefix="fas"
+          menu={null}
+          role="img"
+          style={Object {}}
+          viewBox="0 0 448 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+      </FontAwesomeIcon$1>
+    </UnstyledIcon>
+  </Styled(UnstyledIcon)>
+</Icon>
+`;
+
+exports[`Component: <Icon /> should render markup as MenuIcon 1`] = `
+.c0 {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+<Icon
+  icon="bars"
+  menu={true}
+  size="2x"
+>
+  <Styled(UnstyledIcon)
+    icon="bars"
+    menu={true}
+    size="2x"
+  >
+    <UnstyledIcon
+      className="c0"
+      icon="bars"
+      menu={true}
+      size="2x"
+    >
+      <FontAwesomeIcon$1
+        border={false}
+        className="c0"
+        fixedWidth={false}
+        flip={null}
+        icon="bars"
+        listItem={false}
+        mask={null}
+        menu={null}
+        name=""
+        pull={null}
+        pulse={false}
+        rotation={null}
+        size="2x"
+        spin={false}
+        symbol={false}
+        transform={null}
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-bars fa-w-14 fa-2x c0"
+          data-icon="bars"
+          data-prefix="fas"
+          menu={null}
+          role="img"
+          style={Object {}}
+          viewBox="0 0 448 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+      </FontAwesomeIcon$1>
+    </UnstyledIcon>
+  </Styled(UnstyledIcon)>
+</Icon>
+`;
+
+exports[`Styled Component: <StyledIcon /> should render markup as Icon 1`] = `
+.c0 {
+  margin-left: unset;
+  margin-top: unset;
+}
+
+<ThemeProvider
+  theme={
+    Object {
+      "sizes": Object {
+        "lg": "1000px",
+        "md": "736px",
+        "sm": "540px",
+      },
+    }
+  }
+>
+  <Styled(UnstyledIcon)
+    icon="bars"
+    size="2x"
+  >
+    <UnstyledIcon
+      className="c0"
+      icon="bars"
+      size="2x"
+    >
+      <FontAwesomeIcon$1
+        border={false}
+        className="c0"
+        fixedWidth={false}
+        flip={null}
+        icon="bars"
+        listItem={false}
+        mask={null}
+        menu={null}
+        name=""
+        pull={null}
+        pulse={false}
+        rotation={null}
+        size="2x"
+        spin={false}
+        symbol={false}
+        transform={null}
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-bars fa-w-14 fa-2x c0"
+          data-icon="bars"
+          data-prefix="fas"
+          menu={null}
+          role="img"
+          style={Object {}}
+          viewBox="0 0 448 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+      </FontAwesomeIcon$1>
+    </UnstyledIcon>
+  </Styled(UnstyledIcon)>
+</ThemeProvider>
+`;
+
+exports[`Styled Component: <StyledIcon /> should render markup as MenuIcon 1`] = `
+.c0 {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+<ThemeProvider
+  theme={
+    Object {
+      "sizes": Object {
+        "lg": "1000px",
+        "md": "736px",
+        "sm": "540px",
+      },
+    }
+  }
+>
+  <Styled(UnstyledIcon)
+    icon="bars"
+    menu={true}
+    size="2x"
+  >
+    <UnstyledIcon
+      className="c0"
+      icon="bars"
+      menu={true}
+      size="2x"
+    >
+      <FontAwesomeIcon$1
+        border={false}
+        className="c0"
+        fixedWidth={false}
+        flip={null}
+        icon="bars"
+        listItem={false}
+        mask={null}
+        menu={null}
+        name=""
+        pull={null}
+        pulse={false}
+        rotation={null}
+        size="2x"
+        spin={false}
+        symbol={false}
+        transform={null}
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-bars fa-w-14 fa-2x c0"
+          data-icon="bars"
+          data-prefix="fas"
+          menu={null}
+          role="img"
+          style={Object {}}
+          viewBox="0 0 448 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+      </FontAwesomeIcon$1>
+    </UnstyledIcon>
+  </Styled(UnstyledIcon)>
+</ThemeProvider>
+`;

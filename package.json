@@ -2,11 +2,14 @@
   "name": "mashaeltsova-photography",
   "version": "0.1.0",
   "license": "MIT",
-  "author": "Cody Brunner <rockchalkwushock@icloud.com> (https://codybrunner.me)",
+  "author":
+    "Cody Brunner <rockchalkwushock@icloud.com> (https://codybrunner.me)",
   "description": "Photography portfolio & business website for Masha Eltsova.",
-  "repository": "https://github.com/rockchalkwushock/mashaeltsova-photography.git",
+  "repository":
+    "https://github.com/rockchalkwushock/mashaeltsova-photography.git",
   "scripts": {
-    "build": "nps clean && SITE_DOMAIN=http://localhost:9000 gatsby build --prefix-paths",
+    "build":
+      "nps clean && SITE_DOMAIN=http://localhost:9000 gatsby build --prefix-paths",
     "ci_build": "gatsby build --prefix-paths",
     "cm": "nps commit",
     "dev": "nps clean && SITE_DOMAIN=http://localhost:8000 gatsby develop",
@@ -15,6 +18,10 @@
     "test": "nps test"
   },
   "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.4",
+    "@fortawesome/fontawesome-free-brands": "^5.0.8",
+    "@fortawesome/fontawesome-free-solid": "^5.0.8",
+    "@fortawesome/react-fontawesome": "^0.0.17",
     "gatsby": "^1.9.238",
     "gatsby-plugin-react-next": "^1.0.11",
     "gatsby-plugin-styled-components": "^2.0.9",
@@ -51,10 +58,7 @@
       "jest": true,
       "node": true
     },
-    "extends": [
-      "equimper",
-      "prettier"
-    ]
+    "extends": ["equimper", "prettier"]
   },
   "husky": {
     "hooks": {
@@ -70,9 +74,7 @@
   },
   "jest": {
     "bail": true,
-    "collectCoverageFrom": [
-      "src/**/*.js"
-    ],
+    "collectCoverageFrom": ["src/**/*.js"],
     "coverageThreshold": {
       "global": {
         "branches": 50,
@@ -81,18 +83,19 @@
         "statements": 50
       }
     },
-    "setupFiles": [
-      "./jest.setup.js"
+    "coveragePathIgnorePatterns": [
+      "/src/components/index.js",
+      "/src/components/commons/index.js",
+      "/src/helpers/index.js",
+      "/src/layouts/",
+      "/src/pages/",
+      "/src/utils/"
     ],
+    "setupFiles": ["./jest.setup.js"],
     "setupTestFrameworkScriptFile": "jest-styled-components",
-    "snapshotSerializers": [
-      "enzyme-to-json/serializer"
-    ],
+    "snapshotSerializers": ["enzyme-to-json/serializer"],
     "testEnvironment": "jsdom",
-    "testPathIgnorePatterns": [
-      "/node_modules/",
-      "/.cache/"
-    ],
+    "testPathIgnorePatterns": ["/node_modules/", "/.cache/"],
     "transform": {
       "^.+\\.js$": "<rootDir>/jest.transform.js"
     }

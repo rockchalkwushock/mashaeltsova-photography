@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Styled Component: <MenuList /> should render markup 1`] = `
+.c0 {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(1fr);
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 10px;
+  text-align: center;
+}
+
+<ThemeProvider
+  theme={
+    Object {
+      "sizes": Object {
+        "lg": "1000px",
+        "md": "736px",
+        "sm": "540px",
+      },
+    }
+  }
+>
+  <MenuList>
+    <ul
+      className="c0"
+    />
+  </MenuList>
+</ThemeProvider>
+`;

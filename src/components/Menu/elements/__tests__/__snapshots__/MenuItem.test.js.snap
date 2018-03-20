@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Styled Component: <MenuItem /> should render markup 1`] = `
+.c0 {
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: opacity 0.3s ease-in-out 0.1s;
+  transition: opacity 0.3s ease-in-out 0.1s;
+}
+
+<ThemeProvider
+  theme={
+    Object {
+      "sizes": Object {
+        "lg": "1000px",
+        "md": "736px",
+        "sm": "540px",
+      },
+    }
+  }
+>
+  <MenuItem>
+    <li
+      className="c0"
+    />
+  </MenuItem>
+</ThemeProvider>
+`;
+
+exports[`Styled Component: <MenuItem /> should render markup 2`] = `
+.c0 {
+  opacity: 1;
+  pointer-events: none;
+  -webkit-transition: opacity 0.3s ease-in-out 0.1s;
+  transition: opacity 0.3s ease-in-out 0.1s;
+}
+
+<ThemeProvider
+  theme={
+    Object {
+      "sizes": Object {
+        "lg": "1000px",
+        "md": "736px",
+        "sm": "540px",
+      },
+    }
+  }
+>
+  <MenuItem
+    state={true}
+  >
+    <li
+      className="c0"
+    />
+  </MenuItem>
+</ThemeProvider>
+`;

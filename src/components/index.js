@@ -1,3 +1,4 @@
+import AppMenu from './Menu'
 import Wrapper from './Wrapper'
 
-export { Wrapper }
+export { AppMenu, Wrapper }
